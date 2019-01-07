@@ -1,0 +1,3 @@
+
+A diode OR is used to isolate two or more potential power sources. The circuit behind the diode OR draws power from the highest voltage input source.
+This is commonly used for selecting between multiple power sources. For instance, a device with a 9v battery pack and a 12v power brick will be powered by the battery unless the power brick is plugged in. It can also be used to draw power from multiple independent batteries in a balanced fashion, while still allowing independent balance charging of the cells.

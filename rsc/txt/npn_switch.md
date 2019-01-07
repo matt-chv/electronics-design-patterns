@@ -1,0 +1,3 @@
+
+One of the simplest uses for an NPN transistor is as a switch. In this configuration, when the physical switch - which could also be an output from a microcontroller or other digital line - is closed, current flows through the current limiting resistor R1 into the base of Q1, turning on the transistor, and allowing power to flow through it and R1, turning the load on.
+Bipolar transistors are current controlled devices, and the resistor R1 on the base of the transistor limits the current flow from base to ground. The transistor will conduct a maximum current from collector emitter equal to the base current multiplied by the transistor's gain, notated Hfe.
