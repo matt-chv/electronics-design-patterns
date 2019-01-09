@@ -1,0 +1,5 @@
+out/pdf/*
+out/png/*
+venv/*
+.settings/*
+__pycache__/*
