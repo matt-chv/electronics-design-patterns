@@ -1,17 +1,19 @@
+import argparse
 from bs4 import BeautifulSoup
-
+import io
+import logging    
+import markdown
+import matplotlib.pyplot as plt
 
 from os.path import abspath, join, exists
 from os import walk, mkdir
 
-import logging
-
-import markdown
 try:
     from mdx_mathjax import MathJaxExtension
 except:
     print("module mdx_mathjax not installed")
     print("pip install python-markdown-mathjax")
+from PIL import Image, ImageChops
 
 from reportlab.lib.enums import TA_JUSTIFY
 from reportlab.pdfgen import canvas
@@ -19,9 +21,10 @@ from reportlab.platypus import Paragraph
 from reportlab.lib.units import mm, inch
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet,ParagraphStyle
-from reportlab.lib.pagesizes import A4,A3
+from reportlab.lib.pagesizes import A4,A3,LETTER 
 
 import subprocess
+from titlecase import titlecase
 
 current_dir = abspath(join(__file__,".."))
 rsc_folder = abspath(join(current_dir,"rsc"))
@@ -36,9 +39,12 @@ png_folder = abspath(join(out_folder,"png"))
 pdf_folder = abspath(join(out_folder,"pdf"))
 eq_folder = abspath(join(out_folder,"equations"))
 
-import matplotlib.pyplot as plt
-import io
-from PIL import Image, ImageChops
+#american card size
+us_card_size = (2.72 * inch, 3.7 *inch) #ratio = 1.36
+eu_card_size = card_size = (64*mm,89*mm)
+
+
+
 
 white = (255, 255, 255, 255)
 
@@ -64,41 +70,75 @@ def latex_to_img(tex,save_path):
     return
 
 
-def src_to_png():
+def electronics_title(title_to_be_styled):
+    titlelised = titlecase(title_to_be_styled)
+    
+    abbreviations = ["AMR", "BJT","CMOS","FET", "LC", "LED", "LPF", "LVDT", "MOSFET",\
+                      "NPN","ORP", "PNP","pH","PV","PZT", "RTD", "RC", "SR", "TEG"]
+    for abb in abbreviations:
+        titlelised = titlelised.replace(abb.lower(),abb)
+        titlelised = titlelised.replace(abb.title(),abb)    
+    return titlelised
+    
+
+def compile_rsc_to_png():
     """ will convert all sources into png files
     .sch files will be converted by scripting Eagle
-    .svg ...
+    .svg files will be converted by scripting Inkscape
     """
     
-    schematics = []
-    for path, folders, sch_files in walk(rsc_img_folder):
-        for sch in sch_files:
-            print(sch)
-            schematics.append(abspath(join(path, sch)))# = [abspath(join(sch)) for sch in sch_files]
+    ressources = []
+    for path, folders, rsc_files in walk(rsc_img_folder):
+        for rsc in rsc_files:
+            ressources.append(abspath(join(path, rsc)))# = [abspath(join(sch)) for sch in sch_files]
 
     
-    for sch in schematics:
-        png_full_path = sch.replace(".sch",".png").replace(rsc_img_folder,png_folder).replace("signal chain\\","").\
-            replace("digital_b\\","").replace("power_v\\","")
-        script = "export image %s 600; quit;"%(png_full_path)
+    for rsc in ressources:
+        png_full_path = rsc.replace(".sch",".png").replace(".svg",".png").replace(rsc_img_folder,png_folder).replace("signal_chain\\","").\
+            replace("digital\\","").replace("power\\","").replace("transducers\\","")
         if exists(png_full_path):
             #TODO: add here a timestamp comparison
             pass
         else:
             #create the png file
             try:
-                res = subprocess.check_output(["D:/tools/EAGLE 9.2.2/eagle.exe",\
-                                       sch,"-C", script])
+                if rsc.find(".sch")>=0:
+                    script = "export image %s 600; quit;"%(png_full_path)
+                    res = subprocess.check_output(["D:/tools/EAGLE 9.2.2/eagle.exe",\
+                                               rsc,"-C", script])
+                elif rsc.find(".svg")>=0:
+                    res = subprocess.check_output(["D:/tools/Inkscape/inkscape.exe","-z",\
+                                               rsc,"-e", png_full_path])
             except:
-                print("error for %s\n%s"%(sch, script))
-            print(script)
+                logging.error("error compiling graphic ressources to png for %s\n%s"%(rsc))
             
 
 def draw_card(c, card_size, card_output_path, card_background_path, \
               x0=0,y0=0,\
                   schematics_image_path=None, card_title=None,\
-                  design_pattern_description=None, schematics_index=None,\
-                   schematics_count=None):
+                  design_pattern_description=None, design_pattern_index=None,\
+                   design_pattern_count=None):
+    """ This draws with the reportlab module the card on the canvas (the pdf page) passed in paramter
+    c: reportlab canvas
+        the pdf page where the card is being drawn
+    card_size: (int,int)
+        the size in canvas pixels of the card being drawn
+    card_output_path: str (deprecated)
+    card_background_path: str
+        the path to the background image to be added for the card
+    x0: int
+        the offset in the x axis where to draw the card onto the canvas
+    y0: int
+        the offset in the y axis where to draw the card onto the canvas
+    card_title: str
+        the title of the card (name of the design pattern)
+    design_pattern_description: str
+        the description of the design pattern
+    design_pattern_index: str
+        as of today a str of an int - future proof with string to show suits
+    design_pattern_count: str
+        as of today a str of an int - future proof (see above)
+    """
 #     card_size = A4
 #     card_size = (64*mm,89*mm)
     card_width = card_size[0]
@@ -106,8 +146,8 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
     schematics_image = schematics_image_path
 #     schematics_title = "CMOS Inverter"
 #     schematics_title = card_title
-#     schematics_index = "13"
-#     schematics_count = "32"
+#     design_pattern_index = "13"
+#     design_pattern_count = "32"
 
 #     c = canvas.Canvas(card_output_path, pagesize=card_size)
     #add image background, needs to be done first as otherwise covers the text
@@ -152,10 +192,10 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
                     mask='auto',showBoundary=False,preserveAspectRatio=True)
     
     #add schematics info
-    if not schematics_index is None:
-        c.drawString(x0+card_width/3.,y0+5*mm,schematics_index)
-    if not schematics_count is None:
-        c.drawString(x0+card_width*1/2.+1*mm,y0+5*mm,schematics_count)
+    if not design_pattern_index is None:
+        c.drawString(x0+card_width/3.,y0+5*mm,design_pattern_index)
+    if not design_pattern_count is None:
+        c.drawString(x0+card_width*1/2.+1*mm,y0+5*mm,design_pattern_count)
     if not card_title is None:
         c.drawString(x0+5*mm,y0+card_height*7/8.,card_title)
     
@@ -164,20 +204,12 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
 #     c.save()
     logging.info(card_output_path, "done")
 
-def make_card_deck(cards_rendering="standard sheet",card_deck_layout=A4,naming_convention="named", NCARD=52, card_size = (64*mm,89*mm)):
+def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,naming_convention="named", NCARD=52, card_size = (64*mm,89*mm)):
     """ generates the pdf from:
-    a. the different schematics in the schematics folder
+    a. the different resources in the resource folder
     b. the associated text description (names must match 100%)
     c. color card (based on folder hierarchy)
     
-    Usage:
-    ------
-    #make a single sheet with all cards:
-    make_card_deck(cards_rendering="single sheet", NCARD=34)
-    #make a pdf file with standard size paper sheet
-    make_card_deck(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
-    #make one pdf file for each card
-    make_card_deck(cards_rendering="one a sheet", naming_convention="named",card_deck_layout=None, NCARD=34)
     
     Parameters:
     -----------
@@ -262,7 +294,7 @@ def make_card_deck(cards_rendering="standard sheet",card_deck_layout=A4,naming_c
                 card_output_path= abspath(join(pdf_folder,"card_deck_single_sheet.pdf")) 
             elif cards_rendering== "standard sheet":
                 card_output_path= abspath(join(pdf_folder,"card_deck_DIN_size.pdf"))      
-                
+            
             if exists(card_output_path):
                 #FIXME: here need to check if pdf is more recent than the sources, if not need to overwrite the pdf
                 pass
@@ -276,7 +308,6 @@ def make_card_deck(cards_rendering="standard sheet",card_deck_layout=A4,naming_c
                         card_deck_layout = (card_size[0]*sheet_n_card_width, card_size[1]*sheet_n_card_height)
                         card_output_path= abspath(join(pdf_folder,"card_deck_single_sheet.pdf"))                       
                         card_canva = canvas.Canvas(card_output_path, pagesize=(card_size[0]*sheet_n_card_width,card_size[1]*sheet_n_card_height))
-                        print(card_output_path)
                     elif cards_rendering== "standard sheet":
                         sheet_n_card_width = int(card_deck_layout[0]/card_size[0])
                         sheet_n_card_height = int(card_deck_layout[1]/card_size[1])
@@ -299,12 +330,14 @@ def make_card_deck(cards_rendering="standard sheet",card_deck_layout=A4,naming_c
                     x0_card = 0
                     y0_card = 0
 
-                    
+                
+                styled_title = electronics_title(card_title)
+                logging.info("adding card: %s"%(styled_title))
                 draw_card(c = card_canva,card_size=card_size, card_output_path=card_output_path, card_background_path=card_background_path,\
                           x0=x0_card,y0=y0_card,\
-                                schematics_image_path=png_full_path, card_title=card_title,\
+                                schematics_image_path=png_full_path, card_title=styled_title,\
                                 design_pattern_description= design_pattern_description,
-                               schematics_index=str(card_count), schematics_count=str(total_cards_count))
+                               design_pattern_index=str(card_count), design_pattern_count=str(total_cards_count))
                 
 
                 if cards_rendering in ["single sheet","standard sheet" ]:
@@ -320,10 +353,13 @@ def make_card_deck(cards_rendering="standard sheet",card_deck_layout=A4,naming_c
                     
                 logging.debug("added %s"%(card_title))
     
+
     #we have added all the cards from the deck on the pdf, save to file now
-    if (cards_rendering in ["single sheet","standard sheet" ]) & \
-        creating_deck:
-        card_canva.save()
+    if (cards_rendering in ["single sheet","standard sheet" ]):
+        if creating_deck:
+            card_canva.save()
+        else:
+            logging.info("card deck already existing - not updated")
 
 
 #             draw_card(card_size, card_output_path, card_background_path,\
@@ -332,7 +368,63 @@ def make_card_deck(cards_rendering="standard sheet",card_deck_layout=A4,naming_c
 #             #make back
 #             draw_card(card_size, card_output_path.replace("front","back"), card_background_path.replace("front","back"))
 
+def make_card_deck(**kwargs):
+    """
+    Usage:
+    ------
+    #make a single sheet with all cards:
+    make_card_deck(cards_rendering="single sheet", NCARD=34)
+    #make a pdf file with standard size paper sheet
+    make_card_deck(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
+    #make one pdf file for each card
+    make_card_deck(cards_rendering="one a sheet", naming_convention="named",card_deck_layout=None, NCARD=34)
+    """
+    #compile ressources
+    compile_rsc_to_png()
+    
+    #link all ressources into final pdf
+    link_png_txt_to_pdf(cards_rendering=kwargs.get('pdf_layout'))
+    
+    #make a single sheet with all cards:
+    link_png_txt_to_pdf(cards_rendering="single sheet", NCARD=34)
+    exit()
+    #make a pdf file with standard size paper sheet
+    link_png_txt_to_pdf(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
+    #make one pdf file for each card
+    link_png_txt_to_pdf(cards_rendering="one a sheet", naming_convention="named",card_deck_layout=None, NCARD=34)
+
+
 if __name__=="__main__":
+    # create logger with 'spam_application'
+    logger = logging.getLogger('edp')
+    logger.setLevel(logging.DEBUG)
+    # create file handler which logs even debug messages
+    fh = logging.FileHandler('edp_logs.log')
+    fh.setLevel(logging.DEBUG)
+    # create console handler with a higher log level
+    ch = logging.StreamHandler()
+    ch.setLevel(logging.DEBUG)
+    # create formatter and add it to the handlers
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    fh.setFormatter(formatter)
+    ch.setFormatter(formatter)
+    # add the handlers to the logger
+    logger.addHandler(fh)
+    logger.addHandler(ch)
+
+
+    parser = argparse.ArgumentParser(description='Generate Card Deck with Electronics Design Pattern on each card')
+    parser.add_argument('--pdf_layout', metavar='pdf layout',default="single sheet",
+                        choices=['single sheet','standard sheet','one a sheet'], type=str,
+                        help='final pdf layout (default: single sheet)')
+    parser.add_argument('--pdf_size', metavar='pdf size',default="A4",
+                        choices=['A4','A3','LETTER'], type=str,\
+                        help = 'only needed if pdf layout set to standard sheet')
+    parser.add_argument('--card_size', metavar='card size',default="eu",
+                        choices=['eu','us'], type=str,\
+                        help = 'sets the size of each card in the deck')
+
+    
     if not exists(out_folder):
         mkdir(out_folder)
     if not exists(png_folder):
@@ -341,16 +433,10 @@ if __name__=="__main__":
         mkdir(pdf_folder)
     if not exists(eq_folder):
         mkdir(eq_folder)
-
-    #american card size
-    us_card_size = (2.72 * inch, 3.7 *inch) #ratio = 1.36
-    eu_card_size = card_size = (64*mm,89*mm)
-    print("start")
-    #make a single sheet with all cards:
-    make_card_deck(cards_rendering="single sheet", NCARD=34)
-    #make a pdf file with standard size paper sheet
-    make_card_deck(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
-    #make one pdf file for each card
-    make_card_deck(cards_rendering="one a sheet", naming_convention="named",card_deck_layout=None, NCARD=34)
+        
+    
+        
+    args = parser.parse_args()
+    make_card_deck(**vars(args))
 
     print("done")
