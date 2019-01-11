@@ -1,5 +1,6 @@
 out/pdf/*
 out/png/*
+out/equations/*
 venv/*
 .settings/*
 __pycache__/*
