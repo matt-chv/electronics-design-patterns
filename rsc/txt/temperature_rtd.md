@@ -1,1 +1,2 @@
-Work in Progress
+Thermoelectric transducer - 
+Futher detailed description is Work in Progress

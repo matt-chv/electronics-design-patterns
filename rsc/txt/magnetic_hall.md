@@ -1,1 +1,2 @@
-Work in Progress
+Hall Sensor leverages the Hall effect (derived from Lorentz force) which will push electrons aside when exposed to a magnetic field. This will create a voltage which can be measured.
+Futher detailed description is Work in Progress

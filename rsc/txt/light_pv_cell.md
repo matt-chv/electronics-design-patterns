@@ -1,1 +1,2 @@
-Work in Progress
+Photoelectric transducer - 
+Futher detailed description is Work in Progress
