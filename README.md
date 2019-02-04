@@ -4,6 +4,9 @@ These are the source files for electronics design patterns cards. Each card depi
 
 They could be used for brainstorming, interviews or STEMS education.
 
+## Status
+pre-alpha
+
 ## Ressources
 ./rsc/images is where the illustrations are found
 .sch are EAGLE format files
