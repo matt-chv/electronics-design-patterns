@@ -4,6 +4,9 @@ These are the source files for electronics design patterns cards. Each card depi
 
 They could be used for brainstorming, interviews or STEMS education.
 
+## Status
+pre-alpha
+
 ## Ressources
 ./rsc/images is where the illustrations are found
 .sch are KiCad format files
@@ -15,4 +18,5 @@ today only single new line equations are supported.
 
 ## Build
 png conversion of either .sch or .svg are included to allow for easier pdf generation
+
 generation of png from the .sch requires ./bin/plotkicadsch (credit: [plotkicadsch](https://github.com/jnavila/plotkicadsch)
