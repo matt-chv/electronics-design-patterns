@@ -20,3 +20,4 @@ today only single new line equations are supported.
 png conversion of either .sch or .svg are included to allow for easier pdf generation
 
 generation of png from the .sch requires ./bin/plotkicadsch (credit: [plotkicadsch](https://github.com/jnavila/plotkicadsch)
+plotkicadsch called by build scripts
