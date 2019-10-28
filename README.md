@@ -6,7 +6,7 @@ They could be used for brainstorming, interviews or STEMS education.
 
 ## Ressources
 ./rsc/images is where the illustrations are found
-.sch are EAGLE format files
+.sch are KiCad format files
 .svg are SVG files
 
 ./rsc/txt is where the descriptions are found
@@ -15,4 +15,4 @@ today only single new line equations are supported.
 
 ## Build
 png conversion of either .sch or .svg are included to allow for easier pdf generation
-generation of png from the .sch requires EAGLE
+generation of png from the .sch requires ./bin/plotkicadsch (credit: [plotkicadsch](https://github.com/jnavila/plotkicadsch)
