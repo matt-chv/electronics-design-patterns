@@ -14,4 +14,4 @@ This project aims at:
 
 ## Overview
 
-For an initial overview, have a look at the pdf rendering of all identified design patters [here](https://raw.githubusercontent.com/matt-chv/electronics-design-patterns/out/card_deck_single_sheet.pdf)
+For an initial overview, have a look at the pdf rendering of all identified design patters [here](https://raw.githubusercontent.com/matt-chv/electronics-design-patterns/master/out/card_deck_single_sheet.pdf)
