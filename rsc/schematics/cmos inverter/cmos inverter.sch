@@ -1,0 +1,82 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_SGD Q2
+U 1 1 5EC1000C
+P 5850 3000
+F 0 "Q2" H 6056 3000 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 6056 2955 50  0001 L CNN
+F 2 "" H 6050 3100 50  0001 C CNN
+F 3 "~" H 5850 3000 50  0001 C CNN
+	1    5850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q1
+U 1 1 5EC10DAF
+P 5850 2400
+F 0 "Q1" H 6056 2400 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 6056 2445 50  0001 L CNN
+F 2 "" H 6050 2500 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5950 2600 5950 2700
+$Comp
+L power:+5V VCC
+U 1 1 5EC12C09
+P 5950 2050
+F 0 "VCC" H 6038 2087 50  0000 L CNN
+F 1 "+5V" H 5965 2223 50  0001 C CNN
+F 2 "" H 5950 2050 50  0001 C CNN
+F 3 "" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2050 5950 2200
+Wire Wire Line
+	5650 2400 5650 2700
+Wire Wire Line
+	5300 2700 5650 2700
+Connection ~ 5650 2700
+Wire Wire Line
+	5650 2700 5650 3000
+Wire Wire Line
+	6250 2700 5950 2700
+Connection ~ 5950 2700
+Wire Wire Line
+	5950 2700 5950 2800
+Text Label 6200 2700 0    50   ~ 0
+OUT
+Text Label 5350 2700 0    50   ~ 0
+IN
+$Comp
+L power:GND #PWR?
+U 1 1 5EC14FEC
+P 5950 3450
+F 0 "#PWR?" H 5950 3200 50  0001 C CNN
+F 1 "GND" H 5955 3277 50  0000 C CNN
+F 2 "" H 5950 3450 50  0001 C CNN
+F 3 "" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3200 5950 3450
+$EndSCHEMATC
