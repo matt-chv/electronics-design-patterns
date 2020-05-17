@@ -4,3 +4,5 @@ out/equations/*
 venv/*
 .settings/*
 __pycache__/*
+vscode/*
+.vscode/*
