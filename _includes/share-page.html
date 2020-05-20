@@ -1,0 +1,40 @@
+<div class="share-page">
+  <span style="float: left;">Share this on &rarr;&nbsp;&nbsp;</span>
+
+  <!-- Twitter -->
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.share.twitter_username }}">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <!-- Google + -->
+  <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <!-- Facebook -->
+  <div class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+  
+  <!-- Whatsapp -->
+  <div class="fa fa-whatsapp gi-5x" style="position: relative; top: -4px; left: 3px;" >
+    <a href="https://wa.me/?text={{"I read this ultra short story from embedded-analog-intelligence, have 10s fun reading: " | url_encode}}
+                                  {{site.url| url_encode }}{{site.baseurl| url_encode }}{{page.url | url_encode }}" > 
+      <b>Whatsapp</b> a friend
+    </a>
+  </div>
+
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId={{ site.share.fb_appid }}";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--script type="text/javascript">	
+   if(typeof wabtn4fg==="undefined")
+    {wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");
+     s.type="text/javascript";
+     s.src="static/js/whatsapp-button.js";
+     h.appendChild(s)
+    }
+</script-->
