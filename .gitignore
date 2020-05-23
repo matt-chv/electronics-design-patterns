@@ -1,5 +1,4 @@
 out/pdf/*
-out/png/*
 out/equations/*
 venv/*
 scripts/venv/*
