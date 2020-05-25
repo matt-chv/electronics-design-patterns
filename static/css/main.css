@@ -170,3 +170,7 @@ div.col-sm-3 img.profile-avatar {
     margin-top: 30px;
   }
 }
+
+figcaption {
+    font-size: 0.5em;
+}

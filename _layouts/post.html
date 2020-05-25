@@ -13,6 +13,11 @@ layout: default
 {% endif %}
 
 <div class="content">
+    {% if page.schematics%}
+    <object type="image/svg+xml" data="{{site.baseurl}}/out/svg/{{page.title}}.svg" alt="" width="500" height="200"></object>
+    <figcaption> 
+    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">svg schematics</span> by <a rel="cc:attributionURL" href="http://matthieuchevrier.com"><span rel="cc:attributionName">matt_chv</span></a>CC BY-SA 4.0<a href="https://creativecommons.org/licenses/by-sa/4.0"><img style="height:11px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img  style="height:11px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img  style="height:11px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p></figcaption>
+    {% endif %}
   <div class="post">{{ content }}</div>
   {% include share-page.html %}
 </div>
