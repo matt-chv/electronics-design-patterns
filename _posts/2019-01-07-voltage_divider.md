@@ -1,14 +1,13 @@
 ---
 title: voltage divider
-category: signal-chain
+categories: passive
 layout: post
 function: filter
+schematics: yes
 date: 2019-01-07
 ---
 
 # Voltage Divider
-
-<object type="image/svg+xml" data="{{site.baseurl}}/out/svg/voltage divider.svg" alt="" width="500" height="200"></object>
 
 Output voltage will be a ratio of the two resistances and the input voltage:
 

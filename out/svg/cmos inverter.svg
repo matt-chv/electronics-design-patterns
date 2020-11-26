@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5248.0 1819.8 1020.0 1932.0" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
-  <polyline points="5950, 3200 5950, 3450" stroke-width="10px" stroke="#800000"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5186.0 1749.24 1140.0 2007.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+  <polyline points="5950, 3200 5950, 3450" stroke-width="10px" stroke="#000000"/>
   <text x="5955" y="3623" font-size="50.000000" text-anchor="middle" transform="rotate(0 5955 3623)" fill="#000000">GND</text>
   <polyline points="5900, 3500 5950, 3500" stroke-width="10px" stroke="#000000"/>
   <polyline points="5950, 3550 5900, 3500" stroke-width="10px" stroke="#000000"/>
   <polyline points="6000, 3500 5950, 3550" stroke-width="10px" stroke="#000000"/>
   <polyline points="5950, 3500 6000, 3500" stroke-width="10px" stroke="#000000"/>
   <polyline points="5950, 3450 5950, 3500" stroke-width="10px" stroke="#000000"/>
-  <text x="5350" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2700)" fill="#FF0000">IN</text>
-  <text x="6200" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 6200 2700)" fill="#FF0000">OUT</text>
-  <polyline points="5950, 2700 5950, 2800" stroke-width="10px" stroke="#800000"/>
+  <text x="5350" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2700)" fill="#000000">IN</text>
+  <text x="6200" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 6200 2700)" fill="#000000">OUT</text>
+  <polyline points="5950, 2700 5950, 2800" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5950" cy="2700" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="6250, 2700 5950, 2700" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5650, 2700 5650, 3000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="6250, 2700 5950, 2700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5650, 2700 5650, 3000" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5650" cy="2700" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5300, 2700 5650, 2700" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5650, 2400 5650, 2700" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5950, 2050 5950, 2200" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5300, 2700 5650, 2700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5650, 2400 5650, 2700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5950, 2050 5950, 2200" stroke-width="10px" stroke="#000000"/>
   <text x="6038" y="2013" font-size="50.000000" text-anchor="start" transform="rotate(0 6038 2013)" fill="#000000">VCC</text>
   <polyline points="5950, 1950 5980, 2000" stroke-width="10px" stroke="#000000"/>
   <polyline points="5950, 2050 5950, 1950" stroke-width="10px" stroke="#000000"/>
   <polyline points="5920, 2000 5950, 1950" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5950, 2600 5950, 2700" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5950, 2600 5950, 2700" stroke-width="10px" stroke="#000000"/>
   <text x="6056" y="2400" font-size="50.000000" text-anchor="start" transform="rotate(0 6056 2400)" fill="#000000">Q1</text>
   <text x="5950" y="2200" font-size="50.000000" text-anchor="end" transform="rotate(-90 5950 2200)" fill="#000000">3</text>
   <polyline points="5950, 2300 5950, 2200" stroke-width="10px" stroke="#000000"/>

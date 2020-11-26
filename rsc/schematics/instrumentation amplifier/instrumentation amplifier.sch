@@ -1,0 +1,265 @@
+EESchema Schematic File Version 4
+LIBS:difference amplifier-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5050 1900 5100 1900
+$Comp
+L Amplifier_Current:BQ500100DCK U?
+U 1 1 5E95E29C
+P 4750 1900
+F 0 "U?" H 5094 1900 50  0001 L CNN
+F 1 "Amplifier" H 4750 1750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4750 1900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq500100.pdf" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EC950B1
+P 3950 2250
+F 0 "R1" V 4050 2250 50  0000 C CNN
+F 1 "R" V 3834 2250 50  0001 C CNN
+F 2 "" V 3880 2250 50  0001 C CNN
+F 3 "~" H 3950 2250 50  0001 C CNN
+	1    3950 2250
+	-1   0    0    1   
+$EndComp
+Text Label 2650 2300 0    50   ~ 0
+VIN-
+Text Label 5300 1900 0    50   ~ 0
+VOUT
+$Comp
+L power:VCC #PWR?
+U 1 1 5EC96ED5
+P 4650 1600
+F 0 "#PWR?" H 4650 1450 50  0001 C CNN
+F 1 "VCC" H 4667 1773 50  0001 C CNN
+F 2 "" H 4650 1600 50  0001 C CNN
+F 3 "" H 4650 1600 50  0001 C CNN
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC97519
+P 4650 2200
+F 0 "#PWR?" H 4650 1950 50  0001 C CNN
+F 1 "GND" H 4655 2027 50  0001 C CNN
+F 2 "" H 4650 2200 50  0001 C CNN
+F 3 "" H 4650 2200 50  0001 C CNN
+	1    4650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EC97AC2
+P 4700 2400
+F 0 "R3" V 4800 2400 50  0000 C CNN
+F 1 "R" V 4584 2400 50  0001 C CNN
+F 2 "" V 4630 2400 50  0001 C CNN
+F 3 "~" H 4700 2400 50  0001 C CNN
+	1    4700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 2000 4450 2400
+Wire Wire Line
+	4450 2400 4550 2400
+Wire Wire Line
+	4850 2400 5100 2400
+Wire Wire Line
+	5100 2400 5100 1900
+Connection ~ 5100 1900
+Wire Wire Line
+	5100 1900 5450 1900
+$Comp
+L Device:R R1
+U 1 1 5EC99B11
+P 3950 1550
+F 0 "R1" V 3850 1550 50  0000 C CNN
+F 1 "R" V 3834 1550 50  0001 C CNN
+F 2 "" V 3880 1550 50  0001 C CNN
+F 3 "~" H 3950 1550 50  0001 C CNN
+	1    3950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EC9A4B8
+P 4700 1400
+F 0 "R3" V 4800 1400 50  0000 C CNN
+F 1 "R" V 4584 1400 50  0001 C CNN
+F 2 "" V 4630 1400 50  0001 C CNN
+F 3 "~" H 4700 1400 50  0001 C CNN
+	1    4700 1400
+	0    -1   -1   0   
+$EndComp
+Text Label 2750 1300 0    50   ~ 0
+VIN+
+$Comp
+L Amplifier_Current:BQ500100DCK U?
+U 1 1 5EC9BD69
+P 3350 1400
+F 0 "U?" H 3694 1400 50  0001 L CNN
+F 1 "Amplifier" H 3350 1250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3350 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq500100.pdf" H 3350 1400 50  0001 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Current:BQ500100DCK U?
+U 1 1 5EC9C8F2
+P 3350 2400
+F 0 "U?" H 3694 2400 50  0001 L CNN
+F 1 "Amplifier" H 3350 2250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3350 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq500100.pdf" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ECA2458
+P 4250 1400
+F 0 "R2" V 4150 1400 50  0000 C CNN
+F 1 "R" V 4134 1400 50  0001 C CNN
+F 2 "" V 4180 1400 50  0001 C CNN
+F 3 "~" H 4250 1400 50  0001 C CNN
+	1    4250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ECA27FF
+P 4250 2400
+F 0 "R2" V 4150 2400 50  0000 C CNN
+F 1 "R" V 4134 2400 50  0001 C CNN
+F 2 "" V 4180 2400 50  0001 C CNN
+F 3 "~" H 4250 2400 50  0001 C CNN
+	1    4250 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECA398A
+P 4850 1400
+F 0 "#PWR?" H 4850 1150 50  0001 C CNN
+F 1 "GND" H 4855 1227 50  0001 C CNN
+F 2 "" H 4850 1400 50  0001 C CNN
+F 3 "" H 4850 1400 50  0001 C CNN
+	1    4850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1800 4450 1400
+Wire Wire Line
+	4450 1400 4550 1400
+Wire Wire Line
+	4400 1400 4450 1400
+Connection ~ 4450 1400
+Wire Wire Line
+	4400 2400 4450 2400
+Connection ~ 4450 2400
+$Comp
+L Device:R RG
+U 1 1 5EC9E51D
+P 3950 1900
+F 0 "RG" V 3850 1900 50  0000 C CNN
+F 1 "R" V 3834 1900 50  0001 C CNN
+F 2 "" V 3880 1900 50  0001 C CNN
+F 3 "~" H 3950 1900 50  0001 C CNN
+	1    3950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1400 3950 1400
+Wire Wire Line
+	3950 1700 3950 1750
+Wire Wire Line
+	3950 2050 3950 2100
+Wire Wire Line
+	3950 2400 4100 2400
+Wire Wire Line
+	2900 1500 2900 1750
+Wire Wire Line
+	2900 1750 3950 1750
+Connection ~ 3950 1750
+Wire Wire Line
+	3650 1400 3950 1400
+Connection ~ 3950 1400
+Wire Wire Line
+	3650 2400 3950 2400
+Connection ~ 3950 2400
+Wire Wire Line
+	2900 2500 2900 2050
+Wire Wire Line
+	2900 2050 3950 2050
+Connection ~ 3950 2050
+Wire Wire Line
+	3050 2300 2650 2300
+Wire Wire Line
+	3050 1300 2750 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5ECA9FDF
+P 3250 2700
+F 0 "#PWR?" H 3250 2450 50  0001 C CNN
+F 1 "GND" H 3255 2527 50  0001 C CNN
+F 2 "" H 3250 2700 50  0001 C CNN
+F 3 "" H 3250 2700 50  0001 C CNN
+	1    3250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECAA7F4
+P 3250 1700
+F 0 "#PWR?" H 3250 1450 50  0001 C CNN
+F 1 "GND" H 3255 1527 50  0001 C CNN
+F 2 "" H 3250 1700 50  0001 C CNN
+F 3 "" H 3250 1700 50  0001 C CNN
+	1    3250 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5ECAB2DC
+P 3250 2100
+F 0 "#PWR?" H 3250 1950 50  0001 C CNN
+F 1 "VCC" H 3267 2273 50  0001 C CNN
+F 2 "" H 3250 2100 50  0001 C CNN
+F 3 "" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5ECAB942
+P 3250 1100
+F 0 "#PWR?" H 3250 950 50  0001 C CNN
+F 1 "VCC" H 3267 1273 50  0001 C CNN
+F 2 "" H 3250 1100 50  0001 C CNN
+F 3 "" H 3250 1100 50  0001 C CNN
+	1    3250 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 2500 3100 2500
+Wire Wire Line
+	3050 1500 2900 1500
+$EndSCHEMATC

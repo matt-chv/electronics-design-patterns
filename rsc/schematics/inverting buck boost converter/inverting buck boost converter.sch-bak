@@ -1,0 +1,144 @@
+EESchema Schematic File Version 4
+LIBS:boost regulator-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 5EC52161
+P 4350 2700
+F 0 "Q1" H 4601 2700 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 4602 2700 50  0001 C CNN
+F 2 "" H 4550 2800 50  0001 C CNN
+F 3 "~" H 4350 2700 50  0001 C CNN
+	1    4350 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5EC53D14
+P 4850 2350
+F 0 "D1" H 4800 2250 50  0000 L CNN
+F 1 "D" V 4895 2429 50  0001 L CNN
+F 2 "" H 4850 2350 50  0001 C CNN
+F 3 "~" H 4850 2350 50  0001 C CNN
+	1    4850 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5EC545FF
+P 4150 2350
+F 0 "L1" V 4249 2350 50  0000 C CNN
+F 1 "L" V 4249 2350 50  0001 C CNN
+F 2 "" H 4150 2350 50  0001 C CNN
+F 3 "~" H 4150 2350 50  0001 C CNN
+	1    4150 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C Co
+U 1 1 5EC54F3F
+P 5250 2700
+F 0 "Co" H 5365 2700 50  0000 L CNN
+F 1 "C" H 5365 2655 50  0001 L CNN
+F 2 "" H 5288 2550 50  0001 C CNN
+F 3 "~" H 5250 2700 50  0001 C CNN
+	1    5250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2350 4450 2350
+Wire Wire Line
+	5000 2350 5250 2350
+Wire Wire Line
+	5450 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5250 2850 5250 3000
+Wire Wire Line
+	4000 2350 3550 2350
+Text Label 3650 2350 0    50   ~ 0
+IN
+Text Label 5300 2350 0    50   ~ 0
+OUT
+$Comp
+L power:GND #PWR?
+U 1 1 5EC563BF
+P 4450 3100
+F 0 "#PWR?" H 4450 2850 50  0001 C CNN
+F 1 "GND" H 4455 2927 50  0000 C CNN
+F 2 "" H 4450 3100 50  0001 C CNN
+F 3 "" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2950 3900 2950
+Wire Wire Line
+	3900 2950 3900 2800
+Wire Wire Line
+	3900 2800 3950 2800
+Wire Wire Line
+	3950 2800 3950 2950
+Wire Wire Line
+	3950 2950 4150 2950
+Wire Wire Line
+	4150 2950 4150 2800
+Wire Wire Line
+	4150 2800 4200 2800
+Wire Wire Line
+	4200 2950 4250 2950
+Text Label 4000 2700 0    50   ~ 0
+CMD
+Text Label 3900 2800 0    50   ~ 0
+ton
+Text Label 3950 2950 0    50   ~ 0
+toff
+Connection ~ 4450 2350
+Wire Wire Line
+	4450 3000 5250 3000
+Wire Wire Line
+	4450 2350 4700 2350
+Wire Wire Line
+	4450 3100 4450 3000
+Wire Wire Line
+	5250 2350 5250 2550
+Wire Wire Line
+	4450 2350 4450 2500
+Wire Wire Line
+	4200 2800 4200 2950
+Wire Wire Line
+	4150 2700 3950 2700
+$Comp
+L Device:C Ci
+U 1 1 5EC5DBCC
+P 3650 2700
+F 0 "Ci" H 3400 2700 50  0000 L CNN
+F 1 "C" H 3765 2655 50  0001 L CNN
+F 2 "" H 3688 2550 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2850 3650 3000
+Wire Wire Line
+	3650 2350 3650 2550
+Wire Wire Line
+	4450 2900 4450 3000
+Connection ~ 4450 3000
+Wire Wire Line
+	3650 3000 4450 3000
+$EndSCHEMATC
