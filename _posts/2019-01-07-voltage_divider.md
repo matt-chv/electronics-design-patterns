@@ -1,6 +1,6 @@
 ---
 title: voltage divider
-categories: passive
+categories: signal_chain
 layout: post
 function: filter
 schematics: yes

@@ -1,6 +1,6 @@
 ---
 title: memory logic
-categories: digital
+categories: logic
 layout: post
 function: memory
 schematics: yes

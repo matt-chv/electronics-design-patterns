@@ -1,6 +1,6 @@
 ---
 title: Capacitance Multiplier
-categories: passive
+categories: signal_chain
 layout: post
 function: passive
 schematics: yes
