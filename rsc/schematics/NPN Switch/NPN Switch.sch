@@ -1,0 +1,101 @@
+EESchema Schematic File Version 4
+LIBS:NPN Switch-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 5EC35A34
+P 5900 3150
+F 0 "Q1" H 6091 3196 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 6091 3105 50  0001 L CNN
+F 2 "" H 6100 3250 50  0001 C CNN
+F 3 "~" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R LOAD
+U 1 1 5EC35F6C
+P 6000 2700
+F 0 "LOAD" V 5900 2600 50  0000 L CNN
+F 1 "R" H 6070 2655 50  0001 L CNN
+F 2 "" V 5930 2700 50  0001 C CNN
+F 3 "~" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EC365B1
+P 5400 3150
+F 0 "R1" V 5300 3150 50  0000 C CNN
+F 1 "R" V 5284 3150 50  0001 C CNN
+F 2 "" V 5330 3150 50  0001 C CNN
+F 3 "~" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EC36BEA
+P 6000 2500
+F 0 "#PWR?" H 6000 2350 50  0001 C CNN
+F 1 "VCC" H 6000 2650 50  0000 C CNN
+F 2 "" H 6000 2500 50  0001 C CNN
+F 3 "" H 6000 2500 50  0001 C CNN
+	1    6000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC3712D
+P 6000 3450
+F 0 "#PWR?" H 6000 3200 50  0001 C CNN
+F 1 "GND" H 6005 3277 50  0000 C CNN
+F 2 "" H 6000 3450 50  0001 C CNN
+F 3 "" H 6000 3450 50  0001 C CNN
+	1    6000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3150 5700 3150
+Wire Wire Line
+	6000 2850 6000 2900
+Wire Wire Line
+	6000 2500 6000 2550
+Wire Wire Line
+	5000 3150 5250 3150
+Text Label 5000 3150 0    50   ~ 0
+VIN
+Wire Wire Line
+	5000 2950 5200 2950
+Wire Wire Line
+	5200 2950 5200 2750
+Wire Wire Line
+	5200 2750 5400 2750
+Text Label 5000 2950 0    50   ~ 0
+GND
+Text Label 5250 2750 0    50   ~ 0
+VCC
+Wire Wire Line
+	6000 3350 6000 3450
+Wire Wire Line
+	6000 2900 6250 2900
+Connection ~ 6000 2900
+Wire Wire Line
+	6000 2900 6000 2950
+Text Label 6100 2900 0    50   ~ 0
+VOUT
+$EndSCHEMATC

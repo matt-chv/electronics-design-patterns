@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5900 4600 5900 3600
+Wire Wire Line
+	5100 4600 5100 3600
+Wire Wire Line
+	5100 4600 4800 4600
+Connection ~ 5100 4600
+Text Label 4800 4600 0    70   ~ 0
+CLK
+Wire Wire Line
+	4900 4200 4900 4100
+Text Label 4900 4200 0    10   ~ 0
+GND
+Wire Wire Line
+	5700 4100 5500 4100
+Wire Wire Line
+	5500 4100 5300 4100
+Wire Wire Line
+	5500 4000 5500 4100
+Connection ~ 5500 4100
+Wire Wire Line
+	5700 3600 5500 3600
+Wire Wire Line
+	5500 3600 5300 3600
+Wire Wire Line
+	5500 3700 5500 3600
+Connection ~ 5500 3600
+Wire Wire Line
+	6100 4100 6100 4000
+Text Label 6100 4100 0    10   ~ 0
+VCC
+Wire Wire Line
+	4900 3600 4800 3600
+Wire Wire Line
+	4800 3600 4800 3500
+Text Label 4900 3600 0    10   ~ 0
+VCC
+Wire Wire Line
+	6400 3700 6400 3600
+Wire Wire Line
+	6400 3600 6100 3600
+Wire Wire Line
+	6400 3600 6700 3600
+Connection ~ 6400 3600
+Text Label 6500 3600 0    70   ~ 0
+OUT
+$Comp
+L voltage_doubler-eagle-import:SWITCH-SPST-2RA U$1
+U 1 1 89E33A62
+P 5100 3600
+F 0 "U$1" H 4900 3700 59  0001 L BNN
+F 1 "SWITCH-SPST-2RA" H 4900 3500 59  0001 L BNN
+F 2 "voltage_doubler:R_SW_TH" H 5100 3600 50  0001 C CNN
+F 3 "" H 5100 3600 50  0001 C CNN
+	1    5100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:SWITCH-SPST-2RA U$2
+U 1 1 87B7DF34
+P 5900 3600
+F 0 "U$2" H 5700 3700 59  0001 L BNN
+F 1 "SWITCH-SPST-2RA" H 5700 3500 59  0001 L BNN
+F 2 "voltage_doubler:R_SW_TH" H 5900 3600 50  0001 C CNN
+F 3 "" H 5900 3600 50  0001 C CNN
+	1    5900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:SWITCH-SPST-2RA U$3
+U 1 1 6E1B97F5
+P 5100 4100
+F 0 "U$3" H 4900 4200 59  0001 L BNN
+F 1 "SWITCH-SPST-2RA" H 4900 4000 59  0001 L BNN
+F 2 "voltage_doubler:R_SW_TH" H 5100 4100 50  0001 C CNN
+F 3 "" H 5100 4100 50  0001 C CNN
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:SWITCH-SPST-2RA U$4
+U 1 1 649D799B
+P 5900 4100
+F 0 "U$4" H 5700 4200 59  0001 L BNN
+F 1 "SWITCH-SPST-2RA" H 5700 4000 59  0001 L BNN
+F 2 "voltage_doubler:R_SW_TH" H 5900 4100 50  0001 C CNN
+F 3 "" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:CAP_POL1206 C1
+U 1 1 24F56349
+P 5500 3800
+F 0 "C1" H 5540 3825 59  0000 L BNN
+F 1 "CAP_POL1206" H 5540 3635 59  0000 L BNN
+F 2 "voltage_doubler:EIA3216" H 5500 3800 50  0001 C CNN
+F 3 "" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:7416D IC1
+U 1 1 22F7723E
+P 5500 4600
+F 0 "IC1" H 5475 4575 59  0000 L BNN
+F 1 "7416D" H 5600 4400 59  0001 L BNN
+F 2 "voltage_doubler:SO14" H 5500 4600 50  0001 C CNN
+F 3 "" H 5500 4600 50  0001 C CNN
+	1    5500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:GND #GND1
+U 1 1 8DA2BB24
+P 4900 4300
+F 0 "#GND1" H 4900 4300 50  0001 C CNN
+F 1 "GND" H 4800 4200 59  0000 L BNN
+F 2 "" H 4900 4300 50  0001 C CNN
+F 3 "" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:CAP_POL1206 C2
+U 1 1 4071D1F9
+P 6400 3800
+F 0 "C2" H 6440 3825 59  0000 L BNN
+F 1 "CAP_POL1206" H 6440 3635 59  0000 L BNN
+F 2 "voltage_doubler:EIA3216" H 6400 3800 50  0001 C CNN
+F 3 "" H 6400 3800 50  0001 C CNN
+	1    6400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:GND #GND3
+U 1 1 21137572
+P 6400 4100
+F 0 "#GND3" H 6400 4100 50  0001 C CNN
+F 1 "GND" H 6300 4000 59  0000 L BNN
+F 2 "" H 6400 4100 50  0001 C CNN
+F 3 "" H 6400 4100 50  0001 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:VCC #P+1
+U 1 1 6A081B6E
+P 4800 3400
+F 0 "#P+1" H 4800 3400 50  0001 C CNN
+F 1 "VCC" V 4700 3300 59  0000 L BNN
+F 2 "" H 4800 3400 50  0001 C CNN
+F 3 "" H 4800 3400 50  0001 C CNN
+	1    4800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L voltage_doubler-eagle-import:VCC #P+2
+U 1 1 637B3A6A
+P 6100 3900
+F 0 "#P+2" H 6100 3900 50  0001 C CNN
+F 1 "VCC" V 6000 3800 59  0000 L BNN
+F 2 "" H 6100 3900 50  0001 C CNN
+F 3 "" H 6100 3900 50  0001 C CNN
+	1    6100 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4610 5259 0    10   BiDi ~ 0
+VCC
+Text GLabel 4610 6059 0    10   BiDi ~ 0
+GND
+$Comp
+L voltage_doubler-eagle-import:7416D IC1
+U 7 1 796B606C
+P 4610 5659
+AR Path="/796B606C" Ref="IC1"  Part="7" 
+AR Path="/" Ref="IC1"  Part="7" 
+F 0 "IC1" H 4585 5634 59  0000 L BNN
+F 1 "7416D" H 4710 5459 59  0001 L BNN
+F 2 "voltage_doubler:SO14" H 4610 5659 50  0001 C CNN
+F 3 "" H 4610 5659 50  0001 C CNN
+	7    4610 5659
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,79 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5500 4800 5500 4700
+Wire Wire Line
+	5300 4500 5200 4500
+Text Label 5200 4500 0    70   ~ 0
+IN
+Wire Wire Line
+	5500 4300 5500 4200
+Wire Wire Line
+	5500 4200 5800 4200
+Wire Wire Line
+	5800 4200 6100 4200
+Wire Wire Line
+	5800 4100 5800 4200
+Connection ~ 5800 4200
+Text Label 5900 4200 0    70   ~ 0
+OUT
+Wire Wire Line
+	5800 3600 5800 3700
+$Comp
+L open_collector-eagle-import:GND #GND1
+U 1 1 8DA2BB24
+P 5500 4900
+F 0 "#GND1" H 5500 4900 50  0001 C CNN
+F 1 "GND" H 5400 4800 59  0000 L BNN
+F 2 "" H 5500 4900 50  0001 C CNN
+F 3 "" H 5500 4900 50  0001 C CNN
+	1    5500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_collector-eagle-import:VCC #P+1
+U 1 1 6A081B6E
+P 5800 3500
+F 0 "#P+1" H 5800 3500 50  0001 C CNN
+F 1 "VCC" V 5700 3400 59  0000 L BNN
+F 2 "" H 5800 3500 50  0001 C CNN
+F 3 "" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L open_collector-eagle-import:RESISTOR0402-RES R1
+U 1 1 54673866
+P 5800 3900
+F 0 "R1" H 5650 3959 59  0000 L BNN
+F 1 "RESISTOR0402-RES" H 5650 3770 59  0000 L BNN
+F 2 "open_collector:0402-RES" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L open_collector-eagle-import:TRANSISTOR_NPN" Q1
+U 1 1 22BC07EB
+P 5400 4500
+F 0 "Q1" H 5600 4500 59  0000 L BNN
+F 1 "TRANSISTOR_NPN\"" H 5600 4400 59  0000 L BNN
+F 2 "open_collector:SOT223" H 5400 4500 50  0001 C CNN
+F 3 "" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

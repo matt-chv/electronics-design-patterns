@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name linear_current_regulator-eagle-import)(type Legacy)(uri ${KIPRJMOD}/linear_current_regulator-eagle-import.lib)(options "")(descr ""))
+)

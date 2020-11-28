@@ -1,0 +1,59 @@
+title: electronics design patterns
+description: taxonomy, illustration, explanation of most reusable design concepts. 
+author: matt-chv
+github: https://github.com/matt-chv
+about: robotics is more than AI, robotics needs AI embedded in the system (fed from real time sensors data and planning and adjusting in real-time its actions).
+disqus_shortname: disqus_e5sxXi13p5
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /electronics-design-patterns/static/img/site_logo.png
+
+enableTags: true
+tagarray: []
+
+social:
+#    - icon: fa-facebook
+#      link: "#"
+    - icon: fa-twitter
+      link: "https://twitter.com/matt__chv"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/matthieuchevrier"
+    - icon: fa-stack-exchange
+      link: "https://stackexchange.com/users/13039919/matt__chv"
+    - icon: fa-github
+      link: "https://github.com/matt-chv/electronics-design-patterns"
+    - icon: fa-whatsapp
+      link: "https://wa.me/?text=https%3A%2F%2Fmatt-chv.github.io%2Felectronics-design-patterns"
+    - icon: fa-google-scholar
+      link: "https://scholar.google.com/citations?user=gs3enb8AAAAJ&hl=en"
+    
+
+share:
+  twitter_username: matt__chv
+#  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about
+    - text: My Projects and Prez
+      url: /projects
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://matt-chv.github.io"
+baseurl: "/electronics-design-patterns"
+paginate: 20
+per_page: 20
+paginate_path: "page/:num/"
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+#  - jekyll-sitemap
+  - jekyll-feed
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
+exclude: [bin, scripts, templates]

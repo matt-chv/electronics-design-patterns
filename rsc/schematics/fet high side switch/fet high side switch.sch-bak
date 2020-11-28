@@ -1,0 +1,97 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5400 4600 5700 4600
+Wire Wire Line
+	5700 4600 5700 4300
+Wire Wire Line
+	5400 4500 5400 4600
+Wire Wire Line
+	5400 4600 5400 4700
+Connection ~ 5400 4600
+Wire Wire Line
+	5400 5200 5400 5100
+Wire Wire Line
+	5100 4900 4900 4900
+Text Label 4900 4900 0    70   ~ 0
+IN
+Wire Wire Line
+	5900 4000 6100 4000
+Text Label 6000 4000 0    70   ~ 0
+OUT
+Wire Wire Line
+	5400 3900 5400 4000
+Wire Wire Line
+	5400 4000 5400 4100
+Wire Wire Line
+	5500 4000 5400 4000
+Connection ~ 5400 4000
+$Comp
+L fet_high_side_switch-eagle-import:GND #GND1
+U 1 1 8DA2BB24
+P 5400 5300
+F 0 "#GND1" H 5400 5300 50  0001 C CNN
+F 1 "GND" H 5300 5200 59  0000 L BNN
+F 2 "" H 5400 5300 50  0001 C CNN
+F 3 "" H 5400 5300 50  0001 C CNN
+	1    5400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L fet_high_side_switch-eagle-import:MOSFET-NCHANNEL2N7000 Q1
+U 1 1 22BC07EB
+P 5400 4900
+F 0 "Q1" H 5600 5000 59  0000 L BNN
+F 1 "MOSFET-NCHANNEL2N7000" H 5600 4900 59  0000 L BNN
+F 2 "fet_high_side_switch:TO-92" H 5400 4900 50  0001 C CNN
+F 3 "" H 5400 4900 50  0001 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L fet_high_side_switch-eagle-import:MOSFET-PCHANNELSMD Q2
+U 1 1 FC4D4FCD
+P 5700 4000
+F 0 "Q2" H 5900 4100 59  0000 L BNN
+F 1 "MOSFET-PCHANNELSMD" H 5900 4000 59  0000 L BNN
+F 2 "fet_high_side_switch:SOT23-3" H 5700 4000 50  0001 C CNN
+F 3 "" H 5700 4000 50  0001 C CNN
+	1    5700 4000
+	0    1    -1   0   
+$EndComp
+$Comp
+L fet_high_side_switch-eagle-import:RESISTOR0402-RES R1
+U 1 1 6019A4D2
+P 5400 4300
+F 0 "R1" H 5250 4359 59  0000 L BNN
+F 1 "100k" H 5250 4170 59  0000 L BNN
+F 2 "fet_high_side_switch:0402-RES" H 5400 4300 50  0001 C CNN
+F 3 "" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L fet_high_side_switch-eagle-import:+12V #P+1
+U 1 1 6A081B6E
+P 5400 3800
+F 0 "#P+1" H 5400 3800 50  0001 C CNN
+F 1 "+12V" V 5300 3600 59  0000 L BNN
+F 2 "" H 5400 3800 50  0001 C CNN
+F 3 "" H 5400 3800 50  0001 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

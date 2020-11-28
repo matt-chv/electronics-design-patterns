@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+LIBS:four switch buck boost converter-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C Co
+U 1 1 5EC54F3F
+P 5400 2700
+F 0 "Co" H 5515 2700 50  0000 L CNN
+F 1 "C" H 5515 2655 50  0001 L CNN
+F 2 "" H 5438 2550 50  0001 C CNN
+F 3 "~" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2350 5400 2350
+Connection ~ 5400 2350
+Wire Wire Line
+	5400 2850 5400 3000
+Text Label 3650 2350 0    50   ~ 0
+IN
+Text Label 5450 2350 0    50   ~ 0
+OUT
+$Comp
+L power:GND #PWR?
+U 1 1 5EC563BF
+P 4450 3100
+F 0 "#PWR?" H 4450 2850 50  0001 C CNN
+F 1 "GND" H 4455 2927 50  0000 C CNN
+F 2 "" H 4450 3100 50  0001 C CNN
+F 3 "" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2950 3900 2950
+Wire Wire Line
+	3900 2950 3900 2800
+Wire Wire Line
+	3900 2800 3950 2800
+Wire Wire Line
+	3950 2800 3950 2950
+Wire Wire Line
+	3950 2950 4150 2950
+Wire Wire Line
+	4150 2950 4150 2800
+Wire Wire Line
+	4150 2800 4200 2800
+Wire Wire Line
+	4200 2950 4250 2950
+Text Label 3900 2800 0    50   ~ 0
+ton
+Text Label 3950 2950 0    50   ~ 0
+toff
+Wire Wire Line
+	4450 3100 4450 3000
+Wire Wire Line
+	5400 2350 5400 2550
+Wire Wire Line
+	4450 2350 4450 2500
+Wire Wire Line
+	4200 2800 4200 2950
+$Comp
+L Device:C Ci
+U 1 1 5EC5DBCC
+P 3650 2700
+F 0 "Ci" H 3400 2700 50  0000 L CNN
+F 1 "C" H 3765 2655 50  0001 L CNN
+F 2 "" H 3688 2550 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2850 3650 3000
+Wire Wire Line
+	3650 2350 3650 2550
+Connection ~ 4450 3000
+Wire Wire Line
+	4150 2650 3950 2650
+Text Label 3950 2650 0    50   ~ 0
+CMD
+$Comp
+L Device:L L1
+U 1 1 5EC545FF
+P 4700 2350
+F 0 "L1" V 4799 2350 50  0000 C CNN
+F 1 "L" V 4799 2350 50  0001 C CNN
+F 2 "" H 4700 2350 50  0001 C CNN
+F 3 "~" H 4700 2350 50  0001 C CNN
+	1    4700 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 5EC52161
+P 4150 2450
+F 0 "Q1" H 4401 2450 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 4402 2450 50  0001 C CNN
+F 2 "" H 4350 2550 50  0001 C CNN
+F 3 "~" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3950 2350 3550 2350
+Wire Wire Line
+	4350 2350 4450 2350
+Wire Wire Line
+	4450 2800 4450 3000
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 5FB2A08A
+P 4850 2650
+F 0 "Q?" H 5101 2650 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 5102 2650 50  0001 C CNN
+F 2 "" H 5050 2750 50  0001 C CNN
+F 3 "~" H 4850 2650 50  0001 C CNN
+	1    4850 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5FB2EE53
+P 4450 2650
+F 0 "D?" H 4400 2550 50  0000 L CNN
+F 1 "D" V 4495 2729 50  0001 L CNN
+F 2 "" H 4450 2650 50  0001 C CNN
+F 3 "~" H 4450 2650 50  0001 C CNN
+	1    4450 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2350 4950 2350
+Wire Wire Line
+	4550 2350 4450 2350
+Connection ~ 4450 2350
+Wire Wire Line
+	3650 3000 4450 3000
+Wire Wire Line
+	4950 2450 4950 2350
+Wire Wire Line
+	4950 2850 4950 3000
+Connection ~ 4950 3000
+Connection ~ 4950 2350
+Wire Wire Line
+	4950 2350 5050 2350
+$Comp
+L Device:D D1
+U 1 1 5EC53D14
+P 5200 2350
+F 0 "D1" H 5150 2250 50  0000 L CNN
+F 1 "D" V 5245 2429 50  0001 L CNN
+F 2 "" H 5200 2350 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 2350 5400 2350
+Wire Wire Line
+	4950 3000 5400 3000
+Wire Wire Line
+	4450 3000 4950 3000
+$EndSCHEMATC

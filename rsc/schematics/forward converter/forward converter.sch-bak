@@ -1,0 +1,211 @@
+EESchema Schematic File Version 4
+LIBS:Fly-Buck converter-cache
+LIBS:flyback converter-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D2
+U 1 1 5EC53D14
+P 6300 2300
+F 0 "D2" H 6250 2200 50  0000 L CNN
+F 1 "D" V 6345 2379 50  0001 L CNN
+F 2 "" H 6300 2300 50  0001 C CNN
+F 3 "~" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C Co
+U 1 1 5EC54F3F
+P 6850 2100
+F 0 "Co" H 6965 2100 50  0000 L CNN
+F 1 "C" H 6965 2055 50  0001 L CNN
+F 2 "" H 6888 1950 50  0001 C CNN
+F 3 "~" H 6850 2100 50  0001 C CNN
+	1    6850 2100
+	1    0    0    -1  
+$EndComp
+Text Label 3850 2200 0    50   ~ 0
+VIN
+Text Label 6900 2300 0    50   ~ 0
+VOUT-
+$Comp
+L Device:C Ci
+U 1 1 5EC5DBCC
+P 4000 2800
+F 0 "Ci" H 3750 2800 50  0000 L CNN
+F 1 "C" H 4115 2755 50  0001 L CNN
+F 2 "" H 4038 2650 50  0001 C CNN
+F 3 "~" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2250 6850 2300
+Wire Wire Line
+	4000 2200 4000 2650
+Text Label 6900 1900 0    50   ~ 0
+VOUT+
+Wire Wire Line
+	6100 2300 6150 2300
+Wire Wire Line
+	6850 2300 6900 2300
+Connection ~ 6850 2300
+Wire Wire Line
+	4000 2200 5300 2200
+Wire Wire Line
+	3850 2200 4000 2200
+Connection ~ 4000 2200
+$Comp
+L Device:Transformer_1P_2S T1
+U 1 1 5ECA6671
+P 5700 2100
+F 0 "T1" H 5700 1475 50  0000 C CNN
+F 1 "5-6: Nr; 4-3: Np; 1::N between 4-3 and 2-1" H 5000 2650 50  0000 C CNN
+F 2 "" H 5700 2100 50  0001 C CNN
+F 3 "~" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 2500 5250 2500
+Wire Wire Line
+	4950 2700 4750 2700
+Wire Wire Line
+	5000 2800 5000 2950
+Text Label 4750 2950 0    50   ~ 0
+toff
+Text Label 4700 2800 0    50   ~ 0
+ton
+Text Label 4800 2700 0    50   ~ 0
+CMD
+Wire Wire Line
+	5000 2950 5050 2950
+Wire Wire Line
+	4950 2800 5000 2800
+Wire Wire Line
+	4950 2950 4950 2800
+Wire Wire Line
+	4750 2950 4950 2950
+Wire Wire Line
+	4750 2800 4750 2950
+Wire Wire Line
+	4700 2800 4750 2800
+Wire Wire Line
+	4700 2950 4700 2800
+Wire Wire Line
+	4650 2950 4700 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5EC563BF
+P 5250 3100
+F 0 "#PWR?" H 5250 2850 50  0001 C CNN
+F 1 "GND" H 5255 2927 50  0000 C CNN
+F 2 "" H 5250 3100 50  0001 C CNN
+F 3 "" H 5250 3100 50  0001 C CNN
+	1    5250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 5EC52161
+P 5150 2700
+F 0 "Q1" H 5401 2700 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 5402 2700 50  0001 C CNN
+F 2 "" H 5350 2800 50  0001 C CNN
+F 3 "~" H 5150 2700 50  0001 C CNN
+	1    5150 2700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5300 2000 5300 2200
+$Comp
+L Device:D D1
+U 1 1 5ECB57BD
+P 5050 1700
+F 0 "D1" H 5000 1600 50  0000 L CNN
+F 1 "D" V 5095 1779 50  0001 L CNN
+F 2 "" H 5050 1700 50  0001 C CNN
+F 3 "~" H 5050 1700 50  0001 C CNN
+	1    5050 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ECB5FDE
+P 4850 1800
+F 0 "#PWR?" H 4850 1550 50  0001 C CNN
+F 1 "GND" H 4855 1627 50  0000 C CNN
+F 2 "" H 4850 1800 50  0001 C CNN
+F 3 "" H 4850 1800 50  0001 C CNN
+	1    4850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1800 4850 1700
+Wire Wire Line
+	4850 1700 4900 1700
+Wire Wire Line
+	5200 1700 5300 1700
+Wire Wire Line
+	5250 2900 5250 3050
+Connection ~ 5300 2200
+Wire Wire Line
+	4000 2950 4000 3050
+Wire Wire Line
+	4000 3050 5250 3050
+Connection ~ 5250 3050
+Wire Wire Line
+	5250 3050 5250 3100
+$Comp
+L Device:D D?
+U 1 1 5ECB8CF3
+P 6300 1900
+F 0 "D?" H 6250 1800 50  0000 L CNN
+F 1 "D" V 6345 1979 50  0001 L CNN
+F 2 "" H 6300 1900 50  0001 C CNN
+F 3 "~" H 6300 1900 50  0001 C CNN
+	1    6300 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 1900 6150 1900
+Wire Wire Line
+	6450 2300 6450 1900
+$Comp
+L Device:L L1
+U 1 1 5ECBCFD4
+P 6650 1900
+F 0 "L1" V 6749 1900 50  0000 C CNN
+F 1 "L" V 6749 1900 50  0001 C CNN
+F 2 "" H 6650 1900 50  0001 C CNN
+F 3 "~" H 6650 1900 50  0001 C CNN
+	1    6650 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 1900 6850 1900
+Wire Wire Line
+	6850 1950 6850 1900
+Connection ~ 6850 1900
+Wire Wire Line
+	6850 1900 6900 1900
+Wire Wire Line
+	6450 2300 6850 2300
+Connection ~ 6450 2300
+Wire Wire Line
+	6500 1900 6450 1900
+Connection ~ 6450 1900
+$EndSCHEMATC

@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5FC305ED
+P 7050 4200
+F 0 "Q?" H 7241 4200 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 7241 4155 50  0001 L CNN
+F 2 "" H 7250 4300 50  0001 C CNN
+F 3 "~" H 7050 4200 50  0001 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RLOAD
+U 1 1 5FC30D27
+P 7150 3750
+F 0 "RLOAD" H 7220 3750 50  0000 L CNN
+F 1 "R" H 7220 3705 50  0001 L CNN
+F 2 "" V 7080 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC312F3
+P 6700 3800
+F 0 "R2" H 6770 3800 50  0000 L CNN
+F 1 "R" H 6770 3755 50  0001 L CNN
+F 2 "" V 6630 3800 50  0001 C CNN
+F 3 "~" H 6700 3800 50  0001 C CNN
+	1    6700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC31907
+P 6700 4650
+F 0 "R3" H 6770 4650 50  0000 L CNN
+F 1 "R" H 6770 4605 50  0001 L CNN
+F 2 "" V 6630 4650 50  0001 C CNN
+F 3 "~" H 6700 4650 50  0001 C CNN
+	1    6700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC31FB5
+P 7150 4650
+F 0 "R1" H 7220 4650 50  0000 L CNN
+F 1 "R" H 7220 4605 50  0001 L CNN
+F 2 "" V 7080 4650 50  0001 C CNN
+F 3 "~" H 7150 4650 50  0001 C CNN
+	1    7150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC322D7
+P 7000 4950
+F 0 "#PWR?" H 7000 4700 50  0001 C CNN
+F 1 "GND" H 7005 4777 50  0000 C CNN
+F 2 "" H 7000 4950 50  0001 C CNN
+F 3 "" H 7000 4950 50  0001 C CNN
+	1    7000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FC32849
+P 6950 3450
+F 0 "#PWR?" H 6950 3300 50  0001 C CNN
+F 1 "VCC" H 6967 3623 50  0000 C CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3600 7150 3600
+Wire Wire Line
+	6950 3450 6950 3600
+Wire Wire Line
+	6700 3650 6700 3600
+Wire Wire Line
+	6700 3600 6950 3600
+Connection ~ 6950 3600
+Wire Wire Line
+	6700 3950 6700 4200
+Wire Wire Line
+	6700 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 4950
+Wire Wire Line
+	7150 4800 7000 4800
+Connection ~ 7000 4800
+Wire Wire Line
+	6850 4200 6700 4200
+Connection ~ 6700 4200
+Wire Wire Line
+	6700 4200 6700 4500
+Wire Wire Line
+	7150 4400 7150 4500
+Wire Wire Line
+	7150 4000 7150 3900
+$EndSCHEMATC
