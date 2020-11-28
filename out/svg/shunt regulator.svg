@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="6220.0 3483.48 300.0 1435.2" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+  <polyline points="6300, 4550 6300, 4650" stroke-width="10px" stroke="#000000"/>
+  <text x="6305" y="4823" font-size="50.000000" text-anchor="middle" transform="rotate(0 6305 4823)" fill="#000000">GND</text>
+  <polyline points="6250, 4700 6300, 4700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4750 6250, 4700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6350, 4700 6300, 4750" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4700 6350, 4700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4650 6300, 4700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4150 6300, 4200" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 3800 6300, 3850" stroke-width="10px" stroke="#000000"/>
+  <text x="6317" y="3627" font-size="50.000000" text-anchor="middle" transform="rotate(0 6317 3627)" fill="#000000">VCC</text>
+  <polyline points="6300, 3800 6300, 3750" stroke-width="10px" stroke="#000000"/>
+  <circle r="25" cx="6300" cy="3725" fill="none" stroke-width="10px" stroke="#000000"/>
+  <text x="6370" y="4000" font-size="50.000000" text-anchor="start" transform="rotate(0 6370 4000)" fill="#000000">R1</text>
+  <polyline points="6300, 4100 6300, 4150" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 3900 6300, 3850" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6340, 4100 6260, 4100" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6340, 3900 6340, 4100" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6260, 3900 6340, 3900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6260, 4100 6260, 3900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4200 6500, 4200" stroke-width="10px" stroke="#000000"/>
+  <circle r="10" cx="6300" cy="4200" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4250 6300, 4200" stroke-width="10px" stroke="#000000"/>
+  <text x="6379" y="4400" font-size="50.000000" text-anchor="start" transform="rotate(0 6379 4400)" fill="#000000">D1</text>
+  <polyline points="6300, 4450 6300, 4550" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4350 6300, 4250" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4350 6250, 4450" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6350, 4450 6300, 4350" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6250, 4450 6350, 4450" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6350, 4350 6350, 4370" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6250, 4350 6350, 4350" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 4450 6300, 4350" stroke-width="10px" stroke="#000000"/>
+  <text x="6450" y="4200" font-size="70.000000" text-anchor="start" transform="rotate(0 6450 4200)" fill="#000000">VOUT</text>
+</svg>

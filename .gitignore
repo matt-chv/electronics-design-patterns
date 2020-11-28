@@ -4,6 +4,7 @@
 # Scripting the Jekyll ressources
 
 out/pdf/*
+out/pdf_archive/*
 out/equations/*
 out/card_deck_single_sheet_old.pdf
 
