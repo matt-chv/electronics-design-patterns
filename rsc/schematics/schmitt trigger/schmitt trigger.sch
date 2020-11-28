@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+LIBS:schmitt_trigger-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM324 U1
+U 1 1 5FC235A8
+P 6000 3700
+F 0 "U1" H 6000 3975 50  0000 C CNN
+F 1 "LM324" H 6000 3976 50  0001 C CNN
+F 2 "" H 5950 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6050 3900 50  0001 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5FC24781
+P 5650 3150
+F 0 "#PWR01" H 5650 3000 50  0001 C CNN
+F 1 "VCC" H 5667 3323 50  0000 C CNN
+F 2 "" H 5650 3150 50  0001 C CNN
+F 3 "" H 5650 3150 50  0001 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC24DB9
+P 5650 3400
+F 0 "R1" H 5720 3400 50  0000 L CNN
+F 1 "R" H 5720 3355 50  0001 L CNN
+F 2 "" V 5580 3400 50  0001 C CNN
+F 3 "~" H 5650 3400 50  0001 C CNN
+	1    5650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC252AD
+P 5650 4150
+F 0 "R2" H 5720 4150 50  0000 L CNN
+F 1 "R" H 5720 4105 50  0001 L CNN
+F 2 "" V 5580 4150 50  0001 C CNN
+F 3 "~" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC255B2
+P 5950 4000
+F 0 "R3" V 5835 4000 50  0000 C CNN
+F 1 "R" V 5834 4000 50  0001 C CNN
+F 2 "" V 5880 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3600 5250 3600
+Text Label 5350 3600 0    50   ~ 0
+VIN
+Wire Wire Line
+	5650 3150 5650 3250
+Wire Wire Line
+	5650 3550 5650 3800
+Wire Wire Line
+	5700 3800 5650 3800
+Connection ~ 5650 3800
+Wire Wire Line
+	5650 3800 5650 4000
+Wire Wire Line
+	5800 4000 5650 4000
+Connection ~ 5650 4000
+Wire Wire Line
+	6100 4000 6300 4000
+Wire Wire Line
+	6300 4000 6300 3700
+Wire Wire Line
+	6300 3700 6600 3700
+Connection ~ 6300 3700
+Text Label 6450 3700 0    50   ~ 0
+VOUT
+$Comp
+L power:GND #PWR02
+U 1 1 5FC27015
+P 5650 4400
+F 0 "#PWR02" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5655 4227 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4300 5650 4400
+$EndSCHEMATC

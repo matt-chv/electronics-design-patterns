@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM324 U1
+U 1 1 5FC3510D
+P 6100 4500
+F 0 "U1" H 6100 4225 50  0000 C CNN
+F 1 "LM324" H 6100 4224 50  0001 C CNN
+F 2 "" H 6050 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6150 4700 50  0001 C CNN
+	1    6100 4500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC362FF
+P 5300 4400
+F 0 "R3" V 5300 4400 50  0000 C CNN
+F 1 "R" V 5184 4400 50  0001 C CNN
+F 2 "" V 5230 4400 50  0001 C CNN
+F 3 "~" H 5300 4400 50  0001 C CNN
+	1    5300 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FC368DC
+P 5750 4800
+F 0 "#PWR01" H 5750 4550 50  0001 C CNN
+F 1 "GND" H 5755 4627 50  0000 C CNN
+F 2 "" H 5750 4800 50  0001 C CNN
+F 3 "" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RFB1
+U 1 1 5FC36DDF
+P 6100 4000
+F 0 "RFB1" V 6100 4000 50  0000 C CNN
+F 1 "R" V 5984 4000 50  0001 C CNN
+F 2 "" V 6030 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC3743F
+P 5300 4200
+F 0 "R2" V 5300 4200 50  0000 C CNN
+F 1 "R" V 5184 4200 50  0001 C CNN
+F 2 "" V 5230 4200 50  0001 C CNN
+F 3 "~" H 5300 4200 50  0001 C CNN
+	1    5300 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC37740
+P 5300 4000
+F 0 "R1" V 5300 4000 50  0000 C CNN
+F 1 "RIN" V 5185 4000 50  0001 C CNN
+F 2 "" V 5230 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 4400 5700 4400
+Wire Wire Line
+	5150 4400 4850 4400
+Wire Wire Line
+	5150 4200 4850 4200
+Wire Wire Line
+	5150 4000 4850 4000
+Wire Wire Line
+	5800 4600 5750 4600
+Wire Wire Line
+	5750 4600 5750 4800
+Wire Wire Line
+	6400 4500 6400 4000
+Wire Wire Line
+	6400 4000 6250 4000
+Wire Wire Line
+	6400 4500 6700 4500
+Connection ~ 6400 4500
+Text Label 6600 4500 0    50   ~ 0
+VOUT
+Wire Wire Line
+	5950 4000 5700 4000
+Wire Wire Line
+	5700 4000 5700 4400
+Connection ~ 5700 4400
+Wire Wire Line
+	5700 4400 5800 4400
+Wire Wire Line
+	5450 4200 5450 4400
+Connection ~ 5450 4400
+Wire Wire Line
+	5450 4000 5450 4200
+Connection ~ 5450 4200
+Text Label 4900 4000 0    50   ~ 0
+V1
+Text Label 4900 4200 0    50   ~ 0
+V2
+Text Label 4900 4400 0    50   ~ 0
+V3
+$EndSCHEMATC

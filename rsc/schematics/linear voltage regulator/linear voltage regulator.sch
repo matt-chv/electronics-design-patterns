@@ -1,0 +1,126 @@
+EESchema Schematic File Version 4
+LIBS:linear voltage regulator-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4900 3700 4900 3600
+Wire Wire Line
+	5600 4500 4900 4500
+Connection ~ 5600 4500
+Wire Wire Line
+	6100 3700 6100 3600
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 5FC0D353
+P 5600 3700
+F 0 "Q1" V 5837 3700 50  0000 C CNN
+F 1 "Q_NPN_BCE" V 5837 3700 50  0001 C CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3600 4550 3600
+Connection ~ 4900 3600
+Wire Wire Line
+	6100 3600 6400 3600
+$Comp
+L Device:D_Zener D1
+U 1 1 5FC0E302
+P 5600 4150
+F 0 "D1" V 5554 4229 50  0000 L CNN
+F 1 "D_Zener" V 5645 4229 50  0001 L CNN
+F 2 "" H 5600 4150 50  0001 C CNN
+F 3 "~" H 5600 4150 50  0001 C CNN
+	1    5600 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3900 5600 4000
+Wire Wire Line
+	5250 4000 5600 4000
+Connection ~ 5600 4000
+Wire Wire Line
+	4900 4000 4900 4500
+Wire Wire Line
+	6100 4000 6100 4500
+Text Label 4650 3600 0    50   ~ 0
+VIN
+Text Label 6200 3600 0    50   ~ 0
+VOUT
+$Comp
+L power:GND #PWR01
+U 1 1 5FC107C7
+P 5600 4600
+F 0 "#PWR01" H 5600 4350 50  0001 C CNN
+F 1 "GND" H 5605 4427 50  0000 C CNN
+F 2 "" H 5600 4600 50  0001 C CNN
+F 3 "" H 5600 4600 50  0001 C CNN
+	1    5600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4300 5600 4500
+Wire Wire Line
+	5600 4600 5600 4500
+$Comp
+L Device:C CIN
+U 1 1 5FC0D3A7
+P 4900 3850
+F 0 "CIN" H 5015 3896 50  0000 L CNN
+F 1 "C" H 5015 3805 50  0001 L CNN
+F 2 "" H 4938 3700 50  0001 C CNN
+F 3 "~" H 4900 3850 50  0001 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C COUT
+U 1 1 5FC0DB32
+P 6100 3850
+F 0 "COUT" H 6215 3896 50  0000 L CNN
+F 1 "C" H 6215 3805 50  0001 L CNN
+F 2 "" H 6138 3700 50  0001 C CNN
+F 3 "~" H 6100 3850 50  0001 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3600 6100 3600
+Connection ~ 6100 3600
+Wire Wire Line
+	6100 4500 5600 4500
+Wire Wire Line
+	4900 3600 5250 3600
+$Comp
+L Device:R R1
+U 1 1 5FC0D3C4
+P 5250 3800
+F 0 "R1" H 5320 3800 50  0000 L CNN
+F 1 "R" H 5320 3755 50  0001 L CNN
+F 2 "" V 5180 3800 50  0001 C CNN
+F 3 "~" H 5250 3800 50  0001 C CNN
+	1    5250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3650 5250 3600
+Connection ~ 5250 3600
+Wire Wire Line
+	5250 3600 5400 3600
+Wire Wire Line
+	5250 3950 5250 4000
+$EndSCHEMATC

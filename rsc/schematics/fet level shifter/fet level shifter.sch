@@ -1,0 +1,101 @@
+EESchema Schematic File Version 4
+LIBS:fet_level_shifter-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_SDG Q1
+U 1 1 5FC0BE6C
+P 7100 3800
+F 0 "Q1" V 7351 3800 50  0000 C CNN
+F 1 "Q_NMOS_SDG" V 7442 3800 50  0001 C CNN
+F 2 "" H 7300 3900 50  0001 C CNN
+F 3 "~" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC0CC26
+P 6750 3700
+F 0 "R1" H 6820 3700 50  0000 L CNN
+F 1 "R" H 6820 3655 50  0001 L CNN
+F 2 "" V 6680 3700 50  0001 C CNN
+F 3 "~" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC0D15D
+P 7500 3700
+F 0 "R2" H 7570 3700 50  0000 L CNN
+F 1 "R" H 7570 3655 50  0001 L CNN
+F 2 "" V 7430 3700 50  0001 C CNN
+F 3 "~" H 7500 3700 50  0001 C CNN
+	1    7500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC +3V01
+U 1 1 5FC0DA8F
+P 6750 3450
+F 0 "+3V01" H 6800 3500 50  0000 L CNN
+F 1 "VCC" H 6767 3623 50  0001 C CNN
+F 2 "" H 6750 3450 50  0001 C CNN
+F 3 "" H 6750 3450 50  0001 C CNN
+	1    6750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC +5V01
+U 1 1 5FC0E087
+P 7500 3450
+F 0 "+5V01" H 7500 3500 50  0000 L CNN
+F 1 "VCC" H 7517 3623 50  0001 C CNN
+F 2 "" H 7500 3450 50  0001 C CNN
+F 3 "" H 7500 3450 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3900 6750 3900
+Wire Wire Line
+	6750 3850 6750 3900
+Connection ~ 6750 3900
+Wire Wire Line
+	6750 3900 6500 3900
+Wire Wire Line
+	6750 3450 6750 3500
+Wire Wire Line
+	7100 3600 7100 3500
+Wire Wire Line
+	7100 3500 6750 3500
+Connection ~ 6750 3500
+Wire Wire Line
+	6750 3500 6750 3550
+Wire Wire Line
+	7300 3900 7500 3900
+Wire Wire Line
+	7500 3850 7500 3900
+Connection ~ 7500 3900
+Wire Wire Line
+	7500 3900 7700 3900
+Wire Wire Line
+	7500 3550 7500 3450
+Text Label 6550 3900 0    50   ~ 0
+VIN
+Text Label 7600 3900 0    50   ~ 0
+VOUT
+$EndSCHEMATC

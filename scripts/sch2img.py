@@ -4,12 +4,19 @@
 
 #d:\tools\Git\bin\plotkicadsch.exe -f test_blank.sch -l test_blank-cache.lib
 
+import logging
 from lxml import etree
 from os.path import abspath, dirname, exists, getmtime, join,pardir, realpath
 from os import walk
 from subprocess import call, check_output
 
-plotkicadsch_fp = abspath(join("..","bin","plotkicadsch.exe"))
+posts_path = abspath(join(__file__,pardir, pardir,"_posts"))
+svg_out_path = abspath(join(__file__,pardir, pardir,"out","svg"))
+png_out_path = abspath(join(__file__,pardir, pardir,"out","png"))
+sch_path = abspath(join(__file__,pardir, pardir,"rsc","schematics"))
+plotkicadsch_fp = abspath(join(__file__,pardir, pardir,"bin","plotkicadsch.exe"))
+
+print(16,plotkicadsch_fp)
 
 def svg2png(svg_fp, png_fp):
     """ converts svg files to png by calling Inkscape command lines
@@ -27,7 +34,7 @@ def svg2png(svg_fp, png_fp):
             svg_is_younger = False
             print(png_fp, "not updated") 
     if svg_is_younger:
-        print("calling inkscape on ",svg_fp)
+        logger.info("calling inkscape on ",svg_fp)
         res = call(["D:\\binw\\Inkscape\\inkscape.exe","-z",\
                             svg_fp,"-e", png_fp])
 
@@ -86,7 +93,12 @@ def sch2svg(sch_fp,svg_fp):
             sch_is_younger = False
     
     if sch_is_younger:
-        call([plotkicadsch_fp,"-f",sch_fp,"-l",lib_fp])
+        res = call([plotkicadsch_fp,"-f",sch_fp,"-l",lib_fp])
+        try:
+            assert res == 0
+        except:
+            logger.error(f"failed to convert sch {sch_fp} to svg")
+            raise
 
     if sch_is_younger:
         with open(sch_fp.replace(".sch",".svg"),'r') as fp:
@@ -133,14 +145,16 @@ def sch2svg(sch_fp,svg_fp):
     return(svg_fp)
 
 if __name__=="__main__":
-    schematics_root_folder = abspath(join(__file__,pardir,pardir,"rsc","schematics"))
-    print(137,schematics_root_folder)
-    for root, dir, files in walk(schematics_root_folder):
+    logger = logging.getLogger('edp')
+    logger.setLevel(logging.DEBUG)
+
+    for root, dir, files in walk(sch_path):
         for f in files:
             if f[-4:]==".sch":
                 sch_fp = abspath(join(root,f))
-                svg_fp = abspath(join("../out/svg",f.replace(".sch",".svg")))
-                png_fp = abspath(join("../out/png",f.replace(".sch",".png")))
+                logging.debug(f"processing {f}")
+                svg_fp = abspath(join(svg_out_path,f.replace(".sch",".svg")))
+                png_fp = abspath(join(png_out_path,f.replace(".sch",".png")))
                 svg_fp = sch2svg(sch_fp,svg_fp)
                 png_fp = svg2png(svg_fp, png_fp)
 
