@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 5EC52161
+P 4150 2450
+F 0 "Q1" V 4401 2450 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 4402 2450 50  0001 C CNN
+F 2 "" H 4350 2550 50  0001 C CNN
+F 3 "~" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5EC53D14
+P 4550 2600
+F 0 "D1" V 4550 2679 50  0000 L CNN
+F 1 "D" V 4595 2679 50  0001 L CNN
+F 2 "" H 4550 2600 50  0001 C CNN
+F 3 "~" H 4550 2600 50  0001 C CNN
+	1    4550 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5EC545FF
+P 4850 2350
+F 0 "L1" V 4949 2350 50  0000 C CNN
+F 1 "L" V 4949 2350 50  0001 C CNN
+F 2 "" H 4850 2350 50  0001 C CNN
+F 3 "~" H 4850 2350 50  0001 C CNN
+	1    4850 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EC54F3F
+P 5250 2600
+F 0 "C1" H 5365 2600 50  0000 L CNN
+F 1 "C" H 5365 2555 50  0001 L CNN
+F 2 "" H 5288 2450 50  0001 C CNN
+F 3 "~" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2350 4550 2350
+Wire Wire Line
+	4550 2350 4550 2450
+Wire Wire Line
+	4700 2350 4550 2350
+Connection ~ 4550 2350
+Wire Wire Line
+	5000 2350 5250 2350
+Wire Wire Line
+	5250 2350 5250 2450
+Wire Wire Line
+	5450 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5250 2750 5250 2850
+Wire Wire Line
+	5250 2850 4550 2850
+Wire Wire Line
+	4550 2850 4550 2750
+Wire Wire Line
+	4150 2650 4150 2750
+Wire Wire Line
+	4150 2750 3650 2750
+Wire Wire Line
+	3950 2350 3650 2350
+Text Label 3650 2350 0    50   ~ 0
+IN
+Text Label 5300 2350 0    50   ~ 0
+OUT
+$Comp
+L power:GND #PWR?
+U 1 1 5EC563BF
+P 4400 2900
+F 0 "#PWR?" H 4400 2650 50  0001 C CNN
+F 1 "GND" H 4405 2727 50  0000 C CNN
+F 2 "" H 4400 2900 50  0001 C CNN
+F 3 "" H 4400 2900 50  0001 C CNN
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2900 4400 2850
+Wire Wire Line
+	4400 2850 4550 2850
+Connection ~ 4550 2850
+Wire Wire Line
+	3600 3000 3650 3000
+Wire Wire Line
+	3650 3000 3650 2850
+Wire Wire Line
+	3650 2850 3700 2850
+Wire Wire Line
+	3700 2850 3700 3000
+Wire Wire Line
+	3700 3000 3900 3000
+Wire Wire Line
+	3900 3000 3900 2850
+Wire Wire Line
+	3900 2850 3950 2850
+Wire Wire Line
+	3950 2850 3950 3000
+Wire Wire Line
+	3950 3000 4000 3000
+Text Label 3650 2750 0    50   ~ 0
+CMD
+Text Label 3650 2850 0    50   ~ 0
+ton
+Text Label 3700 3000 0    50   ~ 0
+toff
+$EndSCHEMATC

@@ -15,6 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
+<<<<<<< HEAD
 L Device:Q_NPN_CBE Q1
 U 1 1 5EC35A34
 P 5900 3150
@@ -26,6 +27,7 @@ F 3 "~" H 5900 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
 L Device:R LOAD
 U 1 1 5EC35F6C
 P 6000 2700
@@ -37,6 +39,7 @@ F 3 "~" H 6000 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
 L Device:R R1
 U 1 1 5EC365B1
 P 5400 3150
@@ -50,12 +53,12 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5EC36BEA
-P 6000 2500
-F 0 "#PWR?" H 6000 2350 50  0001 C CNN
-F 1 "VCC" H 6000 2650 50  0000 C CNN
-F 2 "" H 6000 2500 50  0001 C CNN
-F 3 "" H 6000 2500 50  0001 C CNN
-	1    6000 2500
+P 6000 2300
+F 0 "#PWR?" H 6000 2150 50  0001 C CNN
+F 1 "VCC" H 6017 2473 50  0000 C CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
 	1    0    0    -1  
 $EndComp
 $Comp
