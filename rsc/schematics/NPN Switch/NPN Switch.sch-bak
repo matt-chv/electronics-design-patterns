@@ -1,0 +1,71 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_CBE Q?
+U 1 1 5EC35A34
+P 5900 3150
+F 0 "Q?" H 6091 3196 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 6091 3105 50  0000 L CNN
+F 2 "" H 6100 3250 50  0001 C CNN
+F 3 "~" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EC35F6C
+P 6000 2700
+F 0 "R?" H 6070 2746 50  0000 L CNN
+F 1 "R" H 6070 2655 50  0000 L CNN
+F 2 "" V 5930 2700 50  0001 C CNN
+F 3 "~" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EC365B1
+P 5400 3150
+F 0 "R?" V 5193 3150 50  0000 C CNN
+F 1 "R" V 5284 3150 50  0000 C CNN
+F 2 "" V 5330 3150 50  0001 C CNN
+F 3 "~" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EC36BEA
+P 6000 2300
+F 0 "#PWR?" H 6000 2150 50  0001 C CNN
+F 1 "VCC" H 6017 2473 50  0000 C CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC3712D
+P 6000 3600
+F 0 "#PWR?" H 6000 3350 50  0001 C CNN
+F 1 "GND" H 6005 3427 50  0000 C CNN
+F 2 "" H 6000 3600 50  0001 C CNN
+F 3 "" H 6000 3600 50  0001 C CNN
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

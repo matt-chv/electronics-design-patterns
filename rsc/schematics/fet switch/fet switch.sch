@@ -1,0 +1,80 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_DGS Q1
+U 1 1 5EC2A2AD
+P 5550 3100
+F 0 "Q1" H 5756 3100 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5756 3055 50  0001 L CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "~" H 5550 3100 50  0001 C CNN
+	1    5550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EC2B2B6
+P 5650 2400
+F 0 "#PWR?" H 5650 2250 50  0001 C CNN
+F 1 "VCC" H 5667 2573 50  0000 C CNN
+F 2 "" H 5650 2400 50  0001 C CNN
+F 3 "" H 5650 2400 50  0001 C CNN
+	1    5650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC2BD83
+P 5650 3400
+F 0 "#PWR?" H 5650 3150 50  0001 C CNN
+F 1 "GND" H 5655 3227 50  0000 C CNN
+F 2 "" H 5650 3400 50  0001 C CNN
+F 3 "" H 5650 3400 50  0001 C CNN
+	1    5650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R LOAD
+U 1 1 5EC2C3CF
+P 5650 2650
+F 0 "LOAD" H 5720 2650 50  0000 L CNN
+F 1 "R" H 5720 2605 50  0001 L CNN
+F 2 "" V 5580 2650 50  0001 C CNN
+F 3 "~" H 5650 2650 50  0001 C CNN
+	1    5650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2400 5650 2500
+Wire Wire Line
+	5650 2800 5650 2900
+Wire Wire Line
+	5650 3300 5650 3400
+Wire Wire Line
+	5200 3100 5350 3100
+Text Label 5200 3100 0    50   ~ 0
+IN
+Wire Wire Line
+	5200 3000 5300 3000
+Wire Wire Line
+	5300 3000 5300 2900
+Wire Wire Line
+	5300 2900 5400 2900
+Text Label 5150 3000 0    50   ~ 0
+GND
+Text Label 5350 2900 0    50   ~ 0
+VCC
+$EndSCHEMATC
