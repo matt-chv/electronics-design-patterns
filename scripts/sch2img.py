@@ -7,9 +7,23 @@
 from lxml import etree
 from os.path import abspath, dirname, join, realpath
 from os import walk
-from subprocess import call
+from subprocess import call, check_output
 
 plotkicadsch_fp = abspath(join("..","bin","plotkicadsch.exe"))
+
+def svg2png(svg_fp, png_fp):
+    """ converts svg files to png by calling Inkscape command lines
+    Paramters:
+    ----------
+    svg_fp: str
+        full path to the svg input file
+    png_fp: str
+        full path to the png output file
+    
+    """
+    res = call(["D:\\binw\\Inkscape\\inkscape.exe","-z",\
+                            svg_fp,"-e", png_fp])
+
 
 def sch2svg(sch_fp,svg_fp):
     """ converts Kicad .sch (eeschema) to svg leveraging binaries from plotkicadsch
@@ -81,9 +95,11 @@ if __name__=="__main__":
                 print(root)
                 sch_fp = abspath(join(root,f))
                 svg_fp = abspath(join("../out/svg",f.replace(".sch",".svg")))
+                png_fp = abspath(join("../out/png",f.replace(".sch",".png")))
                 print(sch_fp)
                 print(svg_fp)
                 svg_fp = sch2svg(sch_fp,svg_fp)
+                png_fp = svg2png(svg_fp, png_fp)
                 if svg_fp:
                     print(svg_fp)
 

@@ -37,7 +37,7 @@ layout: default
         {% endif %}
       {% endif %}
         <ul class="posts">
-          <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> &raquo;<i><span>{{ post.date | date_to_string }}</span></i></li>
+          <li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a> &raquo;<i><span>{{ post.date | date_to_string }}</span></i></li>
         </ul>
       {% if forloop.last %}
         </div>
