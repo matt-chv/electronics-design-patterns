@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
@@ -63,4 +64,9 @@ Text Label 4150 2750 0    50   ~ 0
 Vin
 Text Label 4700 3250 0    50   ~ 0
 Vout
+=======
+EESchema Schematic File Version 2
+EELAYER 25 0
+EELAYER END
+>>>>>>> 4c8e9a7... update to jekyll blog template
 $EndSCHEMATC

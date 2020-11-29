@@ -1,0 +1,176 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# flash_adc-eagle-import_+18V
+#
+DEF flash_adc-eagle-import_+18V #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_+18V" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 0 50 -50 -25 N
+P 2 1 0 0 0 100 -50 25 N
+P 2 1 0 0 50 -75 0 0 N
+P 2 1 0 0 50 -25 0 50 N
+P 2 1 0 0 50 25 0 100 N
+X +18V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_GND
+#
+DEF flash_adc-eagle-import_GND #GND 0 40 Y Y 1 L P
+F0 "#GND" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_GND" -100 -100 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -75 0 75 0 N
+X GND 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_PE
+#
+DEF flash_adc-eagle-import_PE #PE 0 40 Y Y 1 L P
+F0 "#PE" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_PE" -100 -100 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -75 0 75 0 N
+P 2 1 0 0 -43 -20 43 -20 N
+P 2 1 0 0 -24 -40 24 -40 N
+P 2 1 0 0 -12 -60 13 -60 N
+X PE 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_R-EU_R0805
+#
+DEF flash_adc-eagle-import_R-EU_R0805 R 0 40 Y Y 1 L N
+F0 "R" -150 59 59 H V L BNN
+F1 "flash_adc-eagle-import_R-EU_R0805" -150 -130 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 -35 -100 35 N
+P 2 1 0 0 -100 -35 100 -35 N
+P 2 1 0 0 100 -35 100 35 N
+P 2 1 0 0 100 35 -100 35 N
+X 1 1 -200 0 100 R 0 0 1 0 P
+X 2 2 200 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_RESISTOR0402-RES
+#
+DEF flash_adc-eagle-import_RESISTOR0402-RES R 0 40 Y Y 1 L N
+F0 "R" -150 59 59 H V L BNN
+F1 "flash_adc-eagle-import_RESISTOR0402-RES" -150 -130 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 0 -85 40 N
+P 2 1 0 0 -85 40 -60 -40 N
+P 2 1 0 0 -60 -40 -35 40 N
+P 2 1 0 0 -35 40 -10 -40 N
+P 2 1 0 0 -10 -40 15 40 N
+P 2 1 0 0 15 40 40 -40 N
+P 2 1 0 0 40 -40 65 40 N
+P 2 1 0 0 65 40 90 -40 N
+P 2 1 0 0 90 -40 100 0 N
+X 1 1 -200 0 100 R 0 0 1 0 P
+X 2 2 200 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_TRANSISTOR_NPN"
+#
+DEF flash_adc-eagle-import_TRANSISTOR_NPN" Q 0 40 Y Y 1 L N
+F0 "Q" 200 0 59 H V L BNN
+F1 "flash_adc-eagle-import_TRANSISTOR_NPN\"" 200 -100 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -10 -100 20 100 1 0 0 F
+P 2 1 0 0 50 -100 70 -60 N
+P 2 1 0 0 60 -95 90 -95 N
+P 2 1 0 0 60 -90 75 -90 N
+P 2 1 0 0 60 -80 12 -56 N
+P 2 1 0 0 70 -70 60 -90 N
+P 2 1 0 0 70 -60 100 -100 N
+P 2 1 0 0 75 -90 70 -80 N
+P 2 1 0 0 90 -95 70 -70 N
+P 2 1 0 0 100 -100 50 -100 N
+P 2 1 0 0 100 100 20 60 N
+X B 1 -100 0 100 R 0 0 1 0 P
+X C 2 100 200 100 D 0 0 1 0 P
+X E 3 100 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_V+
+#
+DEF flash_adc-eagle-import_V+ #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_V+" -100 -100 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -35 -50 35 -50 N
+P 2 1 0 0 0 5 -35 -50 N
+P 2 1 0 0 35 -50 0 5 N
+X V+ 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_VCC
+#
+DEF flash_adc-eagle-import_VCC #P+ 0 40 Y Y 1 L P
+F0 "#P+" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_VCC" -100 -100 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 50 -75 0 0 N
+X VCC 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_VDD
+#
+DEF flash_adc-eagle-import_VDD #VDD 0 40 Y Y 1 L P
+F0 "#VDD" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_VDD" -100 -100 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 0 -50 -75 N
+P 2 1 0 0 0 50 -50 -75 N
+P 2 1 0 0 50 -75 0 0 N
+P 2 1 0 0 50 -75 0 50 N
+X VDD 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# flash_adc-eagle-import_VSS
+#
+DEF flash_adc-eagle-import_VSS #VSS 0 40 Y Y 1 L P
+F0 "#VSS" 0 0 50 H I C CNN
+F1 "flash_adc-eagle-import_VSS" -100 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 75 0 -50 N
+P 2 1 0 0 -50 75 0 0 N
+P 2 1 0 0 0 -50 50 75 N
+P 2 1 0 0 0 0 50 75 N
+X VSS 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -53,10 +53,14 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
 <<<<<<< HEAD
+<<<<<<< HEAD
 #  - jekyll-sitemap
 =======
   - jekyll-sitemap
 >>>>>>> 641cae8... moving to new jekyll template
+=======
+#  - jekyll-sitemap
+>>>>>>> 4c8e9a7... update to jekyll blog template
   - jekyll-feed
 compress_html:
   clippings: all

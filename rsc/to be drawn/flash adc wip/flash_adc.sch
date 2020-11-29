@@ -1,0 +1,349 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6200 4100 6000 4100
+Connection ~ 6000 4100
+Wire Wire Line
+	6400 4700 6200 4700
+Wire Wire Line
+	6200 4700 6000 4700
+Wire Wire Line
+	6000 4700 6000 4500
+Wire Wire Line
+	6200 4800 6200 4700
+Connection ~ 6200 4700
+Wire Wire Line
+	6000 3500 6000 3700
+$Comp
+L flash_adc-eagle-import:TRANSISTOR_NPN" Q1
+U 1 1 22BC07EB
+P 6300 4100
+F 0 "Q1" H 6500 4100 59  0000 L BNN
+F 1 "TRANSISTOR_NPN\"" H 6500 4000 59  0000 L BNN
+F 2 "flash_adc:SOT223" H 6300 4100 50  0001 C CNN
+F 3 "" H 6300 4100 50  0001 C CNN
+	1    6300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R1
+U 1 1 8633630C
+P 6400 4500
+F 0 "R1" H 6250 4559 59  0000 L BNN
+F 1 "1.0k" H 6250 4370 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 6400 4500 50  0001 C CNN
+F 3 "" H 6400 4500 50  0001 C CNN
+	1    6400 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES LOAD
+U 1 1 D27619CF
+P 6400 3700
+F 0 "LOAD" V 6359 3650 59  0000 R TNN
+F 1 "RESISTOR0402-RES" H 6250 3570 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 6400 3700 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R2
+U 1 1 9385C98D
+P 6000 3900
+F 0 "R2" H 5850 3959 59  0000 L BNN
+F 1 "8.2k" H 5850 3770 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 6000 3900 50  0001 C CNN
+F 3 "" H 6000 3900 50  0001 C CNN
+	1    6000 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R3
+U 1 1 7BC19B58
+P 6000 4300
+F 0 "R3" H 5850 4359 59  0000 L BNN
+F 1 "1.6k" H 5850 4170 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 6000 4300 50  0001 C CNN
+F 3 "" H 6000 4300 50  0001 C CNN
+	1    6000 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:GND #GND1
+U 1 1 8DA2BB24
+P 6200 4900
+F 0 "#GND1" H 6200 4900 50  0001 C CNN
+F 1 "GND" H 6100 4800 59  0000 L BNN
+F 2 "" H 6200 4900 50  0001 C CNN
+F 3 "" H 6200 4900 50  0001 C CNN
+	1    6200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R4
+U 1 1 AC454FA2
+P 5200 3200
+F 0 "R4" H 5050 3259 59  0000 L BNN
+F 1 "8.2k" H 5050 3070 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R5
+U 1 1 DC3E9D6F
+P 5200 3800
+F 0 "R5" H 5050 3859 59  0000 L BNN
+F 1 "8.2k" H 5050 3670 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 5200 3800 50  0001 C CNN
+F 3 "" H 5200 3800 50  0001 C CNN
+	1    5200 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R6
+U 1 1 0D3DF555
+P 5200 4300
+F 0 "R6" H 5050 4359 59  0000 L BNN
+F 1 "8.2k" H 5050 4170 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 5200 4300 50  0001 C CNN
+F 3 "" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R7
+U 1 1 F0A0034B
+P 5200 4800
+F 0 "R7" H 5050 4859 59  0000 L BNN
+F 1 "8.2k" H 5050 4670 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 5200 4800 50  0001 C CNN
+F 3 "" H 5200 4800 50  0001 C CNN
+	1    5200 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:RESISTOR0402-RES R8
+U 1 1 2DEDC012
+P 5200 5300
+F 0 "R8" H 5050 5359 59  0000 L BNN
+F 1 "8.2k" H 5050 5170 59  0000 L BNN
+F 2 "flash_adc:0402-RES" H 5200 5300 50  0001 C CNN
+F 3 "" H 5200 5300 50  0001 C CNN
+	1    5200 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:GND #GND2
+U 1 1 4877C9E2
+P 5200 5700
+F 0 "#GND2" H 5200 5700 50  0001 C CNN
+F 1 "GND" H 5100 5600 59  0000 L BNN
+F 2 "" H 5200 5700 50  0001 C CNN
+F 3 "" H 5200 5700 50  0001 C CNN
+	1    5200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:R-EU_R0805 R9
+U 1 1 295F0D93
+P 4600 2600
+F 0 "R9" H 4450 2659 59  0000 L BNN
+F 1 "R-EU_R0805" H 4450 2470 59  0000 L BNN
+F 2 "flash_adc:R0805" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:R-EU_R0805 R10
+U 1 1 CB121278
+P 4600 3100
+F 0 "R10" H 4450 3159 59  0000 L BNN
+F 1 "R-EU_R0805" H 4450 2970 59  0000 L BNN
+F 2 "flash_adc:R0805" H 4600 3100 50  0001 C CNN
+F 3 "" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:R-EU_R0805 R11
+U 1 1 3D3C6285
+P 4600 3600
+F 0 "R11" H 4450 3659 59  0000 L BNN
+F 1 "R-EU_R0805" H 4450 3470 59  0000 L BNN
+F 2 "flash_adc:R0805" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:R-EU_R0805 R12
+U 1 1 F26279CE
+P 4600 4100
+F 0 "R12" H 4450 4159 59  0000 L BNN
+F 1 "R-EU_R0805" H 4450 3970 59  0000 L BNN
+F 2 "flash_adc:R0805" H 4600 4100 50  0001 C CNN
+F 3 "" H 4600 4100 50  0001 C CNN
+	1    4600 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:R-EU_R0805 R13
+U 1 1 5D2526FC
+P 4600 4600
+F 0 "R13" H 4450 4659 59  0000 L BNN
+F 1 "R-EU_R0805" H 4450 4470 59  0000 L BNN
+F 2 "flash_adc:R0805" H 4600 4600 50  0001 C CNN
+F 3 "" H 4600 4600 50  0001 C CNN
+	1    4600 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:R-EU_R0805 R14
+U 1 1 52B5C5D8
+P 4600 5100
+F 0 "R14" H 4450 5159 59  0000 L BNN
+F 1 "R-EU_R0805" H 4450 4970 59  0000 L BNN
+F 2 "flash_adc:R0805" H 4600 5100 50  0001 C CNN
+F 3 "" H 4600 5100 50  0001 C CNN
+	1    4600 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L flash_adc-eagle-import:V+ #P+1
+U 1 1 6A081B6E
+P 5100 2300
+F 0 "#P+1" H 5100 2300 50  0001 C CNN
+F 1 "V+" V 5000 2200 59  0000 L BNN
+F 2 "" H 5100 2300 50  0001 C CNN
+F 3 "" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:VCC #P+2
+U 1 1 637B3A6A
+P 5400 2300
+F 0 "#P+2" H 5400 2300 50  0001 C CNN
+F 1 "VCC" V 5300 2200 59  0000 L BNN
+F 2 "" H 5400 2300 50  0001 C CNN
+F 3 "" H 5400 2300 50  0001 C CNN
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:VDD #VDD1
+U 1 1 72EF7348
+P 4100 2200
+F 0 "#VDD1" H 4100 2200 50  0001 C CNN
+F 1 "VDD" V 4000 2100 59  0000 L BNN
+F 2 "" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:VSS #VSS1
+U 1 1 83EEDF46
+P 4600 5500
+F 0 "#VSS1" H 4600 5500 50  0001 C CNN
+F 1 "VSS" V 4500 5300 59  0000 L BNN
+F 2 "" H 4600 5500 50  0001 C CNN
+F 3 "" H 4600 5500 50  0001 C CNN
+	1    4600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:VSS #VSS2
+U 1 1 344F9E0A
+P 4000 5500
+F 0 "#VSS2" H 4000 5500 50  0001 C CNN
+F 1 "VSS" V 3900 5300 59  0000 L BNN
+F 2 "" H 4000 5500 50  0001 C CNN
+F 3 "" H 4000 5500 50  0001 C CNN
+	1    4000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:GND #GND3
+U 1 1 21137572
+P 4100 5900
+F 0 "#GND3" H 4100 5900 50  0001 C CNN
+F 1 "GND" H 4000 5800 59  0000 L BNN
+F 2 "" H 4100 5900 50  0001 C CNN
+F 3 "" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:VCC #P+3
+U 1 1 48C2C5DB
+P 5900 2200
+F 0 "#P+3" H 5900 2200 50  0001 C CNN
+F 1 "VCC" V 5800 2100 59  0000 L BNN
+F 2 "" H 5900 2200 50  0001 C CNN
+F 3 "" H 5900 2200 50  0001 C CNN
+	1    5900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:VDD #VDD2
+U 1 1 EDEAD374
+P 6300 2400
+F 0 "#VDD2" H 6300 2400 50  0001 C CNN
+F 1 "VDD" V 6200 2300 59  0000 L BNN
+F 2 "" H 6300 2400 50  0001 C CNN
+F 3 "" H 6300 2400 50  0001 C CNN
+	1    6300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:+18V #P+4
+U 1 1 459FCD94
+P 6600 2200
+F 0 "#P+4" H 6600 2200 50  0001 C CNN
+F 1 "+18V" V 6500 2000 59  0000 L BNN
+F 2 "" H 6600 2200 50  0001 C CNN
+F 3 "" H 6600 2200 50  0001 C CNN
+	1    6600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:PE #PE1
+U 1 1 0A72218C
+P 7100 2300
+F 0 "#PE1" H 7100 2300 50  0001 C CNN
+F 1 "PE" V 7000 2200 59  0000 L BNN
+F 2 "" H 7100 2300 50  0001 C CNN
+F 3 "" H 7100 2300 50  0001 C CNN
+	1    7100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L flash_adc-eagle-import:V+ #P+5
+U 1 1 57F4DC09
+P 7700 2300
+F 0 "#P+5" H 7700 2300 50  0001 C CNN
+F 1 "V+" V 7600 2200 59  0000 L BNN
+F 2 "" H 7700 2300 50  0001 C CNN
+F 3 "" H 7700 2300 50  0001 C CNN
+	1    7700 2300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

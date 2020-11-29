@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3130.0 895.24 2700.0 2547.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <polyline points="5450, 2350 5650, 2350" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5450" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
@@ -20,18 +21,48 @@
   <polyline points="5450, 1550 5550, 1550" stroke-width="10px" stroke="#000000"/>
   <text x="5550" y="1550" font-size="50.000000" text-anchor="start" transform="rotate(0 5550 1550)" fill="#000000">VOUT_sec+</text>
   <text x="5550" y="1150" font-size="50.000000" text-anchor="start" transform="rotate(0 5550 1150)" fill="#000000">VOUT_sec-</text>
+=======
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3140.2 895.24 2598.0 2547.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+  <polyline points="5450, 2350 5650, 2350" stroke-width="10px" stroke="#800000"/>
+  <circle r="10" cx="5450" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5050, 2350 5450, 2350" stroke-width="10px" stroke="#800000"/>
+  <circle r="10" cx="4550" cy="3000" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 2350 5450, 2450" stroke-width="10px" stroke="#800000"/>
+  <circle r="10" cx="4450" cy="3000" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3650, 3000 4450, 3000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4150, 2700 4150, 2650" stroke-width="10px" stroke="#800000"/>
+  <polyline points="3950, 2800 3950, 2950" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4550, 3000 5450, 3000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4450, 3000 4550, 3000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4550, 2750 4550, 3000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4650, 2350 4550, 2350" stroke-width="10px" stroke="#800000"/>
+  <circle r="10" cx="4550" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="4300, 2350 4550, 2350" stroke-width="10px" stroke="#800000"/>
+  <polyline points="3900, 2800 3900, 2950" stroke-width="10px" stroke="#800000"/>
+  <polyline points="3550, 2350 4000, 2350" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 2750 5450, 3000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 1550 5550, 1550" stroke-width="10px" stroke="#800000"/>
+  <text x="5550" y="1550" font-size="50.000000" text-anchor="start" transform="rotate(0 5550 1550)" fill="#FF0000">VOUT_sec+</text>
+  <text x="5550" y="1150" font-size="50.000000" text-anchor="start" transform="rotate(0 5550 1150)" fill="#FF0000">VOUT_sec-</text>
+>>>>>>> 4c8e9a7... update to jekyll blog template
   <text x="5550" y="2600" font-size="50.000000" text-anchor="start" transform="rotate(0 5550 2600)" fill="#000000">Co_pri</text>
   <polyline points="5450, 2640 5450, 2750" stroke-width="10px" stroke="#000000"/>
   <polyline points="5450, 2560 5450, 2450" stroke-width="10px" stroke="#000000"/>
   <polyline points="5370, 2570 5530, 2570" stroke-width="10px" stroke="#000000"/>
   <polyline points="5370, 2630 5530, 2630" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <text x="5500" y="2350" font-size="50.000000" text-anchor="start" transform="rotate(0 5500 2350)" fill="#000000">VOUT_pri</text>
   <polyline points="3650, 2350 3650, 2550" stroke-width="10px" stroke="#000000"/>
+=======
+  <text x="5500" y="2350" font-size="50.000000" text-anchor="start" transform="rotate(0 5500 2350)" fill="#FF0000">VOUT_pri</text>
+  <polyline points="3650, 2350 3650, 2550" stroke-width="10px" stroke="#800000"/>
+>>>>>>> 4c8e9a7... update to jekyll blog template
   <text x="3400" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 3400 2700)" fill="#000000">Ci</text>
   <polyline points="3650, 2740 3650, 2850" stroke-width="10px" stroke="#000000"/>
   <polyline points="3650, 2660 3650, 2550" stroke-width="10px" stroke="#000000"/>
   <polyline points="3570, 2670 3730, 2670" stroke-width="10px" stroke="#000000"/>
   <polyline points="3570, 2730 3730, 2730" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <polyline points="4150, 2700 3950, 2700" stroke-width="10px" stroke="#000000"/>
   <polyline points="4200, 2800 4200, 2950" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3100 4450, 3000" stroke-width="10px" stroke="#000000"/>
@@ -43,17 +74,38 @@
   <polyline points="4150, 2950 4150, 2800" stroke-width="10px" stroke="#000000"/>
   <polyline points="3950, 2950 4150, 2950" stroke-width="10px" stroke="#000000"/>
   <polyline points="3900, 2800 3950, 2800" stroke-width="10px" stroke="#000000"/>
+=======
+  <polyline points="4150, 2700 3950, 2700" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4200, 2800 4200, 2950" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4450, 3100 4450, 3000" stroke-width="10px" stroke="#800000"/>
+  <text x="3950" y="2950" font-size="50.000000" text-anchor="start" transform="rotate(0 3950 2950)" fill="#FF0000">toff</text>
+  <text x="3900" y="2800" font-size="50.000000" text-anchor="start" transform="rotate(0 3900 2800)" fill="#FF0000">ton</text>
+  <text x="3950" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 3950 2700)" fill="#FF0000">CMD</text>
+  <polyline points="4200, 2950 4250, 2950" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4150, 2800 4200, 2800" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4150, 2950 4150, 2800" stroke-width="10px" stroke="#800000"/>
+  <polyline points="3950, 2950 4150, 2950" stroke-width="10px" stroke="#800000"/>
+  <polyline points="3900, 2800 3950, 2800" stroke-width="10px" stroke="#800000"/>
+>>>>>>> 4c8e9a7... update to jekyll blog template
   <text x="4455" y="3273" font-size="50.000000" text-anchor="middle" transform="rotate(0 4455 3273)" fill="#000000">GND</text>
   <polyline points="4400, 3150 4450, 3150" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3200 4400, 3150" stroke-width="10px" stroke="#000000"/>
   <polyline points="4500, 3150 4450, 3200" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3150 4500, 3150" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3100 4450, 3150" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <text x="3650" y="2350" font-size="50.000000" text-anchor="start" transform="rotate(0 3650 2350)" fill="#000000">VIN</text>
   <circle r="10" cx="5450" cy="1550" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <polyline points="5400, 1550 5450, 1550" stroke-width="10px" stroke="#000000"/>
   <polyline points="5100, 1550 5050, 1550" stroke-width="10px" stroke="#000000"/>
   <polyline points="4650, 1150 5450, 1150" stroke-width="10px" stroke="#000000"/>
+=======
+  <text x="3650" y="2350" font-size="50.000000" text-anchor="start" transform="rotate(0 3650 2350)" fill="#FF0000">VIN</text>
+  <circle r="10" cx="5450" cy="1550" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5400, 1550 5450, 1550" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5100, 1550 5050, 1550" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4650, 1150 5450, 1150" stroke-width="10px" stroke="#800000"/>
+>>>>>>> 4c8e9a7... update to jekyll blog template
   <text x="5138" y="1950" font-size="50.000000" text-anchor="start" transform="rotate(0 5138 1950)" fill="#000000">1::N</text>
   <text x="4650" y="1550" font-size="50.000000" text-anchor="end" transform="rotate(-90 4650 1550)" fill="#000000">4</text>
   <polyline points="4650, 1850 4650, 1550" stroke-width="10px" stroke="#000000"/>
@@ -81,9 +133,15 @@
   <path d="M4850,2050 A50,50 0 0,1 4900,2000" fill="none" stroke-width="10px" stroke="#000000"/>
   <path d="M5000,2000 A50,50 0 0,1 5049,2050" fill="none" stroke-width="10px" stroke="#000000"/>
   <path d="M4950,2050 A50,50 0 0,1 5000,2000" fill="none" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <polyline points="4650, 1550 4650, 1150" stroke-width="10px" stroke="#000000"/>
   <polyline points="3650, 3000 3650, 2850" stroke-width="10px" stroke="#000000"/>
   <polyline points="4550, 2350 4550, 2450" stroke-width="10px" stroke="#000000"/>
+=======
+  <polyline points="4650, 1550 4650, 1150" stroke-width="10px" stroke="#800000"/>
+  <polyline points="3650, 3000 3650, 2850" stroke-width="10px" stroke="#800000"/>
+  <polyline points="4550, 2350 4550, 2450" stroke-width="10px" stroke="#800000"/>
+>>>>>>> 4c8e9a7... update to jekyll blog template
   <text x="4629" y="2600" font-size="50.000000" text-anchor="start" transform="rotate(0 4629 2600)" fill="#000000">D1</text>
   <polyline points="4550, 2650 4550, 2750" stroke-width="10px" stroke="#000000"/>
   <polyline points="4550, 2550 4550, 2450" stroke-width="10px" stroke="#000000"/>
@@ -128,9 +186,15 @@
   <circle r="11" cx="4080" cy="2350" fill="none" stroke-width="10px" stroke="#000000"/>
   <circle r="111" cx="4150" cy="2385" fill="none" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5450" cy="1150" fill="#000000" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <polyline points="5550, 1150 5450, 1150" stroke-width="10px" stroke="#000000"/>
   <polyline points="5450, 1500 5450, 1550" stroke-width="10px" stroke="#000000"/>
   <polyline points="5450, 1150 5450, 1200" stroke-width="10px" stroke="#000000"/>
+=======
+  <polyline points="5550, 1150 5450, 1150" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 1500 5450, 1550" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 1150 5450, 1200" stroke-width="10px" stroke="#800000"/>
+>>>>>>> 4c8e9a7... update to jekyll blog template
   <text x="5565" y="1350" font-size="50.000000" text-anchor="start" transform="rotate(0 5565 1350)" fill="#000000">Co_sec</text>
   <polyline points="5450, 1390 5450, 1500" stroke-width="10px" stroke="#000000"/>
   <polyline points="5450, 1310 5450, 1200" stroke-width="10px" stroke="#000000"/>

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name flash_adc-eagle-import)(type Legacy)(uri ${KIPRJMOD}/flash_adc-eagle-import.lib)(options "")(descr ""))
+)

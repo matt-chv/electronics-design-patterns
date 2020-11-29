@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-update=20/11/27 10:27:00 AM
-version=1
-last_client=eeschema
-=======
-update=22/05/2015 07:44:53
+update=20/11/27 9:54:25 AM
 version=1
 last_client=kicad
->>>>>>> 4c8e9a7... update to jekyll blog template
 [general]
 version=1
 RootSch=
@@ -37,16 +31,13 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-<<<<<<< HEAD
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=empty.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=Pcbnew
+NetFmtName=
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
-=======
->>>>>>> 4c8e9a7... update to jekyll blog template

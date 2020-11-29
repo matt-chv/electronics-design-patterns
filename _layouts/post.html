@@ -22,10 +22,14 @@ MathJax.Hub.Config({
 {% if page.categories %}
   <span class="categories">
 <<<<<<< HEAD
+<<<<<<< HEAD
     &raquo; {% for category in page.categories %}<a href="{{site.baseurl}}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
 =======
     &raquo; {% for category in page.categories %}<a href="{{site.baseurl}}category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
 >>>>>>> 641cae8... moving to new jekyll template
+=======
+    &raquo; {% for category in page.categories %}<a href="{{site.baseurl}}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+>>>>>>> 4c8e9a7... update to jekyll blog template
   </span>
 {% endif %}
 

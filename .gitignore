@@ -4,7 +4,10 @@
 # Scripting the Jekyll ressources
 
 out/pdf/*
+<<<<<<< HEAD
 out/pdf_archive/*
+=======
+>>>>>>> 4c8e9a7... update to jekyll blog template
 out/equations/*
 out/card_deck_single_sheet_old.pdf
 
