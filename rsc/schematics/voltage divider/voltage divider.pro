@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 update=20/11/27 10:27:00 AM
 version=1
 last_client=eeschema
@@ -7,6 +8,11 @@ update=22/05/2015 07:44:53
 version=1
 last_client=kicad
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+update=20/11/27 10:27:00 AM
+version=1
+last_client=eeschema
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 [general]
 version=1
 RootSch=
@@ -38,6 +44,9 @@ version=1
 LibDir=
 [eeschema/libraries]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -48,5 +57,8 @@ NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
+<<<<<<< HEAD
 =======
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP

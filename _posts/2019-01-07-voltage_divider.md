@@ -47,11 +47,17 @@ Notes: assuming that Vin output impedance and Vout input impedance are respectiv
 Considering Laplace Transforms and complex impedance we can rewrite this as :
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 $$ Vout = \frac{Z_2}{Z_1+Z_2}*Vin $$
 
 When Z1 is a capacitor and Z2 is a resistor we have a low pass filter
 
 When Z1 is a resistor and Z2 is a capacitor we have a high pass filter
+<<<<<<< HEAD
 =======
 $$ Vout = \frac{Z_2}{Z_1+Z_2}*Vin $$
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP

@@ -68,7 +68,7 @@ def latex_to_img(tex,save_path):
         plt.rc('text', usetex=True)
         plt.rc('font', family='serif')
         plt.axis('off')
-        plt.text(0.05, 0.5, f'${tex}$', size=20)
+        plt.text(0.05, 0.5, f'${tex}$', size=40)
         plt.savefig(buf, format='png')
         plt.close()
     

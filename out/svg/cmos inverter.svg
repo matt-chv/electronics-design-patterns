@@ -18,6 +18,7 @@
   <polyline points="5950, 3450 5950, 3500" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <text x="5350" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2700)" fill="#000000">VIN</text>
   <text x="6200" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 6200 2700)" fill="#000000">VOUT</text>
   <polyline points="5950, 2700 5950, 2800" stroke-width="10px" stroke="#000000"/>
@@ -35,6 +36,10 @@
 =======
   <text x="5350" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2700)" fill="#000000">IN</text>
   <text x="6200" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 6200 2700)" fill="#000000">OUT</text>
+=======
+  <text x="5350" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2700)" fill="#000000">VIN</text>
+  <text x="6200" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 6200 2700)" fill="#000000">VOUT</text>
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
   <polyline points="5950, 2700 5950, 2800" stroke-width="10px" stroke="#000000"/>
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <circle r="10" cx="5950" cy="2700" fill="#000000" stroke-width="10px" stroke="#000000"/>

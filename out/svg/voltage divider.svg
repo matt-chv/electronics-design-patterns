@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3880.0 2600.0 2700.0 1500.0" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <text x="6050" y="3950" font-size="50.000000" text-anchor="start" transform="rotate(0 6050 3950)" fill="#000000">HPF</text>
   <text x="6050" y="4000" font-size="50.000000" text-anchor="start" transform="rotate(0 6050 4000)" fill="#000000"/>
@@ -59,6 +62,7 @@
   <polyline points="5440, 2900 5440, 3100" stroke-width="10px" stroke="#000000"/>
   <polyline points="5360, 2900 5440, 2900" stroke-width="10px" stroke="#000000"/>
   <polyline points="5360, 3100 5360, 2900" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <text x="4700" y="3250" font-size="50.000000" text-anchor="start" transform="rotate(0 4700 3250)" fill="#000000">Vout</text>
   <text x="4150" y="2750" font-size="50.000000" text-anchor="start" transform="rotate(0 4150 2750)" fill="#000000">Vin</text>
   <polyline points="4550, 3250 4550, 3300" stroke-width="10px" stroke="#000000"/>
@@ -82,6 +86,8 @@
 >>>>>>> 4c8e9a7... update to jekyll blog template
 =======
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="4066.0 2615.24 840.0 1347.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+=======
+>>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
   <text x="4700" y="3250" font-size="50.000000" text-anchor="start" transform="rotate(0 4700 3250)" fill="#000000">Vout</text>
   <text x="4150" y="2750" font-size="50.000000" text-anchor="start" transform="rotate(0 4150 2750)" fill="#000000">Vin</text>
   <polyline points="4550, 3250 4550, 3300" stroke-width="10px" stroke="#000000"/>
