@@ -1,6 +1,6 @@
 ---
 title: npn switch
-categories: digital
+categories: logic
 layout: post
 function: switch
 schematics: yes

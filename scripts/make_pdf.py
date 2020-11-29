@@ -68,7 +68,7 @@ def latex_to_img(tex,save_path):
         plt.rc('text', usetex=True)
         plt.rc('font', family='serif')
         plt.axis('off')
-        plt.text(0.05, 0.5, f'${tex}$', size=40)
+        plt.text(0.05, 0.5, f'${tex}$', size=20)
         plt.savefig(buf, format='png')
         plt.close()
     
@@ -93,6 +93,8 @@ def electronics_title(title_to_be_styled):
     
 
 def compile_rsc_to_png():
+    # remove and call sch2svg
+    raise Exception("remove this function call")
     """ will convert all sources into png files
     .sch files will be converted by scripting Eagle
     .svg files will be converted by scripting Inkscape
@@ -124,7 +126,7 @@ def compile_rsc_to_png():
                 logging.error("error compiling graphic ressources to png for %s\n%s"%(rsc))
             
 
-def draw_card(c, card_size, card_output_path, card_background_path, \
+def draw_card(c, card_size,card_background_path, \
               x0=0,y0=0,\
                   schematics_image_path=None, card_title=None,\
                   design_pattern_description=None, design_pattern_index=None,\
@@ -162,6 +164,8 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
 
 #     c = canvas.Canvas(card_output_path, pagesize=card_size)
     #add image background, needs to be done first as otherwise covers the text
+    logger.info(f"drawing at {x0},{y0}")
+    print(f"drawing at {x0},{y0}")
     c.drawImage(card_background_path, x0+0, y0+0, width = card_width, height=card_height, \
                 mask='auto',showBoundary=False) 
     
@@ -182,7 +186,10 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
             print(re_split("---\n|----\n",ptext))
             raise
         soup = BeautifulSoup(htm,'html.parser')
-        equations = [s.extract() for s in soup('script')]
+        equations = []
+        for script_tag in soup.find_all('script'):
+            res = script_tag.string
+            equations.append(res)
         style_description = ParagraphStyle(name='card_description',
                                       fontSize=5,
                                       leading=8,
@@ -196,11 +203,15 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
             raise Exception("Description for: %s, too big"%(card_title))
         p.drawOn(c, x0+6*mm, y0+card_height/2.-5*mm-p.height)    # position of text / where to draw
         
+
         if len(equations)==1:
-            equation = "$%s$"%(equations[0].get_text())
+            logger.info(f"making equation {card_title}")
+            equation = "$%s$"%(equations[0])
             eq_full_path = abspath(join(".","out","equations","%s_equation.png"%(card_title)))
+
             latex_to_img(equation,eq_full_path)
             eq_height = card_height*3/8.-p.height-5*mm
+            print(f"equation heights: {eq_height}")
             #to make it transparent add mask =[255,255,255,255,255,255]
             c.drawImage(eq_full_path, x0+6*mm, y0+card_height/2.-5*mm-p.height-eq_height,\
                         width = card_width*3/4., height=eq_height,preserveAspectRatio=True)#, width = card_width, height=card_height) 
@@ -220,10 +231,6 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
     if not card_title is None:
         c.drawString(x0+5*mm,y0+card_height*7/8.,card_title)
     
-    
-#     c.showPage()
-#     c.save()
-    logging.info(card_output_path, "done")
 
 def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                         naming_convention="named", NCARD=52, card_size = (64*mm,89*mm)):
@@ -261,6 +268,8 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
     
     #count cards
     total_cards_count = 0
+    # sheet_n_card_width is the number of card side by side on one sheet
+    sheet_n_card_width = 1 # Type: int
     
     schematics_posts = {}
     edp_cat = {}
@@ -298,13 +307,18 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                 else:
                     raise Exception(" visual without description: %s"%(sch))
     
-    card_count = 0
+    # card_count is the index of the current card in the deck
+    card_count = 0 # Type: int
     logger.debug("starting to draw the pdf output")
-    #now we walk the folder and collect all info then draw the card on pdf as per#
-    #the selected pdf output
+
+    """ GENERATE PDF """
+
+    #now we walk the folder and collect all info then draw the card on pdf as per
+    #the selected pdf output format
     for path, _, img_files in walk(rsc_img_folder):
-        # sch is schematics file name
+        #img_files = ["Capacitance Multiplier.png"]
         for img_fn in img_files: # Type: str
+            card_count+=1
             logger.debug(img_fn)
             #assert that the text file exists
             design_pattern = img_fn.lower().replace(".png","")
@@ -314,7 +328,7 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                     
             
             #assert that the image file exists
-            png_full_path = abspath(join(png_folder,sch.replace(".sch",".png")))
+            png_full_path = abspath(join(png_folder,img_fn))
             if not exists(png_full_path):
                 png_full_path = abspath(join(png_folder,sch.replace(".svg",".png")))
                 if not exists(png_full_path):
@@ -322,10 +336,12 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                 
             #select the background image based on the folder where the design pattern is located
             card_background_path = None
-            for suit in ["signal-chain","power","digital","transducers"]:
+            for suit in ["signal_chain","power","logic","transducer"]:
                 if edp_cat[design_pattern]==suit:
                     card_background_path = abspath(join(template_png_folder,"%s_front.png"%(suit)))
-            
+            if card_background_path is None:
+                logging.error(f"did not find existing suit for {img_fn}")
+                raise Exception("value Error for categories")
             #select the text description
             #with open(text_full_path,'r') as fb:
             #    design_pattern_description = fb.read()
@@ -358,10 +374,10 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
             else:
                 creating_deck = True
                 #make front
-                if (card_count == 0):
+
+                if (card_count == 1):
                     if cards_rendering=="single sheet":
                         sheet_n_card_width = int(total_cards_count**0.5)+1
-                        print(357,sheet_n_card_width)
                         sheet_n_card_height = int(total_cards_count/sheet_n_card_width )+1
                         card_deck_layout = (card_size[0]*sheet_n_card_width, card_size[1]*sheet_n_card_height)
                         card_output_path= abspath(join(pdf_folder,"card_deck_single_sheet.pdf"))                       
@@ -390,13 +406,14 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
 
                 
                 styled_title = electronics_title(card_title)
-                logging.info("adding card: %s"%(styled_title))
-                draw_card(c = card_canva,card_size=card_size, card_output_path=card_output_path,\
-                     card_background_path=card_background_path,\
-                          x0=x0_card,y0=y0_card,\
-                                schematics_image_path=png_full_path, card_title=styled_title,\
-                                design_pattern_description= design_pattern_description,
-                               design_pattern_index=str(card_count), design_pattern_count=str(total_cards_count))
+                logger.info(f"adding card: {styled_title} at {x0_card},{y0_card} from {png_full_path}")
+                print(f"sheet width {sheet_n_card_width} ")
+                draw_card(c = card_canva,card_size=card_size,\
+                    card_background_path=card_background_path,\
+                    x0=x0_card,y0=y0_card,\
+                    schematics_image_path=png_full_path, card_title=styled_title,\
+                    design_pattern_description= design_pattern_description,
+                    design_pattern_index=str(card_count), design_pattern_count=str(total_cards_count))
                 
 
                 if cards_rendering in ["single sheet","standard sheet" ]:
@@ -405,10 +422,20 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                     #call "showPage" which will add a new page of the pdf file
                     if (card_index % sheet_n_card_width == sheet_n_card_width-1) &  \
                         (int(( card_index  % (sheet_n_card_width*sheet_n_card_height)) /sheet_n_card_width) == sheet_n_card_height-1):
+                        print("adding page")
                         card_canva.showPage()
                 else:
                     card_canva.showPage()
                     card_canva.save()
+                if card_count==2000:
+                    draw_card(c = card_canva,card_size=card_size,\
+                    card_background_path=card_background_path,\
+                    x0=x0_card+card_size[0],y0=y0_card,\
+                    schematics_image_path=png_full_path, card_title=styled_title,\
+                    design_pattern_description= design_pattern_description,
+                    design_pattern_index=str(card_count), design_pattern_count=str(total_cards_count))
+                    card_canva.save()
+                    #exit()
                     
                 logging.debug("added %s"%(card_title))
     
@@ -440,16 +467,16 @@ def make_card_deck(**kwargs):
     make_card_deck(cards_rendering="one a sheet", naming_convention="named",card_deck_layout=None, NCARD=34)
     """
     #compile ressources
-    compile_rsc_to_png()
+    #compile_rsc_to_png()
     
     #link all ressources into final pdf
-    link_png_txt_to_pdf(cards_rendering=kwargs.get('pdf_layout'))
+    #link_png_txt_to_pdf(cards_rendering=kwargs.get('pdf_layout'))
     
     #make a single sheet with all cards:
     link_png_txt_to_pdf(cards_rendering="single sheet", NCARD=34)
     
     #make a pdf file with standard size paper sheet
-    link_png_txt_to_pdf(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
+    #link_png_txt_to_pdf(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
     #make one pdf file for each card
     link_png_txt_to_pdf(cards_rendering="one a sheet", naming_convention="named",card_deck_layout=None, NCARD=34)
 
@@ -457,7 +484,7 @@ def make_card_deck(**kwargs):
 if __name__=="__main__":
     # create logger with 'spam_application'
     logger = logging.getLogger('edp')
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.DEBUG) #DEBUG)INFO
     # create file handler which logs even debug messages
     fh = logging.FileHandler('edp_logs.log')
     fh.setLevel(logging.DEBUG)

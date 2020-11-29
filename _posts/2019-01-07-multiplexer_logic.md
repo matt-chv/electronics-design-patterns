@@ -1,6 +1,6 @@
 ---
 title: multiplexer logic
-categories: digital
+categories: logic
 layout: post
 function: multiplexer
 schematics: yes
