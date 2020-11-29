@@ -50,7 +50,6 @@ def get_svg_viewbox(mxml):
     for el in mxml.xpath("//*[@points]"):
         points = el.attrib['points']
         points = points.split(" ")
-        print(points, range(int(len(points)/2))) 
         for i in range(int(len(points)/2)):
             x, y = points[2*i], points[2*i+1]
             x, y = float(x.replace(",","")), float(y)
@@ -85,10 +84,8 @@ def sch2svg(sch_fp,svg_fp):
     if exists(svg_fp):
         if getmtime(sch_fp) < getmtime(svg_fp):
             sch_is_younger = False
-            print(svg_fp, "not pdated")
     
     if sch_is_younger:
-        print("calling plotkicad on",sch_fp)
         call([plotkicadsch_fp,"-f",sch_fp,"-l",lib_fp])
 
     if sch_is_younger:
@@ -105,7 +102,23 @@ def sch2svg(sch_fp,svg_fp):
         for element in mxml.xpath('//*[contains(text(),"Page:")]'):
             element.getparent().remove(element)
         
+        #text in RED and GREEN changed back to black
+        for el in mxml.xpath("//svg:text[@fill='#FF0000']",\
+            namespaces={'svg':'http://www.w3.org/2000/svg'}):
+            el.attrib["fill"]="#000000"
+        for element in mxml.xpath('//svg:text[@fill="#00FF00"]',\
+            namespaces={'svg':'http://www.w3.org/2000/svg'}):
+            element.attrib["fill"]="#000000"
+            
+        #polyline in dark red to black
+        for element in mxml.xpath('//svg:polyline[@stroke="#800000"]',\
+            namespaces={'svg':'http://www.w3.org/2000/svg'}):
+            element.attrib["stroke"]="#000000"
+        
         x_min, x_max, y_min, y_max = get_svg_viewbox(mxml)
+        
+        
+        
             
         for el in mxml.xpath("//*[@viewBox]"):
             width = (x_max - x_min) *1.2
