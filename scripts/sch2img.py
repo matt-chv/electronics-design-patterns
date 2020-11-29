@@ -6,9 +6,10 @@
 
 from lxml import etree
 from os.path import abspath, dirname, join, realpath
+from os import walk
 from subprocess import call
 
-plotkicadsch_fp = abspath(join(".","bin","plotkicadsch.exe"))
+plotkicadsch_fp = abspath(join("..","bin","plotkicadsch.exe"))
 
 def sch2svg(sch_fp,svg_fp):
     """ converts Kicad .sch (eeschema) to svg leveraging binaries from plotkicadsch
@@ -27,8 +28,14 @@ def sch2svg(sch_fp,svg_fp):
     ------
     N/A
     """
-
-    call([plotkicadsch_fp,"-f",sch_fp,"-l","test-cache.lib"])
+    lib_fp = sch_fp.replace(".sch","-cache.lib")
+    from os.path import exists
+    print(exists(lib_fp))
+    print(lib_fp)
+    if exists(lib_fp):
+        call([plotkicadsch_fp,"-f",sch_fp,"-l",lib_fp])
+    else:
+        print(lib_fp, "does not exists")
 
     with open(sch_fp.replace(".sch",".svg"),'r') as fp:
         fxml = fp.read()
@@ -68,7 +75,21 @@ def sch2svg(sch_fp,svg_fp):
     return(svg_fp)
 
 if __name__=="__main__":
+    for root, dir, files in walk("../rsc/schematics"):
+        for f in files:
+            if f[-4:]==".sch":
+                print(root)
+                sch_fp = abspath(join(root,f))
+                svg_fp = abspath(join("../out/svg",f.replace(".sch",".svg")))
+                print(sch_fp)
+                print(svg_fp)
+                svg_fp = sch2svg(sch_fp,svg_fp)
+                if svg_fp:
+                    print(svg_fp)
+
+    """
     local_folder = dirname(realpath(__file__))
     test_sch_fp = abspath(join(local_folder,"test.sch"))
     svg_fp = sch2svg(test_sch_fp)
     print("done, created: %s"%(svg_fp))
+    """
