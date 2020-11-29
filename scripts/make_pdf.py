@@ -1,12 +1,26 @@
+""" This module generates the pdf summary of all design patterns.
+
+Usage:
+python make_pdf.py 
+
+"""
+
+#import python modules
 import argparse
-from bs4 import BeautifulSoup
 import io
 import logging    
+from os.path import abspath, join, exists, pardir
+from os import walk, mkdir
+from re import split as re_split
+
+#import pip
+from bs4 import BeautifulSoup
+import frontmatter
 import markdown
 import matplotlib.pyplot as plt
 
-from os.path import abspath, join, exists
-from os import walk, mkdir
+#import own
+
 
 try:
     from mdx_mathjax import MathJaxExtension
@@ -26,15 +40,15 @@ from reportlab.lib.pagesizes import A4,A3,LETTER
 import subprocess
 from titlecase import titlecase
 
-current_dir = abspath(join(__file__,".."))
-rsc_folder = abspath(join(current_dir,"rsc"))
-rsc_img_folder = abspath(join(rsc_folder,"images"))
-rsc_txt_folder = abspath(join(rsc_folder,"txt"))
-template_png_folder = abspath(join(current_dir,"templates","png"))
+current_dir = abspath(join(__file__,pardir))
+rsc_folder = abspath(join(current_dir,"..","_posts"))
+rsc_img_folder = abspath(join(current_dir,"..","out","png"))
+rsc_txt_folder = abspath(join(current_dir,"..","_posts"))
+template_png_folder = abspath(join(current_dir,pardir,"templates","png"))
 
 
 txt_folder = "./txt"
-out_folder = abspath(join(current_dir,"out"))
+out_folder = abspath(join(current_dir,pardir,"out"))
 png_folder = abspath(join(out_folder,"png"))
 pdf_folder = abspath(join(out_folder,"pdf"))
 eq_folder = abspath(join(out_folder,"equations"))
@@ -42,9 +56,6 @@ eq_folder = abspath(join(out_folder,"equations"))
 #american card size
 us_card_size = (2.72 * inch, 3.7 *inch) #ratio = 1.36
 eu_card_size = card_size = (64*mm,89*mm)
-
-
-
 
 white = (255, 255, 255, 255)
 
@@ -159,7 +170,17 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
         
         md = markdown.Markdown(extensions=[MathJaxExtension()])
         
-        htm = md.convert(ptext)
+        #print(f"172--{ptext}--")
+        #ptext = "# hello \n hellow world"
+        try:
+            htm = md.convert(re_split("---\n|----\n",ptext)[0])
+        except:
+            print(f"error for {card_title}")
+            res = len(re_split("---\n|----\n",ptext))
+            print(f"len {res}")
+            print("first lines",ptext[0:20])
+            print(re_split("---\n|----\n",ptext))
+            raise
         soup = BeautifulSoup(htm,'html.parser')
         equations = [s.extract() for s in soup('script')]
         style_description = ParagraphStyle(name='card_description',
@@ -204,7 +225,8 @@ def draw_card(c, card_size, card_output_path, card_background_path, \
 #     c.save()
     logging.info(card_output_path, "done")
 
-def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,naming_convention="named", NCARD=52, card_size = (64*mm,89*mm)):
+def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
+                        naming_convention="named", NCARD=52, card_size = (64*mm,89*mm)):
     """ generates the pdf from:
     a. the different resources in the resource folder
     b. the associated text description (names must match 100%)
@@ -230,17 +252,44 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,nam
     None
     """
     #ratio = 1.39
+    logger = logging.getLogger('edp')
+    logger.debug("image folder: %s"%(rsc_img_folder))
+    logger.debug("text folder: %s"%(rsc_txt_folder))
     
     assert cards_rendering in ["single sheet", "standard sheet", "one a sheet","one a pdf"]
     creating_deck = False
     
     #count cards
     total_cards_count = 0
-    for path, _, sch_files in walk(rsc_img_folder):
-        for sch in sch_files:
+    
+    schematics_posts = {}
+    edp_cat = {}
+    edp_descr = {}
+    #we now proces the _posts folder to build a dic of posts 
+    #whose key is the title and value the path
+    #for this we leverage the python module frontmatter
+    for _, _, posts in walk(rsc_txt_folder):
+        for post in posts:
+            try:
+                post_text = None
+                post_text = frontmatter.load(join(rsc_txt_folder,post))
+                schematics_posts[post_text["title"].lower()]=join(rsc_txt_folder,post)
+                edp_cat[post_text["title"].lower()]=post_text["categories"]
+                edp_descr[post_text["title"].lower()]=post_text.content
+            except:
+                print(f"error for {post}")
+                print(f"post text: {post_text}")
+                raise
+    
+    #now we count how many images have a matching post with markdown description
+    #this `total_cards_count` is needed for the index of the card when we draw them
+    for path, _, img_files in walk(rsc_img_folder):
+        for sch in img_files:
             #assert that the text file exists
-            text_full_path = abspath(join(rsc_txt_folder,sch.replace(".sch",".md")))
-            if exists(text_full_path):
+            #text_full_path = abspath(join(rsc_txt_folder,sch.replace(".sch",".md")))
+            
+            png_file = sch
+            if png_file.replace(".png","").lower() in schematics_posts:
                 total_cards_count+=1
             else:
                 text_full_path = abspath(join(rsc_txt_folder,sch.replace(".svg",".md")))
@@ -250,15 +299,18 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,nam
                     raise Exception(" visual without description: %s"%(sch))
     
     card_count = 0
-    for path, _, sch_files in walk(rsc_img_folder):
-        for sch in sch_files:
+    logger.debug("starting to draw the pdf output")
+    #now we walk the folder and collect all info then draw the card on pdf as per#
+    #the selected pdf output
+    for path, _, img_files in walk(rsc_img_folder):
+        # sch is schematics file name
+        for img_fn in img_files: # Type: str
+            logger.debug(img_fn)
             #assert that the text file exists
-            text_full_path = abspath(join(rsc_txt_folder,sch.replace(".sch",".md")))
-            if not exists(text_full_path):
-                text_full_path = abspath(join(rsc_txt_folder,sch.replace(".svg",".md")))
-                if not exists(text_full_path):
-                    print("missing %s "%(text_full_path))
-                    raise Exception("missing")
+            design_pattern = img_fn.lower().replace(".png","")
+            if not design_pattern in schematics_posts:
+                print("missing text %s "%(design_pattern))
+                raise Exception("missing")
                     
             
             #assert that the image file exists
@@ -269,24 +321,29 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,nam
                     raise Exception("missing: %s for %s"%(png_full_path,sch))
                 
             #select the background image based on the folder where the design pattern is located
-            for suit in ["signal_chain","power","digital","transducers"]:
-                if path.find(suit)>=0:
+            card_background_path = None
+            for suit in ["signal-chain","power","digital","transducers"]:
+                if edp_cat[design_pattern]==suit:
                     card_background_path = abspath(join(template_png_folder,"%s_front.png"%(suit)))
             
             #select the text description
-            with open(text_full_path,'r') as fb:
-                design_pattern_description = fb.read()
-            card_title = sch.replace("_"," ").replace(".sch","").replace(".svg","").title()
+            #with open(text_full_path,'r') as fb:
+            #    design_pattern_description = fb.read()
+            #card_title = sch.replace("_"," ").replace(".sch","").replace(".svg","").title()
+            card_title = design_pattern
+            design_pattern_description = edp_descr[design_pattern]
 
             #if we have a single pdf file per card, create names for the front
-            if sch.find(".sch")>=0:
+            card_output_path = abspath(join(pdf_folder,card_title+"_front.pdf"))
+            """
+            if img_fn.find(".sch")>=0:
                 card_output_path = abspath(join(pdf_folder,sch.replace(".sch","_front.pdf")))
-            elif sch.find(".svg")>=0:
+            elif img_fn.find(".svg")>=0:
                 card_output_path = abspath(join(pdf_folder,sch.replace(".svg","_front.pdf")))
             else:
                 raise Exception("Unsupported visual format")
+            """
             
-            card_count+=1
             if naming_convention == "indexed":
                 #if the desired output is one pdf per card (front and back) then overwrite the card name
                 card_output_path=abspath(join(pdf_folder,"indexed","front","%s.pdf"%(card_count)))
@@ -301,9 +358,10 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,nam
             else:
                 creating_deck = True
                 #make front
-                if (card_count == 1):
+                if (card_count == 0):
                     if cards_rendering=="single sheet":
                         sheet_n_card_width = int(total_cards_count**0.5)+1
+                        print(357,sheet_n_card_width)
                         sheet_n_card_height = int(total_cards_count/sheet_n_card_width )+1
                         card_deck_layout = (card_size[0]*sheet_n_card_width, card_size[1]*sheet_n_card_height)
                         card_output_path= abspath(join(pdf_folder,"card_deck_single_sheet.pdf"))                       
@@ -333,7 +391,8 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,nam
                 
                 styled_title = electronics_title(card_title)
                 logging.info("adding card: %s"%(styled_title))
-                draw_card(c = card_canva,card_size=card_size, card_output_path=card_output_path, card_background_path=card_background_path,\
+                draw_card(c = card_canva,card_size=card_size, card_output_path=card_output_path,\
+                     card_background_path=card_background_path,\
                           x0=x0_card,y0=y0_card,\
                                 schematics_image_path=png_full_path, card_title=styled_title,\
                                 design_pattern_description= design_pattern_description,
@@ -358,6 +417,7 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,nam
     if (cards_rendering in ["single sheet","standard sheet" ]):
         if creating_deck:
             card_canva.save()
+            print(f"created deck at: {card_output_path}")
         else:
             logging.info("card deck already existing - not updated")
 
@@ -387,7 +447,7 @@ def make_card_deck(**kwargs):
     
     #make a single sheet with all cards:
     link_png_txt_to_pdf(cards_rendering="single sheet", NCARD=34)
-    exit()
+    
     #make a pdf file with standard size paper sheet
     link_png_txt_to_pdf(cards_rendering="standard sheet", naming_convention="named", NCARD=34)
     #make one pdf file for each card
@@ -423,7 +483,6 @@ if __name__=="__main__":
     parser.add_argument('--card_size', metavar='card size',default="eu",
                         choices=['eu','us'], type=str,\
                         help = 'sets the size of each card in the deck')
-
     
     if not exists(out_folder):
         mkdir(out_folder)
@@ -433,9 +492,6 @@ if __name__=="__main__":
         mkdir(pdf_folder)
     if not exists(eq_folder):
         mkdir(eq_folder)
-        
-    
-        
     args = parser.parse_args()
     make_card_deck(**vars(args))
 

@@ -16,6 +16,19 @@ pre-alpha
 jupyter notebook markdown is the goal in terms of support
 today only single new line equations are supported.
 
+## Install
+
+try first
+```
+python -m pip install -r requirements
+```
+
+if this fails because matplotlib cannot be installed
+
+download binaries from [pythonlibs](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
+
+you will also need to have an instlled LATEX for the equation conversion
+
 ## Build
 png conversion of either .sch or .svg are included to allow for easier pdf generation
 

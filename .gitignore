@@ -1,11 +1,25 @@
+.settings/*
+.vscode/*
+
+# Scripting the Jekyll ressources
+
 out/pdf/*
 out/equations/*
-venv/*
+out/card_deck_single_sheet_old.pdf
+
+rsc/eagle/*
+rsc/eagle_2_kicad/*
+
 scripts/venv/*
-.settings/*
+scripts/venv_edp/*
+scripts/out/*
+scripts/.vscode/*
+scripts/*.whl
+venv/*
 __pycache__/*
+
 vscode/*
-.vscode/*
+
 # Jekyll local debug
 _site/*
 .jekyll-cache

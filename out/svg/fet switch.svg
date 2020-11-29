@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5077.28 2065.48 727.1999999999999 1615.2" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
-  <text x="5350" y="2900" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2900)" fill="#FF0000">VCC</text>
-  <text x="5150" y="3000" font-size="50.000000" text-anchor="start" transform="rotate(0 5150 3000)" fill="#FF0000">GND</text>
-  <polyline points="5300, 2900 5400, 2900" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5300, 3000 5300, 2900" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5200, 3000 5300, 3000" stroke-width="10px" stroke="#800000"/>
-  <text x="5200" y="3100" font-size="50.000000" text-anchor="start" transform="rotate(0 5200 3100)" fill="#FF0000">IN</text>
-  <polyline points="5200, 3100 5350, 3100" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5650, 3300 5650, 3400" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5650, 2800 5650, 2900" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5650, 2400 5650, 2500" stroke-width="10px" stroke="#800000"/>
+  <text x="5350" y="2900" font-size="50.000000" text-anchor="start" transform="rotate(0 5350 2900)" fill="#000000">VCC</text>
+  <text x="5150" y="3000" font-size="50.000000" text-anchor="start" transform="rotate(0 5150 3000)" fill="#000000">GND</text>
+  <polyline points="5300, 2900 5400, 2900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5300, 3000 5300, 2900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5200, 3000 5300, 3000" stroke-width="10px" stroke="#000000"/>
+  <text x="5200" y="3100" font-size="50.000000" text-anchor="start" transform="rotate(0 5200 3100)" fill="#000000">IN</text>
+  <polyline points="5200, 3100 5350, 3100" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5650, 3300 5650, 3400" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5650, 2800 5650, 2900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5650, 2400 5650, 2500" stroke-width="10px" stroke="#000000"/>
   <text x="5720" y="2650" font-size="50.000000" text-anchor="start" transform="rotate(0 5720 2650)" fill="#000000">LOAD</text>
   <polyline points="5650, 2750 5650, 2800" stroke-width="10px" stroke="#000000"/>
   <polyline points="5650, 2550 5650, 2500" stroke-width="10px" stroke="#000000"/>

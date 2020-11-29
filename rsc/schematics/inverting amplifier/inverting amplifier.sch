@@ -1,0 +1,109 @@
+EESchema Schematic File Version 4
+LIBS:Log amplifier-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5E95F7F2
+P 4050 2000
+F 0 "#PWR?" H 4050 1750 50  0001 C CNN
+F 1 "GNDREF" H 4055 1827 50  0001 C CNN
+F 2 "" H 4050 2000 50  0001 C CNN
+F 3 "" H 4050 2000 50  0001 C CNN
+	1    4050 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2100 4750 2100
+$Comp
+L Amplifier_Current:BQ500100DCK U?
+U 1 1 5E95E29C
+P 4400 2100
+F 0 "U?" H 4744 2100 50  0001 L CNN
+F 1 "Amplifier" H 4400 1950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4400 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq500100.pdf" H 4400 2100 50  0001 C CNN
+	1    4400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EC950B1
+P 3650 2200
+F 0 "R1" V 3750 2200 50  0000 C CNN
+F 1 "R" V 3534 2200 50  0001 C CNN
+F 2 "" V 3580 2200 50  0001 C CNN
+F 3 "~" H 3650 2200 50  0001 C CNN
+	1    3650 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2200 3500 2200
+Text Label 3400 2200 0    50   ~ 0
+VIN
+Text Label 4950 2100 0    50   ~ 0
+VOUT
+Wire Wire Line
+	4050 2000 4100 2000
+$Comp
+L power:VCC #PWR?
+U 1 1 5EC96ED5
+P 4300 1800
+F 0 "#PWR?" H 4300 1650 50  0001 C CNN
+F 1 "VCC" H 4317 1973 50  0001 C CNN
+F 2 "" H 4300 1800 50  0001 C CNN
+F 3 "" H 4300 1800 50  0001 C CNN
+	1    4300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC97519
+P 4300 2400
+F 0 "#PWR?" H 4300 2150 50  0001 C CNN
+F 1 "GND" H 4305 2227 50  0001 C CNN
+F 2 "" H 4300 2400 50  0001 C CNN
+F 3 "" H 4300 2400 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EC97AC2
+P 4350 2600
+F 0 "R2" V 4450 2600 50  0000 C CNN
+F 1 "R" V 4234 2600 50  0001 C CNN
+F 2 "" V 4280 2600 50  0001 C CNN
+F 3 "~" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 2200 4050 2200
+Wire Wire Line
+	4050 2200 4050 2600
+Wire Wire Line
+	4050 2600 4200 2600
+Wire Wire Line
+	4500 2600 4750 2600
+Wire Wire Line
+	4750 2600 4750 2100
+Connection ~ 4050 2200
+Wire Wire Line
+	4050 2200 4100 2200
+Connection ~ 4750 2100
+Wire Wire Line
+	4750 2100 5100 2100
+$EndSCHEMATC
