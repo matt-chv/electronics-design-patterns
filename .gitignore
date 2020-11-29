@@ -47,6 +47,7 @@ scripts/.vscode/*
 scripts/*.whl
 venv/*
 __pycache__/*
+scripts/*.log
 
 vscode/*
 
