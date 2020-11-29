@@ -14,17 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-<<<<<<< HEAD
 L Device:C C1
 U 1 1 5ECBD53C
 P 900 2250
 F 0 "C1" V 648 2250 50  0000 C CNN
-=======
-L Device:C C?
-U 1 1 5ECBD53C
-P 900 2250
-F 0 "C?" V 648 2250 50  0000 C CNN
->>>>>>> 0af1974... closes #1 and closes #2
 F 1 "C" V 739 2250 50  0000 C CNN
 F 2 "" H 938 2100 50  0001 C CNN
 F 3 "~" H 900 2250 50  0001 C CNN
@@ -32,29 +25,21 @@ F 3 "~" H 900 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-<<<<<<< HEAD
 L Device:C C2
 U 1 1 5ECBD5D1
 P 1950 2250
 F 0 "C2" V 1698 2250 50  0000 C CNN
 F 1 "C" V 1789 2250 50  0001 C CNN
-=======
-L Device:C C?
-U 1 1 5ECBD5D1
-P 1950 2250
-F 0 "C?" V 1698 2250 50  0000 C CNN
-F 1 "C" V 1789 2250 50  0000 C CNN
->>>>>>> 0af1974... closes #1 and closes #2
 F 2 "" H 1988 2100 50  0001 C CNN
 F 3 "~" H 1950 2250 50  0001 C CNN
 	1    1950 2250
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_NPN_CBE Q?
+L Device:Q_NPN_CBE Q1
 U 1 1 5ECBEC44
 P 1300 2350
-F 0 "Q?" V 1537 2350 50  0001 C CNN
+F 0 "Q1" V 1537 2350 50  0000 C CNN
 F 1 "Q_NPN_CBE" V 1537 2350 50  0001 C CNN
 F 2 "" H 1500 2450 50  0001 C CNN
 F 3 "~" H 1300 2350 50  0001 C CNN
@@ -108,21 +93,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5ECC0E77
-<<<<<<< HEAD
 P 750 2950
 F 0 "#PWR?" H 750 2700 50  0001 C CNN
 F 1 "GND" H 755 2777 50  0000 C CNN
 F 2 "" H 750 2950 50  0001 C CNN
 F 3 "" H 750 2950 50  0001 C CNN
 	1    750  2950
-=======
-P 600 2950
-F 0 "#PWR?" H 600 2700 50  0001 C CNN
-F 1 "GND" H 605 2777 50  0000 C CNN
-F 2 "" H 600 2950 50  0001 C CNN
-F 3 "" H 600 2950 50  0001 C CNN
-	1    600  2950
->>>>>>> 0af1974... closes #1 and closes #2
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -152,21 +128,17 @@ L Device:R R16
 U 1 1 5ECC229B
 P 1750 2750
 F 0 "R16" H 1680 2704 50  0000 R CNN
-<<<<<<< HEAD
 F 1 "R" H 1680 2795 50  0001 R CNN
-=======
-F 1 "R" H 1680 2795 50  0000 R CNN
->>>>>>> 0af1974... closes #1 and closes #2
 F 2 "" V 1680 2750 50  0001 C CNN
 F 3 "~" H 1750 2750 50  0001 C CNN
 	1    1750 2750
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_NPN_CBE Q?
+L Device:Q_NPN_CBE Q2
 U 1 1 5ECC2D1A
 P 2350 2350
-F 0 "Q?" V 2587 2350 50  0001 C CNN
+F 0 "Q2" V 2587 2350 50  0000 C CNN
 F 1 "Q_NPN_CBE" V 2587 2350 50  0001 C CNN
 F 2 "" H 2550 2450 50  0001 C CNN
 F 3 "~" H 2350 2350 50  0001 C CNN
@@ -178,11 +150,7 @@ L Device:R R17
 U 1 1 5ECC39B2
 P 2350 2750
 F 0 "R17" H 2280 2704 50  0000 R CNN
-<<<<<<< HEAD
 F 1 "R" H 2280 2795 50  0001 R CNN
-=======
-F 1 "R" H 2280 2795 50  0000 R CNN
->>>>>>> 0af1974... closes #1 and closes #2
 F 2 "" V 2280 2750 50  0001 C CNN
 F 3 "~" H 2350 2750 50  0001 C CNN
 	1    2350 2750
@@ -203,16 +171,10 @@ Connection ~ 2550 2250
 Wire Wire Line
 	1750 2600 1750 2250
 Wire Wire Line
-<<<<<<< HEAD
-=======
-	1750 2250 1800 2250
-Wire Wire Line
->>>>>>> 0af1974... closes #1 and closes #2
 	1750 2900 1750 2950
 $Comp
 L Device:R RM
 U 1 1 5ECD24F3
-<<<<<<< HEAD
 P 750 2750
 F 0 "RM" H 680 2750 50  0000 R CNN
 F 1 "R" H 680 2795 50  0001 R CNN
@@ -225,22 +187,6 @@ Wire Wire Line
 	750  2600 750  2250
 Wire Wire Line
 	750  2900 750  2950
-=======
-P 600 2750
-F 0 "RM" H 530 2750 50  0000 R CNN
-F 1 "R" H 530 2795 50  0001 R CNN
-F 2 "" V 530 2750 50  0001 C CNN
-F 3 "~" H 600 2750 50  0001 C CNN
-	1    600  2750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	600  2600 600  2250
-Wire Wire Line
-	600  2250 750  2250
-Wire Wire Line
-	600  2900 600  2950
->>>>>>> 0af1974... closes #1 and closes #2
 Wire Wire Line
 	1050 2000 1050 2250
 Wire Wire Line
@@ -261,12 +207,6 @@ F 3 "~" H 2150 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 2000 2150 2250
-<<<<<<< HEAD
-=======
-Connection ~ 1800 2250
-Wire Wire Line
-	1800 2250 1850 2250
->>>>>>> 0af1974... closes #1 and closes #2
 Wire Wire Line
 	2100 2250 2150 2250
 Connection ~ 2150 2250
@@ -284,7 +224,6 @@ Wire Wire Line
 Connection ~ 1650 2250
 Connection ~ 1750 2250
 $Comp
-<<<<<<< HEAD
 L Device:C C15
 U 1 1 5ED10000
 P 3850 2250
@@ -293,62 +232,33 @@ F 1 "C" V 3689 2250 50  0000 C CNN
 F 2 "" H 3888 2100 50  0001 C CNN
 F 3 "~" H 3850 2250 50  0001 C CNN
 	1    3850 2250
-=======
-L Device:C C?
-U 1 1 5ED10000
-P 3500 2250
-F 0 "C?" V 3248 2250 50  0000 C CNN
-F 1 "C" V 3339 2250 50  0000 C CNN
-F 2 "" H 3538 2100 50  0001 C CNN
-F 3 "~" H 3500 2250 50  0001 C CNN
-	1    3500 2250
->>>>>>> 0af1974... closes #1 and closes #2
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5ED10006
-<<<<<<< HEAD
 P 3450 2950
 F 0 "#PWR?" H 3450 2700 50  0001 C CNN
 F 1 "GND" H 3455 2777 50  0000 C CNN
 F 2 "" H 3450 2950 50  0001 C CNN
 F 3 "" H 3450 2950 50  0001 C CNN
 	1    3450 2950
-=======
-P 3100 2950
-F 0 "#PWR?" H 3100 2700 50  0001 C CNN
-F 1 "GND" H 3105 2777 50  0000 C CNN
-F 2 "" H 3100 2950 50  0001 C CNN
-F 3 "" H 3100 2950 50  0001 C CNN
-	1    3100 2950
->>>>>>> 0af1974... closes #1 and closes #2
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_CBE Q?
 U 1 1 5ED1000C
-<<<<<<< HEAD
 P 3450 2350
 F 0 "Q?" V 3687 2350 50  0001 C CNN
 F 1 "Q_NPN_CBE" V 3687 2350 50  0001 C CNN
 F 2 "" H 3650 2450 50  0001 C CNN
 F 3 "~" H 3450 2350 50  0001 C CNN
 	1    3450 2350
-=======
-P 3100 2350
-F 0 "Q?" V 3337 2350 50  0001 C CNN
-F 1 "Q_NPN_CBE" V 3337 2350 50  0001 C CNN
-F 2 "" H 3300 2450 50  0001 C CNN
-F 3 "~" H 3100 2350 50  0001 C CNN
-	1    3100 2350
->>>>>>> 0af1974... closes #1 and closes #2
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R29
 U 1 1 5ED10012
-<<<<<<< HEAD
 P 3450 2750
 F 0 "R29" H 3380 2704 50  0000 R CNN
 F 1 "R" H 3380 2795 50  0001 R CNN
@@ -394,79 +304,22 @@ F 1 "GND" H 4555 2777 50  0000 C CNN
 F 2 "" H 4550 2950 50  0001 C CNN
 F 3 "" H 4550 2950 50  0001 C CNN
 	1    4550 2950
-=======
-P 3100 2750
-F 0 "R29" H 3030 2704 50  0000 R CNN
-F 1 "R" H 3030 2795 50  0000 R CNN
-F 2 "" V 3030 2750 50  0001 C CNN
-F 3 "~" H 3100 2750 50  0001 C CNN
-	1    3100 2750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3100 2900 3100 2950
-Wire Wire Line
-	3100 2550 3100 2600
-Wire Wire Line
-	3300 2250 3350 2250
-Wire Wire Line
-	3100 2550 3300 2550
-Wire Wire Line
-	3300 2550 3300 2250
-Connection ~ 3100 2550
-Connection ~ 3300 2250
-$Comp
-L Device:R R14
-U 1 1 5ED1001F
-P 2900 1850
-F 0 "R14" H 2830 1850 50  0000 R CNN
-F 1 "R" H 2830 1895 50  0001 R CNN
-F 2 "" V 2830 1850 50  0001 C CNN
-F 3 "~" H 2900 1850 50  0001 C CNN
-	1    2900 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2900 2000 2900 2250
-Wire Wire Line
-	2850 2250 2900 2250
-Connection ~ 2900 2250
-$Comp
-L power:GND #PWR?
-U 1 1 5ED140CF
-P 4200 2950
-F 0 "#PWR?" H 4200 2700 50  0001 C CNN
-F 1 "GND" H 4205 2777 50  0000 C CNN
-F 2 "" H 4200 2950 50  0001 C CNN
-F 3 "" H 4200 2950 50  0001 C CNN
-	1    4200 2950
->>>>>>> 0af1974... closes #1 and closes #2
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_CBE Q?
 U 1 1 5ED140D5
-<<<<<<< HEAD
 P 4250 2350
 F 0 "Q?" V 4487 2350 50  0001 C CNN
 F 1 "Q_NPN_CBE" V 4487 2350 50  0001 C CNN
 F 2 "" H 4450 2450 50  0001 C CNN
 F 3 "~" H 4250 2350 50  0001 C CNN
 	1    4250 2350
-=======
-P 3900 2350
-F 0 "Q?" V 4137 2350 50  0001 C CNN
-F 1 "Q_NPN_CBE" V 4137 2350 50  0001 C CNN
-F 2 "" H 4100 2450 50  0001 C CNN
-F 3 "~" H 3900 2350 50  0001 C CNN
-	1    3900 2350
->>>>>>> 0af1974... closes #1 and closes #2
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R RL
 U 1 1 5ED140DB
-<<<<<<< HEAD
 P 4550 2750
 F 0 "RL" H 4480 2704 50  0000 R CNN
 F 1 "R" H 4480 2795 50  0001 R CNN
@@ -502,43 +355,6 @@ Wire Wire Line
 	4550 2600 4550 2250
 Wire Wire Line
 	4450 2250 4550 2250
-=======
-P 4200 2750
-F 0 "RL" H 4130 2704 50  0000 R CNN
-F 1 "R" H 4130 2795 50  0000 R CNN
-F 2 "" V 4130 2750 50  0001 C CNN
-F 3 "~" H 4200 2750 50  0001 C CNN
-	1    4200 2750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3900 2550 4100 2550
-Wire Wire Line
-	4100 2550 4100 2250
-Connection ~ 4100 2250
-$Comp
-L Device:R R15
-U 1 1 5ED140E8
-P 3700 1850
-F 0 "R15" H 3630 1850 50  0000 R CNN
-F 1 "R" H 3630 1895 50  0001 R CNN
-F 2 "" V 3630 1850 50  0001 C CNN
-F 3 "~" H 3700 1850 50  0001 C CNN
-	1    3700 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3700 2000 3700 2250
-Wire Wire Line
-	3650 2250 3700 2250
-Connection ~ 3700 2250
-Wire Wire Line
-	4200 2950 4200 2900
-Wire Wire Line
-	4200 2600 4200 2250
-Wire Wire Line
-	4100 2250 4200 2250
->>>>>>> 0af1974... closes #1 and closes #2
 Wire Wire Line
 	1650 2550 1650 3000
 Wire Wire Line
@@ -549,15 +365,9 @@ Wire Wire Line
 Wire Wire Line
 	1300 3000 1400 3000
 Wire Wire Line
-<<<<<<< HEAD
 	3000 2250 3050 2250
 Wire Wire Line
 	3100 2250 3150 2250
-=======
-	2650 2250 2700 2250
-Wire Wire Line
-	2750 2250 2800 2250
->>>>>>> 0af1974... closes #1 and closes #2
 $Comp
 L power:VCC #PWR?
 U 1 1 5ED33518
@@ -572,27 +382,17 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5ED33DF9
-<<<<<<< HEAD
 P 3250 1600
 F 0 "#PWR?" H 3250 1450 50  0001 C CNN
 F 1 "VCC" H 3267 1773 50  0000 C CNN
 F 2 "" H 3250 1600 50  0001 C CNN
 F 3 "" H 3250 1600 50  0001 C CNN
 	1    3250 1600
-=======
-P 2900 1600
-F 0 "#PWR?" H 2900 1450 50  0001 C CNN
-F 1 "VCC" H 2917 1773 50  0000 C CNN
-F 2 "" H 2900 1600 50  0001 C CNN
-F 3 "" H 2900 1600 50  0001 C CNN
-	1    2900 1600
->>>>>>> 0af1974... closes #1 and closes #2
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5ED347C9
-<<<<<<< HEAD
 P 4050 1600
 F 0 "#PWR?" H 4050 1450 50  0001 C CNN
 F 1 "VCC" H 4067 1773 50  0000 C CNN
@@ -632,20 +432,4 @@ Wire Wire Line
 	1500 3100 1600 3100
 Wire Wire Line
 	1750 2250 1850 2250
-=======
-P 3700 1600
-F 0 "#PWR?" H 3700 1450 50  0001 C CNN
-F 1 "VCC" H 3717 1773 50  0000 C CNN
-F 2 "" H 3700 1600 50  0001 C CNN
-F 3 "" H 3700 1600 50  0001 C CNN
-	1    3700 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 1600 3700 1700
-Wire Wire Line
-	2150 1600 2150 1700
-Wire Wire Line
-	2900 1600 2900 1700
->>>>>>> 0af1974... closes #1 and closes #2
 $EndSCHEMATC
