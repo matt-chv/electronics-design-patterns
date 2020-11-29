@@ -17,11 +17,20 @@ scripts/out/*
 scripts/.vscode/*
 scripts/*.whl
 venv/*
+<<<<<<< HEAD
+=======
+scripts/venv/*
+.settings/*
+>>>>>>> 087f5d1... updates
 __pycache__/*
 scripts/*.log
 
 vscode/*
+<<<<<<< HEAD
 
+=======
+.vscode/*
+>>>>>>> 087f5d1... updates
 # Jekyll local debug
 _site/*
 .jekyll-cache
