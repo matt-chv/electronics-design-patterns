@@ -3,10 +3,14 @@ description: taxonomy, illustration, explanation of most reusable design concept
 author: matt-chv
 github: https://github.com/matt-chv
 <<<<<<< HEAD
+<<<<<<< HEAD
 about: Design is as much reuse as to know when to know when not to reuse. Which means to start we need to know what can be reused. This blog intends to provide first a taxonomy of existings design patterns, illustrate them in modern way (SVG, png, pdf) while using open source SW (KiCad, pySpice, ...) so everyone can build on top of it.
 =======
 about: robotics is more than AI, robotics needs AI embedded in the system (fed from real time sensors data and planning and adjusting in real-time its actions).
 >>>>>>> 641cae8... moving to new jekyll template
+=======
+about: Design is as much reuse as to know when to know when not to reuse. Which means to start we need to know what can be reused. This blog intends to provide first a taxonomy of existings design patterns, illustrate them in modern way (SVG, png, pdf) while using open source SW (KiCad, pySpice, ...) so everyone can build on top of it.
+>>>>>>> 869cecc... misc changes
 disqus_shortname: disqus_e5sxXi13p5
 google_analytics: UA-XXXXXXXX-Y
 avatar_url: /electronics-design-patterns/static/img/site_logo.png
