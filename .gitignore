@@ -2,7 +2,20 @@ out/pdf/*
 out/png/*
 out/equations/*
 venv/*
+scripts/venv/*
 .settings/*
 __pycache__/*
 vscode/*
 .vscode/*
+# Jekyll local debug
+_site/*
+.jekyll-cache
+# Ruby
+.bundle/
+.byebug_history
+.ruby-gemset
+.ruby-version
+*.gem
+Gemfile.lock
+Gemfile
+
