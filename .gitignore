@@ -5,9 +5,13 @@
 
 out/pdf/*
 <<<<<<< HEAD
+<<<<<<< HEAD
 out/pdf_archive/*
 =======
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+out/pdf_archive/*
+>>>>>>> b41b708... adding svg and png
 out/equations/*
 out/card_deck_single_sheet_old.pdf
 
