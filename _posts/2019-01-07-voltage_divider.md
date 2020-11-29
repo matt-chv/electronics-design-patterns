@@ -2,6 +2,7 @@
 title: voltage divider
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 categories: signal_chain
 layout: post
 function: filter
@@ -13,6 +14,9 @@ function: filter
 >>>>>>> 4c8e9a7... update to jekyll blog template
 =======
 categories: passive
+=======
+categories: signal_chain
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
 layout: post
 function: filter
 schematics: yes

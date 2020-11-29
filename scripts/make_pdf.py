@@ -68,7 +68,7 @@ def latex_to_img(tex,save_path):
         plt.rc('text', usetex=True)
         plt.rc('font', family='serif')
         plt.axis('off')
-        plt.text(0.05, 0.5, f'${tex}$', size=40)
+        plt.text(0.05, 0.5, f'${tex}$', size=20)
         plt.savefig(buf, format='png')
         plt.close()
     
@@ -269,10 +269,15 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
     #count cards
     total_cards_count = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     # sheet_n_card_width is the number of card side by side on one sheet
     sheet_n_card_width = 1 # Type: int
 =======
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
+=======
+    # sheet_n_card_width is the number of card side by side on one sheet
+    sheet_n_card_width = 1 # Type: int
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
     
     schematics_posts = {}
     edp_cat = {}
@@ -311,6 +316,7 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                     raise Exception(" visual without description: %s"%(sch))
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     # card_count is the index of the current card in the deck
     card_count = 0 # Type: int
     logger.debug("starting to draw the pdf output")
@@ -325,13 +331,24 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
             card_count+=1
 =======
     card_count = 0
+=======
+    # card_count is the index of the current card in the deck
+    card_count = 0 # Type: int
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
     logger.debug("starting to draw the pdf output")
-    #now we walk the folder and collect all info then draw the card on pdf as per#
-    #the selected pdf output
+
+    """ GENERATE PDF """
+
+    #now we walk the folder and collect all info then draw the card on pdf as per
+    #the selected pdf output format
     for path, _, img_files in walk(rsc_img_folder):
-        # sch is schematics file name
+        #img_files = ["Capacitance Multiplier.png"]
         for img_fn in img_files: # Type: str
+<<<<<<< HEAD
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
+=======
+            card_count+=1
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
             logger.debug(img_fn)
             #assert that the text file exists
             design_pattern = img_fn.lower().replace(".png","")
@@ -350,10 +367,14 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
             #select the background image based on the folder where the design pattern is located
             card_background_path = None
 <<<<<<< HEAD
+<<<<<<< HEAD
             for suit in ["signal_chain","power","logic","transducer"]:
 =======
             for suit in ["signal-chain","power","digital","transducers"]:
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
+=======
+            for suit in ["signal_chain","power","logic","transducer"]:
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
                 if edp_cat[design_pattern]==suit:
                     card_background_path = abspath(join(template_png_folder,"%s_front.png"%(suit)))
             if card_background_path is None:
@@ -392,14 +413,18 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                 creating_deck = True
                 #make front
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 if (card_count == 1):
 =======
                 if (card_count == 0):
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
+=======
+
+                if (card_count == 1):
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
                     if cards_rendering=="single sheet":
                         sheet_n_card_width = int(total_cards_count**0.5)+1
-                        print(357,sheet_n_card_width)
                         sheet_n_card_height = int(total_cards_count/sheet_n_card_width )+1
                         card_deck_layout = (card_size[0]*sheet_n_card_width, card_size[1]*sheet_n_card_height)
                         card_output_path= abspath(join(pdf_folder,"card_deck_single_sheet.pdf"))                       
@@ -429,6 +454,9 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                 
                 styled_title = electronics_title(card_title)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
                 logger.info(f"adding card: {styled_title} at {x0_card},{y0_card} from {png_full_path}")
                 print(f"sheet width {sheet_n_card_width} ")
                 draw_card(c = card_canva,card_size=card_size,\
@@ -437,6 +465,7 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                     schematics_image_path=png_full_path, card_title=styled_title,\
                     design_pattern_description= design_pattern_description,
                     design_pattern_index=str(card_count), design_pattern_count=str(total_cards_count))
+<<<<<<< HEAD
 =======
                 logging.info("adding card: %s"%(styled_title))
                 draw_card(c = card_canva,card_size=card_size, card_output_path=card_output_path,\
@@ -446,6 +475,8 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
                                 design_pattern_description= design_pattern_description,
                                design_pattern_index=str(card_count), design_pattern_count=str(total_cards_count))
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
+=======
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
                 
 
                 if cards_rendering in ["single sheet","standard sheet" ]:

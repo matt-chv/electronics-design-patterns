@@ -1,10 +1,14 @@
 ---
 title: multiplexer logic
+<<<<<<< HEAD
 <<<<<<< HEAD:_posts/2019-01-07-multiplexer_logic.md
 categories: logic
 =======
 categories: digital
 >>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation:rsc/txt/multiplexer_logic.md
+=======
+categories: logic
+>>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
 layout: post
 function: multiplexer
 schematics: yes
