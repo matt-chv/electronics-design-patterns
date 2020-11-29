@@ -1,0 +1,92 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# linear_current_regulator-eagle-import_+9V
+#
+DEF linear_current_regulator-eagle-import_+9V #SUPPLY 0 40 Y Y 1 L P
+F0 "#SUPPLY" 0 0 50 H I C CNN
+F1 "linear_current_regulator-eagle-import_+9V" -75 125 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 50 50 1 0 10 N
+P 2 1 0 0 -25 50 25 50 N
+P 2 1 0 0 0 25 0 75 N
+X +9V 1 0 -100 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# linear_current_regulator-eagle-import_CAP0402-CAP
+#
+DEF linear_current_regulator-eagle-import_CAP0402-CAP C 0 40 Y Y 1 L N
+F0 "C" 60 115 59 H V L BNN
+F1 "linear_current_regulator-eagle-import_CAP0402-CAP" 60 -85 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -80 20 80 40 1 0 0 F
+S -80 60 80 80 1 0 0 F
+P 2 1 0 0 0 0 0 20 N
+P 2 1 0 0 0 100 0 80 N
+X 1 1 0 200 100 D 0 0 1 0 P
+X 2 2 0 -100 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# linear_current_regulator-eagle-import_GND
+#
+DEF linear_current_regulator-eagle-import_GND #GND 0 40 Y Y 1 L P
+F0 "#GND" 0 0 50 H I C CNN
+F1 "linear_current_regulator-eagle-import_GND" -100 -100 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -75 0 75 0 N
+X GND 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# linear_current_regulator-eagle-import_RESISTOR0402-RES
+#
+DEF linear_current_regulator-eagle-import_RESISTOR0402-RES R 0 40 Y Y 1 L N
+F0 "R" -150 59 59 H V L BNN
+F1 "linear_current_regulator-eagle-import_RESISTOR0402-RES" -150 -130 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 0 -85 40 N
+P 2 1 0 0 -85 40 -60 -40 N
+P 2 1 0 0 -60 -40 -35 40 N
+P 2 1 0 0 -35 40 -10 -40 N
+P 2 1 0 0 -10 -40 15 40 N
+P 2 1 0 0 15 40 40 -40 N
+P 2 1 0 0 40 -40 65 40 N
+P 2 1 0 0 65 40 90 -40 N
+P 2 1 0 0 90 -40 100 0 N
+X 1 1 -200 0 100 R 0 0 1 0 P
+X 2 2 200 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# linear_current_regulator-eagle-import_V_REG_317DPACK
+#
+DEF linear_current_regulator-eagle-import_V_REG_317DPACK U 0 40 Y Y 1 L N
+F0 "U" 100 -300 59 H V L BNN
+F1 "linear_current_regulator-eagle-import_V_REG_317DPACK" 100 -400 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -80 -170 51 0 1 0 ADJ Normal 0 L B
+T 0 -175 -25 51 0 1 0 IN Normal 0 L B
+T 0 25 -25 51 0 1 0 OUT Normal 0 L B
+P 2 1 0 0 -200 -200 200 -200 N
+P 2 1 0 0 -200 100 -200 -200 N
+P 2 1 0 0 200 -200 200 100 N
+P 2 1 0 0 200 100 -200 100 N
+X ADJ 1 0 -300 100 U 0 0 1 0 I
+X IN 3 -300 0 100 R 0 0 1 0 I
+X OUT 4 300 0 100 L 0 0 1 0 O
+ENDDRAW
+ENDDEF
+#
+#End Library

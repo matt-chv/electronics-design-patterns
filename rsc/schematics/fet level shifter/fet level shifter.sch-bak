@@ -1,0 +1,102 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5600 3900 5500 3900
+Wire Wire Line
+	5500 3900 5300 3900
+Wire Wire Line
+	5500 3800 5500 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3200 5500 3300
+Wire Wire Line
+	5500 3300 5500 3400
+Wire Wire Line
+	5800 3600 5800 3300
+Wire Wire Line
+	5800 3300 5500 3300
+Connection ~ 5500 3300
+Wire Wire Line
+	6100 3200 6100 3400
+Wire Wire Line
+	6000 3900 6100 3900
+Wire Wire Line
+	6100 3900 6300 3900
+Wire Wire Line
+	6100 3800 6100 3900
+Connection ~ 6100 3900
+$Comp
+L fet_level_shifter-eagle-import:MOSFET-NCHANNEL2N7000 Q1
+U 1 1 22BC07EB
+P 5800 3900
+F 0 "Q1" H 6000 4000 59  0000 L BNN
+F 1 "MOSFET-NCHANNEL2N7000" H 6000 3900 59  0000 L BNN
+F 2 "fet_level_shifter:TO-92" H 5800 3900 50  0001 C CNN
+F 3 "" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L fet_level_shifter-eagle-import:+5V #P+1
+U 1 1 6A081B6E
+P 6100 3100
+F 0 "#P+1" H 6100 3100 50  0001 C CNN
+F 1 "+5V" V 6000 2900 59  0000 L BNN
+F 2 "" H 6100 3100 50  0001 C CNN
+F 3 "" H 6100 3100 50  0001 C CNN
+	1    6100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L fet_level_shifter-eagle-import:+3V3 #+3V1
+U 1 1 7D977A11
+P 5500 3100
+F 0 "#+3V1" H 5500 3100 50  0001 C CNN
+F 1 "+3V3" V 5400 2900 59  0000 L BNN
+F 2 "" H 5500 3100 50  0001 C CNN
+F 3 "" H 5500 3100 50  0001 C CNN
+	1    5500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L fet_level_shifter-eagle-import:RESISTOR0402-RES R1
+U 1 1 54673866
+P 5500 3600
+F 0 "R1" H 5350 3659 59  0000 L BNN
+F 1 "RESISTOR0402-RES" H 5350 3470 59  0000 L BNN
+F 2 "fet_level_shifter:0402-RES" H 5500 3600 50  0001 C CNN
+F 3 "" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L fet_level_shifter-eagle-import:RESISTOR0402-RES R2
+U 1 1 855FDFDB
+P 6100 3600
+F 0 "R2" H 5950 3659 59  0000 L BNN
+F 1 "RESISTOR0402-RES" H 5950 3470 59  0000 L BNN
+F 2 "fet_level_shifter:0402-RES" H 6100 3600 50  0001 C CNN
+F 3 "" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	0    -1   -1   0   
+$EndComp
+Text Notes 5820 3740 0    59   ~ 0
+G
+Text Notes 5620 3880 0    59   ~ 0
+S
+Text Notes 5920 3880 0    59   ~ 0
+D
+$EndSCHEMATC

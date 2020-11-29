@@ -1,0 +1,73 @@
+EESchema Schematic File Version 4
+LIBS:nor_based_sr_latch-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6200 3400 6500 3400
+Wire Wire Line
+	5200 4500 5200 4200
+Wire Wire Line
+	5200 4200 5600 3800
+Wire Wire Line
+	5600 3800 6200 3800
+Wire Wire Line
+	6200 3800 6200 3400
+Connection ~ 6200 3400
+Text Label 6400 3400 0    50   ~ 0
+Q
+Wire Wire Line
+	6200 4600 6500 4600
+Wire Wire Line
+	5200 3500 5200 3800
+Wire Wire Line
+	5200 3800 5600 4200
+Wire Wire Line
+	5600 4200 6200 4200
+Wire Wire Line
+	6200 4200 6200 4600
+Connection ~ 6200 4600
+Text Label 6350 4600 0    50   ~ 0
+/Q
+Wire Wire Line
+	5200 3300 5000 3300
+Text Label 5000 3300 0    50   ~ 0
+R
+Wire Wire Line
+	5200 4700 5000 4700
+Text Label 5000 4700 0    50   ~ 0
+S
+$Comp
+L nor_based_sr_latch-rescue:7402D-sr_latch-eagle-import IC1
+U 1 1 22F7723E
+P 5700 3400
+F 0 "IC1" H 5675 3375 59  0000 L BNN
+F 1 "7402D" H 5400 3100 59  0001 L BNN
+F 2 "sr_latch:SO14" H 5700 3400 50  0001 C CNN
+F 3 "" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L nor_based_sr_latch-rescue:7402D-sr_latch-eagle-import IC1
+U 2 1 22F77232
+P 5700 4600
+F 0 "IC1" H 5675 4575 59  0000 L BNN
+F 1 "7402D" H 5400 4300 59  0001 L BNN
+F 2 "sr_latch:SO14" H 5700 4600 50  0001 C CNN
+F 3 "" H 5700 4600 50  0001 C CNN
+	2    5700 4600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

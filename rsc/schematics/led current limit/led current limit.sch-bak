@@ -1,0 +1,66 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5900 3900 5900 4000
+Wire Wire Line
+	5900 4600 5900 4700
+Wire Wire Line
+	5900 3400 5900 3500
+$Comp
+L led_current_limit-eagle-import:APA3010SF4C D1
+U 1 1 C78C3FBD
+P 5900 4300
+F 0 "D1" H 5600 4100 59  0000 L BNN
+F 1 "APA3010SF4C" H 5600 4000 59  0000 L BNN
+F 2 "led_current_limit:APA3010SF4C" H 5900 4300 50  0001 C CNN
+F 3 "" H 5900 4300 50  0001 C CNN
+	1    5900 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L led_current_limit-eagle-import:RESISTOR0402-RES R1
+U 1 1 54673866
+P 5900 3700
+F 0 "R1" H 5750 3759 59  0000 L BNN
+F 1 "RESISTOR0402-RES" H 5750 3570 59  0000 L BNN
+F 2 "led_current_limit:0402-RES" H 5900 3700 50  0001 C CNN
+F 3 "" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L led_current_limit-eagle-import:VCC #SUPPLY1
+U 1 1 F54A36B8
+P 5900 3400
+F 0 "#SUPPLY1" H 5900 3400 50  0001 C CNN
+F 1 "VCC" H 5860 3540 59  0000 L BNN
+F 2 "" H 5900 3400 50  0001 C CNN
+F 3 "" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_current_limit-eagle-import:GND #GND1
+U 1 1 8DA2BB24
+P 5900 4800
+F 0 "#GND1" H 5900 4800 50  0001 C CNN
+F 1 "GND" H 5800 4700 59  0000 L BNN
+F 2 "" H 5900 4800 50  0001 C CNN
+F 3 "" H 5900 4800 50  0001 C CNN
+	1    5900 4800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+LIBS:voltage doubler-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D1
+U 1 1 5FC0D8AC
+P 4750 3600
+F 0 "D1" H 4750 3476 50  0000 C CNN
+F 1 "D" H 4750 3475 50  0001 C CNN
+F 2 "" H 4750 3600 50  0001 C CNN
+F 3 "~" H 4750 3600 50  0001 C CNN
+	1    4750 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5FC0DCC4
+P 5150 3600
+F 0 "D2" H 5150 3476 50  0000 C CNN
+F 1 "D" H 5150 3475 50  0001 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "~" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5FC0DEFF
+P 5950 3600
+F 0 "D4" H 5950 3476 50  0000 C CNN
+F 1 "D" H 5950 3475 50  0001 C CNN
+F 2 "" H 5950 3600 50  0001 C CNN
+F 3 "~" H 5950 3600 50  0001 C CNN
+	1    5950 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FC0E355
+P 4950 3800
+F 0 "C1" H 5065 3800 50  0000 L CNN
+F 1 "C" H 5065 3755 50  0001 L CNN
+F 2 "" H 4988 3650 50  0001 C CNN
+F 3 "~" H 4950 3800 50  0001 C CNN
+	1    4950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FC0ED00
+P 5350 3800
+F 0 "C2" H 5465 3800 50  0000 L CNN
+F 1 "C" H 5465 3755 50  0001 L CNN
+F 2 "" H 5388 3650 50  0001 C CNN
+F 3 "~" H 5350 3800 50  0001 C CNN
+	1    5350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FC0F06A
+P 6200 3800
+F 0 "C4" H 6315 3800 50  0000 L CNN
+F 1 "C" H 6315 3755 50  0001 L CNN
+F 2 "" H 6238 3650 50  0001 C CNN
+F 3 "~" H 6200 3800 50  0001 C CNN
+	1    6200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3600 4400 3600
+Wire Wire Line
+	4900 3600 4950 3600
+Wire Wire Line
+	5300 3600 5350 3600
+Wire Wire Line
+	6100 3600 6200 3600
+Wire Wire Line
+	6200 3650 6200 3600
+Connection ~ 6200 3600
+Wire Wire Line
+	6200 3600 6450 3600
+Wire Wire Line
+	5350 3650 5350 3600
+Connection ~ 5350 3600
+Wire Wire Line
+	5350 3600 5400 3600
+Wire Wire Line
+	4950 3650 4950 3600
+Connection ~ 4950 3600
+Wire Wire Line
+	4950 3600 5000 3600
+$Comp
+L Device:D D3
+U 1 1 5FC12E3B
+P 5550 3600
+F 0 "D3" H 5550 3476 50  0000 C CNN
+F 1 "D" H 5550 3475 50  0001 C CNN
+F 2 "" H 5550 3600 50  0001 C CNN
+F 3 "~" H 5550 3600 50  0001 C CNN
+	1    5550 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FC12E41
+P 5750 3800
+F 0 "C3" H 5865 3800 50  0000 L CNN
+F 1 "C" H 5865 3755 50  0001 L CNN
+F 2 "" H 5788 3650 50  0001 C CNN
+F 3 "~" H 5750 3800 50  0001 C CNN
+	1    5750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3600 5750 3600
+Wire Wire Line
+	5750 3650 5750 3600
+Connection ~ 5750 3600
+Wire Wire Line
+	5750 3600 5800 3600
+Text Label 4500 3600 0    50   ~ 0
+VIN
+Text Label 6300 3600 0    50   ~ 0
+VOUT
+Wire Wire Line
+	4950 3950 4950 4050
+Wire Wire Line
+	4950 4050 4550 4050
+Wire Wire Line
+	5750 3950 5750 4050
+Wire Wire Line
+	5750 4050 4950 4050
+Connection ~ 4950 4050
+Wire Wire Line
+	5350 3950 5350 4200
+Wire Wire Line
+	5350 4200 4550 4200
+$Comp
+L power:GND #PWR01
+U 1 1 5FC15D0C
+P 6200 4050
+F 0 "#PWR01" H 6200 3800 50  0001 C CNN
+F 1 "GND" H 6205 3877 50  0000 C CNN
+F 2 "" H 6200 4050 50  0001 C CNN
+F 3 "" H 6200 4050 50  0001 C CNN
+	1    6200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4050 6200 3950
+Text Label 4600 4050 0    50   ~ 0
+PWM1
+Text Label 4600 4200 0    50   ~ 0
+~PWM
+$EndSCHEMATC

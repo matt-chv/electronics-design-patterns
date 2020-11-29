@@ -1,0 +1,66 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 5FC0D178
+P 6600 4300
+F 0 "D1" V 6593 4183 50  0000 R CNN
+F 1 "LED" V 6548 4183 50  0001 R CNN
+F 2 "" H 6600 4300 50  0001 C CNN
+F 3 "~" H 6600 4300 50  0001 C CNN
+	1    6600 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FC0D938
+P 6600 4600
+F 0 "#PWR02" H 6600 4350 50  0001 C CNN
+F 1 "GND" H 6605 4427 50  0000 C CNN
+F 2 "" H 6600 4600 50  0001 C CNN
+F 3 "" H 6600 4600 50  0001 C CNN
+	1    6600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC0DDB0
+P 6600 3900
+F 0 "R1" H 6670 3900 50  0000 L CNN
+F 1 "R" H 6670 3855 50  0001 L CNN
+F 2 "" V 6530 3900 50  0001 C CNN
+F 3 "~" H 6600 3900 50  0001 C CNN
+	1    6600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5FC0E2D2
+P 6600 3650
+F 0 "#PWR01" H 6600 3500 50  0001 C CNN
+F 1 "VCC" H 6617 3823 50  0000 C CNN
+F 2 "" H 6600 3650 50  0001 C CNN
+F 3 "" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3650 6600 3750
+Wire Wire Line
+	6600 4050 6600 4150
+Wire Wire Line
+	6600 4450 6600 4600
+$EndSCHEMATC

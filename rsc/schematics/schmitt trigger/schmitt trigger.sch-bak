@@ -1,0 +1,109 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM324 U1
+U 1 1 5FC235A8
+P 8150 3950
+F 0 "U1" H 8150 4225 50  0000 C CNN
+F 1 "LM324" H 8150 4226 50  0001 C CNN
+F 2 "" H 8100 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8200 4150 50  0001 C CNN
+	1    8150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5FC24781
+P 7800 3400
+F 0 "#PWR01" H 7800 3250 50  0001 C CNN
+F 1 "VCC" H 7817 3573 50  0000 C CNN
+F 2 "" H 7800 3400 50  0001 C CNN
+F 3 "" H 7800 3400 50  0001 C CNN
+	1    7800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC24DB9
+P 7800 3650
+F 0 "R1" H 7870 3650 50  0000 L CNN
+F 1 "R" H 7870 3605 50  0001 L CNN
+F 2 "" V 7730 3650 50  0001 C CNN
+F 3 "~" H 7800 3650 50  0001 C CNN
+	1    7800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC252AD
+P 7800 4400
+F 0 "R2" H 7870 4400 50  0000 L CNN
+F 1 "R" H 7870 4355 50  0001 L CNN
+F 2 "" V 7730 4400 50  0001 C CNN
+F 3 "~" H 7800 4400 50  0001 C CNN
+	1    7800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FC255B2
+P 8100 4250
+F 0 "R3" V 7985 4250 50  0000 C CNN
+F 1 "R" V 7984 4250 50  0001 C CNN
+F 2 "" V 8030 4250 50  0001 C CNN
+F 3 "~" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 3850 7400 3850
+Text Label 7500 3850 0    50   ~ 0
+VIN
+Wire Wire Line
+	7800 3400 7800 3500
+Wire Wire Line
+	7800 3800 7800 4050
+Wire Wire Line
+	7850 4050 7800 4050
+Connection ~ 7800 4050
+Wire Wire Line
+	7800 4050 7800 4250
+Wire Wire Line
+	7950 4250 7800 4250
+Connection ~ 7800 4250
+Wire Wire Line
+	8250 4250 8450 4250
+Wire Wire Line
+	8450 4250 8450 3950
+Wire Wire Line
+	8450 3950 8750 3950
+Connection ~ 8450 3950
+Text Label 8600 3950 0    50   ~ 0
+VOUT
+$Comp
+L power:GND #PWR02
+U 1 1 5FC27015
+P 7800 4650
+F 0 "#PWR02" H 7800 4400 50  0001 C CNN
+F 1 "GND" H 7805 4477 50  0000 C CNN
+F 2 "" H 7800 4650 50  0001 C CNN
+F 3 "" H 7800 4650 50  0001 C CNN
+	1    7800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4550 7800 4650
+$EndSCHEMATC

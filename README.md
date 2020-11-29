@@ -1,11 +1,33 @@
 # electronics-design-patterns
 
-These are the source files for electronics design patterns cards. Each card depicts and describes an electronics pattern, in either analog, digital, power electronics or transducers.
+These are the source files for electronics design patterns cards. Each card depicts and describes an electronics pattern, in either analog, digital, power or transducers.
 
 They could be used for brainstorming, interviews or STEMS education.
 
+## Credits
+
+In alphabetical order:
+* [Arachnid Labs trading cards]()
+* [Circuit.js](http://www.falstad.com/circuit/circuitjs.html)
+* IEEE papers
+* Wikipedia
+
 ## Status
 pre-alpha
+
+## WHY ?
+
+As of the day of starting this there was no good centralised archive of basic electronic design patterns. Sources included IC manufacturers application note sections, wikipedia, electronic hobbyist, EE curriculum text books but nothing centralised easily searchable when in need of a good idea during brainstorming.
+
+## WHAT ?
+
+## HOW ?
+
+### Incremental update to the pdf output
+once a schematics + description has been added / updated
+1. run sanity check to ensure all naming conventions are followed (required for next steps)
+2. run sch2img (updates the png and svg from the Kicad schematics database)
+3. run make_pdf
 
 ## Ressources
 ./rsc/images is where the illustrations are found

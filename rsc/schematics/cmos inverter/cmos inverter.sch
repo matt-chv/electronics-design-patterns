@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:cmos inverter-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -63,9 +64,9 @@ Connection ~ 5950 2700
 Wire Wire Line
 	5950 2700 5950 2800
 Text Label 6200 2700 0    50   ~ 0
-OUT
+VOUT
 Text Label 5350 2700 0    50   ~ 0
-IN
+VIN
 $Comp
 L power:GND #PWR?
 U 1 1 5EC14FEC
