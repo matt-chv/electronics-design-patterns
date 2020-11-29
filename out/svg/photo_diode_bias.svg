@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2770.0 1108.24 4800.0 2187.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <circle r="10" cx="4700" cy="2100" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <text x="5650" y="2900" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 2900)" fill="#000000">photoconductive (Reverse bias):</text>
@@ -19,10 +20,22 @@
   <text x="5650" y="3150" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 3150)" fill="#00FF00">capacitance and produces a very linear response</text>
   <polyline points="5450, 1500 5450, 1600" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2770.0 1108.24 4800.0 2187.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+  <circle r="10" cx="4700" cy="2100" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <text x="5650" y="2900" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 2900)" fill="#000000">photoconductive (Reverse bias):</text>
+  <text x="5650" y="2950" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 2950)" fill="#000000">Vout is ipd * RF</text>
+  <text x="5650" y="3000" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 3000)" fill="#000000">Benefit: everse bias increases the width of </text>
+  <text x="5650" y="3050" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 3050)" fill="#000000">the depletion junction producing an increased </text>
+  <text x="5650" y="3100" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 3100)" fill="#000000">responsivity with a decrease in junction </text>
+  <text x="5650" y="3150" font-size="50.000000" text-anchor="start" transform="rotate(0 5650 3150)" fill="#000000">capacitance and produces a very linear response</text>
+  <polyline points="5450, 1500 5450, 1600" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="5465" y="1327" font-size="50.000000" text-anchor="middle" transform="rotate(0 5465 1327)" fill="#000000">+5V</text>
   <polyline points="5450, 1400 5480, 1450" stroke-width="10px" stroke="#000000"/>
   <polyline points="5450, 1500 5450, 1400" stroke-width="10px" stroke="#000000"/>
   <polyline points="5420, 1450 5450, 1400" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <polyline points="5450, 1900 5450, 2000" stroke-width="10px" stroke="#000000"/>
   <text x="6950" y="2100" font-size="50.000000" text-anchor="start" transform="rotate(0 6950 2100)" fill="#000000">Vout</text>
@@ -30,6 +43,10 @@
   <polyline points="5450, 1900 5450, 2000" stroke-width="10px" stroke="#800000"/>
   <text x="6950" y="2100" font-size="50.000000" text-anchor="start" transform="rotate(0 6950 2100)" fill="#00FF00">Vout</text>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+  <polyline points="5450, 1900 5450, 2000" stroke-width="10px" stroke="#000000"/>
+  <text x="6950" y="2100" font-size="50.000000" text-anchor="start" transform="rotate(0 6950 2100)" fill="#000000">Vout</text>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <circle r="10" cx="6850" cy="2100" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <text x="5608" y="1704" font-size="50.000000" text-anchor="start" transform="rotate(0 5608 1704)" fill="#000000">D?</text>
   <text x="5608" y="1795" font-size="50.000000" text-anchor="start" transform="rotate(0 5608 1795)" fill="#000000">Photodiode</text>
@@ -66,10 +83,14 @@
   <polyline points="6350, 1900 6350, 2300" stroke-width="10px" stroke="#000000"/>
   <polyline points="6750, 2100 6350, 1900" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <polyline points="6850, 2100 7250, 2100" stroke-width="10px" stroke="#000000"/>
   <polyline points="6850, 1650 6850, 2100" stroke-width="10px" stroke="#000000"/>
   <polyline points="6600, 1650 6850, 1650" stroke-width="10px" stroke="#000000"/>
   <polyline points="6100, 2000 6250, 2000" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <circle r="10" cx="6100" cy="2000" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <polyline points="6100, 1650 6100, 2000" stroke-width="10px" stroke="#000000"/>
   <polyline points="6300, 1650 6100, 1650" stroke-width="10px" stroke="#000000"/>
@@ -82,6 +103,11 @@
   <polyline points="6100, 1650 6100, 2000" stroke-width="10px" stroke="#800000"/>
   <polyline points="6300, 1650 6100, 1650" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+  <circle r="10" cx="6100" cy="2000" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6100, 1650 6100, 2000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6300, 1650 6100, 1650" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="6450" y="1535" font-size="50.000000" text-anchor="middle" transform="rotate(0 6450 1535)" fill="#000000">RF</text>
   <polyline points="6350, 1650 6300, 1650" stroke-width="10px" stroke="#000000"/>
   <polyline points="6550, 1650 6600, 1650" stroke-width="10px" stroke="#000000"/>
@@ -89,6 +115,7 @@
   <polyline points="6550, 1690 6350, 1690" stroke-width="10px" stroke="#000000"/>
   <polyline points="6550, 1610 6550, 1690" stroke-width="10px" stroke="#000000"/>
   <polyline points="6350, 1610 6550, 1610" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <polyline points="5450, 2000 6100, 2000" stroke-width="10px" stroke="#000000"/>
   <polyline points="6150, 2200 6250, 2200" stroke-width="10px" stroke="#000000"/>
@@ -98,21 +125,32 @@
   <polyline points="6150, 2200 6250, 2200" stroke-width="10px" stroke="#800000"/>
   <polyline points="6150, 2450 6150, 2200" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+  <polyline points="5450, 2000 6100, 2000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6150, 2200 6250, 2200" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6150, 2450 6150, 2200" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <polyline points="6200, 2500 6100, 2500" stroke-width="10px" stroke="#000000"/>
   <polyline points="6150, 2500 6150, 2450" stroke-width="10px" stroke="#000000"/>
   <polyline points="6145, 2550 6155, 2550" stroke-width="10px" stroke="#000000"/>
   <polyline points="6125, 2525 6175, 2525" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="4800" y="2100" font-size="50.000000" text-anchor="start" transform="rotate(0 4800 2100)" fill="#000000">Vout</text>
   <text x="3800" y="2750" font-size="50.000000" text-anchor="start" transform="rotate(0 3800 2750)" fill="#000000">Photovoltaic:</text>
   <text x="3800" y="2800" font-size="50.000000" text-anchor="start" transform="rotate(0 3800 2800)" fill="#000000">Vout is ipd * RF</text>
   <text x="3800" y="2850" font-size="50.000000" text-anchor="start" transform="rotate(0 3800 2850)" fill="#000000">Benefit: reduces dark current</text>
+<<<<<<< HEAD
 =======
   <text x="4800" y="2100" font-size="50.000000" text-anchor="start" transform="rotate(0 4800 2100)" fill="#00FF00">Vout</text>
   <text x="3800" y="2750" font-size="50.000000" text-anchor="start" transform="rotate(0 3800 2750)" fill="#00FF00">Photovoltaic:</text>
   <text x="3800" y="2800" font-size="50.000000" text-anchor="start" transform="rotate(0 3800 2800)" fill="#00FF00">Vout is ipd * RF</text>
   <text x="3800" y="2850" font-size="50.000000" text-anchor="start" transform="rotate(0 3800 2850)" fill="#00FF00">Benefit: reduces dark current</text>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="3458" y="2254" font-size="50.000000" text-anchor="start" transform="rotate(0 3458 2254)" fill="#000000">D1</text>
   <text x="3458" y="2345" font-size="50.000000" text-anchor="start" transform="rotate(0 3458 2345)" fill="#000000">Photodiode</text>
   <polyline points="3300, 2350 3300, 2450" stroke-width="10px" stroke="#000000"/>
@@ -148,10 +186,14 @@
   <polyline points="4200, 1900 4200, 2300" stroke-width="10px" stroke="#000000"/>
   <polyline points="4600, 2100 4200, 1900" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <polyline points="4700, 2100 5100, 2100" stroke-width="10px" stroke="#000000"/>
   <polyline points="4700, 1650 4700, 2100" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 1650 4700, 1650" stroke-width="10px" stroke="#000000"/>
   <polyline points="3950, 2000 4100, 2000" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <circle r="10" cx="3950" cy="2000" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <polyline points="3950, 1650 3950, 2000" stroke-width="10px" stroke="#000000"/>
   <polyline points="4150, 1650 3950, 1650" stroke-width="10px" stroke="#000000"/>
@@ -164,6 +206,11 @@
   <polyline points="3950, 1650 3950, 2000" stroke-width="10px" stroke="#800000"/>
   <polyline points="4150, 1650 3950, 1650" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+  <circle r="10" cx="3950" cy="2000" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3950, 1650 3950, 2000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="4150, 1650 3950, 1650" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="4300" y="1535" font-size="50.000000" text-anchor="middle" transform="rotate(0 4300 1535)" fill="#000000">RF</text>
   <polyline points="4200, 1650 4150, 1650" stroke-width="10px" stroke="#000000"/>
   <polyline points="4400, 1650 4450, 1650" stroke-width="10px" stroke="#000000"/>
@@ -172,11 +219,15 @@
   <polyline points="4400, 1610 4400, 1690" stroke-width="10px" stroke="#000000"/>
   <polyline points="4200, 1610 4400, 1610" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <polyline points="3300, 2000 3950, 2000" stroke-width="10px" stroke="#000000"/>
   <polyline points="3300, 2150 3300, 2000" stroke-width="10px" stroke="#000000"/>
   <polyline points="3300, 2600 3300, 2450" stroke-width="10px" stroke="#000000"/>
   <polyline points="4000, 2200 4100, 2200" stroke-width="10px" stroke="#000000"/>
   <polyline points="4000, 2450 4000, 2200" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
 =======
   <polyline points="3300, 2000 3950, 2000" stroke-width="10px" stroke="#800000"/>
   <polyline points="3300, 2150 3300, 2000" stroke-width="10px" stroke="#800000"/>
@@ -184,6 +235,8 @@
   <polyline points="4000, 2200 4100, 2200" stroke-width="10px" stroke="#800000"/>
   <polyline points="4000, 2450 4000, 2200" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <polyline points="4050, 2500 3950, 2500" stroke-width="10px" stroke="#000000"/>
   <polyline points="4000, 2500 4000, 2450" stroke-width="10px" stroke="#000000"/>
   <polyline points="3995, 2550 4005, 2550" stroke-width="10px" stroke="#000000"/>

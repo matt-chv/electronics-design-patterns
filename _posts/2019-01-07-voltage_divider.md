@@ -1,6 +1,7 @@
 ---
 title: voltage divider
 <<<<<<< HEAD
+<<<<<<< HEAD
 categories: signal_chain
 layout: post
 function: filter
@@ -10,16 +11,25 @@ category: signal-chain
 layout: post
 function: filter
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+categories: passive
+layout: post
+function: filter
+schematics: yes
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 date: 2019-01-07
 ---
 
 # Voltage Divider
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <object type="image/svg+xml" data="{{site.baseurl}}/out/svg/voltage divider.svg" alt="" width="500" height="200"></object>
 
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 Output voltage will be a ratio of the two resistances and the input voltage:
 
 $$ Vout = \frac{R_2}{R_1+R_2}*Vin $$

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3154.0 2127.24 2460.0 1227.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <polyline points="3650, 3000 4450, 3000" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="4450" cy="3000" fill="#000000" stroke-width="10px" stroke="#000000"/>
@@ -13,12 +14,23 @@
   <polyline points="3650, 2350 3650, 2550" stroke-width="10px" stroke="#800000"/>
   <polyline points="3650, 2850 3650, 3000" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3154.0 2127.24 2460.0 1227.6" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+  <polyline points="3650, 3000 4450, 3000" stroke-width="10px" stroke="#000000"/>
+  <circle r="10" cx="4450" cy="3000" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="4450, 2900 4450, 3000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3650, 2350 3650, 2550" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3650, 2850 3650, 3000" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="3400" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 3400 2700)" fill="#000000">Ci</text>
   <polyline points="3650, 2740 3650, 2850" stroke-width="10px" stroke="#000000"/>
   <polyline points="3650, 2660 3650, 2550" stroke-width="10px" stroke="#000000"/>
   <polyline points="3570, 2670 3730, 2670" stroke-width="10px" stroke="#000000"/>
   <polyline points="3570, 2730 3730, 2730" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <polyline points="4150, 2700 3950, 2700" stroke-width="10px" stroke="#000000"/>
   <polyline points="4200, 2800 4200, 2950" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 2350 4450, 2500" stroke-width="10px" stroke="#000000"/>
@@ -26,6 +38,7 @@
   <polyline points="4450, 3100 4450, 3000" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 2350 4700, 2350" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3000 5250, 3000" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <circle r="10" cx="4450" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <text x="3950" y="2950" font-size="50.000000" text-anchor="start" transform="rotate(0 3950 2950)" fill="#000000">toff</text>
   <text x="3900" y="2800" font-size="50.000000" text-anchor="start" transform="rotate(0 3900 2800)" fill="#000000">ton</text>
@@ -59,6 +72,20 @@
   <polyline points="3900, 2950 3900, 2800" stroke-width="10px" stroke="#800000"/>
   <polyline points="3850, 2950 3900, 2950" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+  <circle r="10" cx="4450" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <text x="3950" y="2950" font-size="50.000000" text-anchor="start" transform="rotate(0 3950 2950)" fill="#000000">toff</text>
+  <text x="3900" y="2800" font-size="50.000000" text-anchor="start" transform="rotate(0 3900 2800)" fill="#000000">ton</text>
+  <text x="4000" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 4000 2700)" fill="#000000">CMD</text>
+  <polyline points="4200, 2950 4250, 2950" stroke-width="10px" stroke="#000000"/>
+  <polyline points="4150, 2800 4200, 2800" stroke-width="10px" stroke="#000000"/>
+  <polyline points="4150, 2950 4150, 2800" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3950, 2950 4150, 2950" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3950, 2800 3950, 2950" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3900, 2800 3950, 2800" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3900, 2950 3900, 2800" stroke-width="10px" stroke="#000000"/>
+  <polyline points="3850, 2950 3900, 2950" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="4455" y="3273" font-size="50.000000" text-anchor="middle" transform="rotate(0 4455 3273)" fill="#000000">GND</text>
   <polyline points="4400, 3150 4450, 3150" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3200 4400, 3150" stroke-width="10px" stroke="#000000"/>
@@ -66,10 +93,14 @@
   <polyline points="4450, 3150 4500, 3150" stroke-width="10px" stroke="#000000"/>
   <polyline points="4450, 3100 4450, 3150" stroke-width="10px" stroke="#000000"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="5300" y="2350" font-size="50.000000" text-anchor="start" transform="rotate(0 5300 2350)" fill="#000000">OUT</text>
   <text x="3650" y="2350" font-size="50.000000" text-anchor="start" transform="rotate(0 3650 2350)" fill="#000000">IN</text>
   <polyline points="4000, 2350 3550, 2350" stroke-width="10px" stroke="#000000"/>
   <polyline points="5250, 2850 5250, 3000" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <circle r="10" cx="5250" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <polyline points="5450, 2350 5250, 2350" stroke-width="10px" stroke="#000000"/>
   <polyline points="5000, 2350 5250, 2350" stroke-width="10px" stroke="#000000"/>
@@ -84,6 +115,12 @@
   <polyline points="5000, 2350 5250, 2350" stroke-width="10px" stroke="#800000"/>
   <polyline points="4300, 2350 4450, 2350" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 4c8e9a7... update to jekyll blog template
+=======
+  <circle r="10" cx="5250" cy="2350" fill="#000000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 2350 5250, 2350" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5000, 2350 5250, 2350" stroke-width="10px" stroke="#000000"/>
+  <polyline points="4300, 2350 4450, 2350" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="5365" y="2700" font-size="50.000000" text-anchor="start" transform="rotate(0 5365 2700)" fill="#000000">Co</text>
   <polyline points="5250, 2740 5250, 2850" stroke-width="10px" stroke="#000000"/>
   <polyline points="5250, 2660 5250, 2550" stroke-width="10px" stroke="#000000"/>

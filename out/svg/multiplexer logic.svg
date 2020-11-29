@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5312.0 2331.48 1380.0 2455.2" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <polyline points="6000, 2850 6000, 2750" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="6000" cy="2850" fill="#000000" stroke-width="10px" stroke="#000000"/>
@@ -35,38 +36,47 @@
 =======
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5480.0 2331.48 1200.0 2455.2" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <polyline points="6000, 2850 6000, 2750" stroke-width="10px" stroke="#800000"/>
+=======
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5312.0 2331.48 1380.0 2455.2" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
+  <polyline points="6000, 2850 6000, 2750" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <circle r="10" cx="6000" cy="2850" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5500" cy="3600" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5500, 2850 6000, 2850" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5500, 3600 5500, 2850" stroke-width="10px" stroke="#800000"/>
-  <polyline points="6200, 4400 6200, 4300" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5500, 2850 6000, 2850" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5500, 3600 5500, 2850" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6200, 4400 6200, 4300" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="6200" cy="4400" fill="#000000" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5450" cy="4000" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5450, 4400 6200, 4400" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5450, 4000 5450, 4400" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5500, 4100 5600, 4100" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 4400 6200, 4400" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 4000 5450, 4400" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5500, 4100 5600, 4100" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5500" cy="3900" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5500, 3900 5500, 4100" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5500, 3900 5500, 4100" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5500" cy="3700" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5500, 3900 5600, 3900" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5500, 3700 5500, 3900" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5500, 3700 5600, 3700" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5500, 3600 5500, 3700" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5600, 3600 5500, 3600" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5500, 3900 5600, 3900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5500, 3700 5500, 3900" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5500, 3700 5600, 3700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5500, 3600 5500, 3700" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5600, 3600 5500, 3600" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5450" cy="3800" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5450, 4000 5600, 4000" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5450, 3800 5450, 4000" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 4000 5600, 4000" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 3800 5450, 4000" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="5450" cy="3500" fill="#000000" stroke-width="10px" stroke="#000000"/>
-  <polyline points="5450, 3800 5600, 3800" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5450, 3500 5450, 3800" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5450, 3500 5600, 3500" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5450, 3400 5450, 3500" stroke-width="10px" stroke="#800000"/>
-  <polyline points="5600, 3400 5450, 3400" stroke-width="10px" stroke="#800000"/>
-  <polyline points="6000, 2900 6000, 2850" stroke-width="10px" stroke="#800000"/>
+  <polyline points="5450, 3800 5600, 3800" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 3500 5450, 3800" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 3500 5600, 3500" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5450, 3400 5450, 3500" stroke-width="10px" stroke="#000000"/>
+  <polyline points="5600, 3400 5450, 3400" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6000, 2900 6000, 2850" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="6200" cy="4300" fill="#000000" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
   <polyline points="6100, 4300 6200, 4300" stroke-width="10px" stroke="#800000"/>
   <polyline points="6200, 4450 6200, 4400" stroke-width="10px" stroke="#800000"/>
 >>>>>>> 26e1b2f... out/svg/buck regulator.svg
+=======
+  <polyline points="6100, 4300 6200, 4300" stroke-width="10px" stroke="#000000"/>
+  <polyline points="6200, 4450 6200, 4400" stroke-width="10px" stroke="#000000"/>
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
   <text x="6205" y="4623" font-size="50.000000" text-anchor="middle" transform="rotate(0 6205 4623)" fill="#000000">GND</text>
   <polyline points="6150, 4500 6200, 4500" stroke-width="10px" stroke="#000000"/>
   <polyline points="6200, 4550 6150, 4500" stroke-width="10px" stroke="#000000"/>

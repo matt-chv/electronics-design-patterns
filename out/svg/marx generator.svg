@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="3129.6 2473.48 4704.0 2035.1999999999998" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <polyline points="4700, 3500 4750, 3500" stroke-width="10px" stroke="#000000"/>
   <circle r="10" cx="4700" cy="3500" fill="#000000" stroke-width="10px" stroke="#000000"/>
@@ -275,6 +278,7 @@
   <polyline points="3840, 3500 3950, 3500" stroke-width="10px" stroke="#000000"/>
   <polyline points="3830, 3420 3830, 3580" stroke-width="10px" stroke="#000000"/>
   <polyline points="3770, 3420 3770, 3580" stroke-width="10px" stroke="#000000"/>
+<<<<<<< HEAD
 =======
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="229.59999999999997 1223.48 4704.0 2035.1999999999998" font-family="Verdana, sans-serif" style="stroke-opacity:1.000000;fill-opacity:1.000000;">
   <polyline points="1750, 2250 1850, 2250" stroke-width="10px" stroke="#000000"/>
@@ -549,4 +553,6 @@
   <polyline points="930, 2170 930, 2330" stroke-width="10px" stroke="#000000"/>
   <polyline points="870, 2170 870, 2330" stroke-width="10px" stroke="#000000"/>
 >>>>>>> 0af1974... closes #1 and closes #2
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 </svg>

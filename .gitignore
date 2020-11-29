@@ -14,6 +14,7 @@ out/card_deck_single_sheet_old.pdf
 rsc/eagle/*
 rsc/eagle_2_kicad/*
 
+<<<<<<< HEAD
 scripts/venv/*
 scripts/venv_edp/*
 scripts/out/*
@@ -34,6 +35,18 @@ vscode/*
 =======
 .vscode/*
 >>>>>>> 087f5d1... updates
+=======
+scripts/venv/*
+scripts/venv_edp/*
+scripts/out/*
+scripts/.vscode/*
+scripts/*.whl
+venv/*
+__pycache__/*
+
+vscode/*
+
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 # Jekyll local debug
 _site/*
 .jekyll-cache

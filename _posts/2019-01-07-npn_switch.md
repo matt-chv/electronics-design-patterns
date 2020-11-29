@@ -1,6 +1,10 @@
 ---
 title: npn switch
+<<<<<<< HEAD
 categories: logic
+=======
+categories: digital
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 layout: post
 function: switch
 schematics: yes

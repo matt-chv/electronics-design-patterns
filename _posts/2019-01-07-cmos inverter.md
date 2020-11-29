@@ -1,10 +1,23 @@
 ---
 title: CMOS Inverter
+<<<<<<< HEAD
+<<<<<<< HEAD:_posts/2019-01-07-cmos inverter.md
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 categories: logic
 layout: post
 function: inverter
 schematics: yes
 date: 2019-01-07
+<<<<<<< HEAD
+=======
+category: logic
+layout: post
+function: inverter
+date: 
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation:_drafts/cmos inverter.md
+=======
+>>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 ---
 
 # CMOS Inverter

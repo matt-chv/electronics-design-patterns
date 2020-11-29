@@ -5,7 +5,7 @@
 #d:\tools\Git\bin\plotkicadsch.exe -f test_blank.sch -l test_blank-cache.lib
 
 from lxml import etree
-from os.path import abspath, dirname, exists, getmtime, join, realpath
+from os.path import abspath, dirname, exists, getmtime, join,pardir, realpath
 from os import walk
 from subprocess import call, check_output
 
@@ -133,7 +133,9 @@ def sch2svg(sch_fp,svg_fp):
     return(svg_fp)
 
 if __name__=="__main__":
-    for root, dir, files in walk("../rsc/schematics"):
+    schematics_root_folder = abspath(join(__file__,pardir,pardir,"rsc","schematics"))
+    print(137,schematics_root_folder)
+    for root, dir, files in walk(schematics_root_folder):
         for f in files:
             if f[-4:]==".sch":
                 sch_fp = abspath(join(root,f))
