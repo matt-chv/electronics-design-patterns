@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 EESchema Schematic File Version 4
 LIBS:gyrator-cache
 EELAYER 30 0
@@ -124,4 +125,9 @@ Wire Wire Line
 Connection ~ 4000 1500
 Text Label 3500 1500 0    50   ~ 0
 VIN
+=======
+EESchema Schematic File Version 2
+EELAYER 25 0
+EELAYER END
+>>>>>>> 62b9d21... adding capacitance multiplier
 $EndSCHEMATC
