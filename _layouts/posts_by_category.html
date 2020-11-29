@@ -37,7 +37,11 @@ layout: default
         {% endif %}
       {% endif %}
         <ul class="posts">
+<<<<<<< HEAD
           <li><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a> &raquo;<i><span>{{ post.date | date_to_string }}</span></i></li>
+=======
+          <li><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> &raquo;<i><span>{{ post.date | date_to_string }}</span></i></li>
+>>>>>>> 641cae8... moving to new jekyll template
         </ul>
       {% if forloop.last %}
         </div>
