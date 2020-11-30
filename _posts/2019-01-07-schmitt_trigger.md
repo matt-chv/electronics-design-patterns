@@ -12,7 +12,7 @@ This is useful in preventing noisy sources from generating many spurious transit
 The threshold VTH is set by R1 and R2 while R3 provides a small bias depending on the state of the output.
 This positive feedback provides a range of voltages for which the output will not change from the state it's currently in.
 
-$$ V_TH = \frac{VCC}{2} $$
+$$ V_{TH} = \frac{VCC}{2} $$
 
 ---
 

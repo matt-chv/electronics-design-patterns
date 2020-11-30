@@ -1,12 +1,4 @@
 EESchema Schematic File Version 4
-<<<<<<< HEAD
-<<<<<<< HEAD
-LIBS:voltage divider-cache
-=======
->>>>>>> 4c8e9a7... update to jekyll blog template
-=======
-LIBS:voltage divider-cache
->>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,24 +36,10 @@ F 3 "~" H 4550 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-<<<<<<< HEAD
-<<<<<<< HEAD
 L power:GND #PWR01
 U 1 1 5EC5C190
 P 4550 3700
 F 0 "#PWR01" H 4550 3450 50  0001 C CNN
-=======
-L power:GND #PWR?
-U 1 1 5EC5C190
-P 4550 3700
-F 0 "#PWR?" H 4550 3450 50  0001 C CNN
->>>>>>> 4c8e9a7... update to jekyll blog template
-=======
-L power:GND #PWR01
-U 1 1 5EC5C190
-P 4550 3700
-F 0 "#PWR01" H 4550 3450 50  0001 C CNN
->>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 F 1 "GND" H 4555 3527 50  0000 C CNN
 F 2 "" H 4550 3700 50  0001 C CNN
 F 3 "" H 4550 3700 50  0001 C CNN
@@ -85,10 +63,6 @@ Text Label 4150 2750 0    50   ~ 0
 Vin
 Text Label 4700 3250 0    50   ~ 0
 Vout
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
 $Comp
 L Device:R R3
 U 1 1 5FC0DCE9
@@ -112,8 +86,6 @@ F 3 "" H 5400 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2750 5400 2750
-Wire Wire Line
 	5400 2750 5400 2850
 Wire Wire Line
 	5400 3600 5400 3700
@@ -124,8 +96,6 @@ Wire Wire Line
 Connection ~ 5400 3250
 Wire Wire Line
 	5400 3250 5400 3300
-Text Label 5000 2750 0    50   ~ 0
-Vin
 Text Label 5550 3250 0    50   ~ 0
 VOUT_LPF
 $Comp
@@ -151,8 +121,6 @@ F 3 "" H 6100 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 2750 6100 2750
-Wire Wire Line
 	6100 2750 6100 2850
 Wire Wire Line
 	6100 3600 6100 3700
@@ -163,8 +131,6 @@ Wire Wire Line
 Connection ~ 6100 3250
 Wire Wire Line
 	6100 3250 6100 3300
-Text Label 5700 2750 0    50   ~ 0
-Vin
 Text Label 6250 3250 0    50   ~ 0
 VOUT_HPF
 $Comp
@@ -193,9 +159,12 @@ Text Notes 5350 4000 0    50   ~ 0
 LPF\n
 Text Notes 6050 4000 0    50   ~ 0
 HPF\n
-<<<<<<< HEAD
-=======
->>>>>>> 4c8e9a7... update to jekyll blog template
-=======
->>>>>>> 96aa8b1... kicad_v0.2a adding backlog of DP
+Text Label 5000 2750 0    50   ~ 0
+Vin
+Text Label 5700 2750 0    50   ~ 0
+Vin
+Wire Wire Line
+	5700 2750 6100 2750
+Wire Wire Line
+	5000 2750 5400 2750
 $EndSCHEMATC

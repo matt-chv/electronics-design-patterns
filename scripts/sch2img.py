@@ -28,7 +28,8 @@ def svg2png(svg_fp, png_fp):
         full path to the png output file
     
     """
-    svg_is_younger = True
+    # svg_is_younger indicates if png needs to be regenerated
+    svg_is_younger = True # Type: bool
     if exists(png_fp):
         if getmtime(svg_fp) < getmtime(png_fp):
             svg_is_younger = False
@@ -37,6 +38,11 @@ def svg2png(svg_fp, png_fp):
         logger.info(f"calling inkscape on {svg_fp}")
         res = call(["D:\\binw\\Inkscape\\inkscape.exe","-z",\
                             svg_fp,"-e", png_fp])
+        try:
+            assert res==0
+        except:
+            logger.error(f"failed to convert {svg_fp}")
+            raise
 
 def get_svg_viewbox(mxml):
     #Rescale the viewbox
@@ -93,6 +99,7 @@ def sch2svg(sch_fp,svg_fp):
             sch_is_younger = False
     
     if sch_is_younger:
+        logger.info(f"calling plotkicadsch on {sch_fp}")
         res = call([plotkicadsch_fp,"-f",sch_fp,"-l",lib_fp])
         try:
             assert res == 0
