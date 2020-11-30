@@ -1,6 +1,13 @@
+#import python modules
 from re import split as re_split
 from os import walk
 from os.path import abspath, pardir, join
+
+#imports from pip
+import frontmatter #python -m pip install python-frontmatter
+
+#own imports
+from make_pdf import defined_categories
 
 posts_path = abspath(join(__file__,pardir, pardir,"_posts"))
 
@@ -18,6 +25,11 @@ for dir,root,files in walk(posts_path):
                 mkdown = fi.read()
         except:
             print(f"failed for {f}")
+            raise
+        post_text = frontmatter.load(join(dir,f))
+        cat=post_text["categories"]
+        if not cat in defined_categories:
+            print(f"category {cat} from {f} not in defined ones")
             raise
         try:
             mkdown = re_split("---\n|----\n",mkdown)[2]

@@ -1,14 +1,18 @@
 #Convert .sch (Kicad eeschema) schematics to svg and png
 # svg generation done thanks to plotkicadsch
-# png generation from svg done with pillow
+# png generation from svg done with inkscape
 
 #d:\tools\Git\bin\plotkicadsch.exe -f test_blank.sch -l test_blank-cache.lib
 
+#python standard modules
 import logging
-from lxml import etree
 from os.path import abspath, dirname, exists, getmtime, join,pardir, realpath
 from os import walk
 from subprocess import call, check_output
+
+#python pip modules
+from lxml import etree
+
 
 posts_path = abspath(join(__file__,pardir, pardir,"_posts"))
 svg_out_path = abspath(join(__file__,pardir, pardir,"out","svg"))

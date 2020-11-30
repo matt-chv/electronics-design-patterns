@@ -12,6 +12,7 @@ rsc/eagle/*
 rsc/eagle_2_kicad/*
 
 scripts/venv/*
+scripts/__pycache__/*
 scripts/venv_edp/*
 scripts/out/*
 scripts/.vscode/*
@@ -19,6 +20,7 @@ scripts/*.whl
 venv/*
 __pycache__/*
 scripts/*.log
+*.log
 
 vscode/*
 =======

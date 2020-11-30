@@ -1,6 +1,6 @@
 ---
 title: fet high side switch
-categories: signal
+categories: signal_chain
 layout: post
 function: switch
 schematics: yes

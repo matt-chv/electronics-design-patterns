@@ -12,23 +12,27 @@ import logging
 from os.path import abspath, join, exists, pardir
 from os import walk, mkdir
 from re import split as re_split
+import subprocess
 
 #import pip
-from bs4 import BeautifulSoup
-import frontmatter
-import markdown
-import matplotlib.pyplot as plt
-
-#import own
-
+from bs4 import BeautifulSoup #python -m pip install beautifulsoup4
+import frontmatter #python -m pip install python-frontmatter
+import markdown #python -m pip install markdown
+#matplotlib can be difficult to install in windows
+#one working solution is to download a wheel from:
+#download matplotlib‑3.3.3‑cp39‑cp39‑win_amd64.whl from https://www.lfd.uci.edu/~gohlke/pythonlibs/#matplotlib
+#then
+# > python -m pip install python -m pip install matplotlib-3.3.3-cp39-cp39-win_amd64.whl
+import matplotlib.pyplot as plt #
 
 try:
     from mdx_mathjax import MathJaxExtension
 except:
     print("module mdx_mathjax not installed")
-    print("pip install python-markdown-mathjax")
-from PIL import Image, ImageChops
+    print("python -m pip install python-markdown-mathjax")
+from PIL import Image, ImageChops #python -m pip install Pillow
 
+#then python -m pip install reportlab
 from reportlab.lib.enums import TA_JUSTIFY
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
@@ -37,8 +41,11 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet,ParagraphStyle
 from reportlab.lib.pagesizes import A4,A3,LETTER 
 
-import subprocess
 from titlecase import titlecase
+
+#import own
+
+
 
 current_dir = abspath(join(__file__,pardir))
 rsc_folder = abspath(join(current_dir,"..","_posts"))
@@ -58,6 +65,9 @@ us_card_size = (2.72 * inch, 3.7 *inch) #ratio = 1.36
 eu_card_size = card_size = (64*mm,89*mm)
 
 white = (255, 255, 255, 255)
+
+# defined_categories are the main categories of design patterns
+defined_categories = ["signal_chain","power","logic","transducer"]
 
 def latex_to_img(tex,save_path):
     if exists(save_path):
@@ -85,7 +95,7 @@ def electronics_title(title_to_be_styled):
     titlelised = titlecase(title_to_be_styled)
     
     abbreviations = ["AMR", "BJT","CMOS","FET", "LC", "LED", "LPF", "LVDT", "MOSFET",\
-                      "NPN","ORP", "PNP","pH","PV","PZT", "RTD", "RC", "SR", "TEG"]
+                      "NPN","ORP", "PNP","pH ","PV","PZT", "RTD", "RC", "SR", "TEG ", " OR"]
     for abb in abbreviations:
         titlelised = titlelised.replace(abb.lower(),abb)
         titlelised = titlelised.replace(abb.title(),abb)    
@@ -338,7 +348,7 @@ def link_png_txt_to_pdf(cards_rendering="standard sheet",card_deck_layout=A4,\
             #select the background image based on the folder where the design pattern is located
             card_background_path = None
 
-            for suit in ["signal_chain","power","logic","transducer"]:
+            for suit in defined_categories:
                 if edp_cat[design_pattern]==suit:
                     card_background_path = abspath(join(template_png_folder,"%s_front.png"%(suit)))
             if card_background_path is None:
