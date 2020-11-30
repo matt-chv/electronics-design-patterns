@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
-categories: signal-chain
+categories: signal_chain
 title: Signal-Chain
-permalink: /category/signal-chain
+permalink: /category/signal_chain
 ---
