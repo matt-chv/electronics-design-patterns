@@ -1,22 +1,9 @@
 ---
 title: Digital Amplifier
-<<<<<<< HEAD
-<<<<<<< HEAD
 categories: signal_chain
 layout: post
 function: filter
 schematics: yes
-=======
-category: signal-chain
-layout: post
-function: filter
->>>>>>> 641cae8... moving to new jekyll template
-=======
-categories: signal_chain
-layout: post
-function: filter
-schematics: yes
->>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
 date: 2020-05-19    
 ---
 

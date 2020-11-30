@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d34b8c0... adding support for mathjax in posts
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
@@ -15,11 +12,6 @@ MathJax.Hub.Config({
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-<<<<<<< HEAD
-=======
->>>>>>> 641cae8... moving to new jekyll template
-=======
->>>>>>> d34b8c0... adding support for mathjax in posts
 <header class="post-header">
   <h1 class="post-title">{{ page.title }}</h1>
 </header>
@@ -27,37 +19,18 @@ MathJax.Hub.Config({
 <span class="time">{{ page.date | date_to_string }}</span>
 {% if page.categories %}
   <span class="categories">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     &raquo; {% for category in page.categories %}<a href="{{site.baseurl}}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
-=======
-    &raquo; {% for category in page.categories %}<a href="{{site.baseurl}}category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
->>>>>>> 641cae8... moving to new jekyll template
-=======
-    &raquo; {% for category in page.categories %}<a href="{{site.baseurl}}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
->>>>>>> 4c8e9a7... update to jekyll blog template
   </span>
 {% endif %}
 
 <div class="content">
-<<<<<<< HEAD
-<<<<<<< HEAD
     {% if page.schematics%}
     <object type="image/svg+xml" data="{{site.baseurl}}/out/svg/{{page.title}}.svg" alt="" width="500" height="200"></object>
     <figcaption> 
     <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">svg schematics</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="matthieuchevrier.com">matt-chv</a> is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0<img style="height:11px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img style="height:11px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img style="height:11px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" /></a></p>
     </figcaption>
     {% endif %}
-=======
->>>>>>> 641cae8... moving to new jekyll template
-=======
-    {% if page.schematics%}
-    <object type="image/svg+xml" data="{{site.baseurl}}/out/svg/{{page.title}}.svg" alt="" width="500" height="200"></object>
-    <figcaption> 
-    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><span rel="dct:title">svg schematics</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="matthieuchevrier.com">matt-chv</a> is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0<img style="height:11px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img style="height:11px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img style="height:11px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" /></a></p>
-    </figcaption>
-    {% endif %}
->>>>>>> 97dfe4b... added front matter to add automatically the schematics in the html from svg schematics and fixed the css for proper image caption
   <div class="post">{{ content }}</div>
   {% include share-page.html %}
 </div>

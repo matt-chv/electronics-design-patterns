@@ -4,42 +4,13 @@
 # Scripting the Jekyll ressources
 
 out/pdf/*
-<<<<<<< HEAD
-<<<<<<< HEAD
 out/pdf_archive/*
-=======
->>>>>>> 4c8e9a7... update to jekyll blog template
-=======
-out/pdf_archive/*
->>>>>>> b41b708... adding svg and png
 out/equations/*
 out/card_deck_single_sheet_old.pdf
 
 rsc/eagle/*
 rsc/eagle_2_kicad/*
 
-<<<<<<< HEAD
-scripts/venv/*
-scripts/venv_edp/*
-scripts/out/*
-scripts/.vscode/*
-scripts/*.whl
-venv/*
-<<<<<<< HEAD
-=======
-scripts/venv/*
-.settings/*
->>>>>>> 087f5d1... updates
-__pycache__/*
-scripts/*.log
-
-vscode/*
-<<<<<<< HEAD
-
-=======
-.vscode/*
->>>>>>> 087f5d1... updates
-=======
 scripts/venv/*
 scripts/venv_edp/*
 scripts/out/*
@@ -50,8 +21,19 @@ __pycache__/*
 scripts/*.log
 
 vscode/*
+=======
+scripts/venv/*
+scripts/venv_edp/*
+scripts/venv_edp_head/*
+scripts/out/*
+scripts/.vscode/*
+scripts/*.whl
+venv/*
+__pycache__/*
+scripts/*.log
 
->>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
+vscode/*
+
 # Jekyll local debug
 _site/*
 .jekyll-cache

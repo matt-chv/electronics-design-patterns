@@ -1,14 +1,6 @@
 ---
 title: memory logic
-<<<<<<< HEAD
-<<<<<<< HEAD
 categories: logic
-=======
-categories: digital
->>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
-=======
-categories: logic
->>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
 layout: post
 function: memory
 schematics: yes

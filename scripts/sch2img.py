@@ -34,7 +34,7 @@ def svg2png(svg_fp, png_fp):
             svg_is_younger = False
             print(png_fp, "not updated") 
     if svg_is_younger:
-        logger.info("calling inkscape on ",svg_fp)
+        logger.info(f"calling inkscape on {svg_fp}")
         res = call(["D:\\binw\\Inkscape\\inkscape.exe","-z",\
                             svg_fp,"-e", png_fp])
 
@@ -97,7 +97,7 @@ def sch2svg(sch_fp,svg_fp):
         try:
             assert res == 0
         except:
-            logger.error(f"failed to convert sch {sch_fp} to svg")
+            logger.error(f"failed to convert sch {sch_fp} lib_fp: {lib_fp} to svg")
             raise
 
     if sch_is_younger:

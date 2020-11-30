@@ -1,14 +1,6 @@
 ---
 title: Capacitance Multiplier
-<<<<<<< HEAD
-<<<<<<< HEAD
 categories: signal_chain
-=======
-categories: passive
->>>>>>> e2aa394... kicad v0.1 first pass generation pdf from kicad schematics still fail one sheet generation
-=======
-categories: signal_chain
->>>>>>> 4ed3408... kicad v0.2 first successful generation of single_sheet overview
 layout: post
 function: passive
 schematics: yes
