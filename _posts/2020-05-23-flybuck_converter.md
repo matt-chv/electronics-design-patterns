@@ -13,4 +13,4 @@ A Fly-Buck converter, is a transformer based switching regulator where the induc
 
 The secondary output voltage (VOUT_sec) is ratio of the primary voltage (VOUT_pri) given by the transformer ratio (N) while being isolated from it.
 
-$$ VOUT_pri = N * VOUT_sec $$
+$$ VOUT_{pri} = N * VOUT_{sec} $$
