@@ -1,5 +1,5 @@
 ---
-title: Forward Converter
+title: forward converter
 categories: power
 layout: post
 function: regulation

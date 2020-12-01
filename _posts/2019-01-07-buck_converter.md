@@ -1,5 +1,5 @@
 ---
-title: Buck Converter
+title: buck converter
 categories: power
 layout: post
 function: regulation

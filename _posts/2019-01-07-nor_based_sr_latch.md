@@ -1,5 +1,5 @@
 ---
-title: NOR based SR latch
+title: nor based sr latch
 categories: logic
 layout: post
 function: latch

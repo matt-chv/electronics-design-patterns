@@ -1,5 +1,5 @@
 ---
-title: Boost Converter
+title: boost converter
 categories: power
 layout: post
 function: regulation

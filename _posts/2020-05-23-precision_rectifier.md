@@ -1,5 +1,5 @@
 ---
-title: Precision Rectifier
+title: precision rectifier
 categories: signal_chain
 layout: post
 function: passives

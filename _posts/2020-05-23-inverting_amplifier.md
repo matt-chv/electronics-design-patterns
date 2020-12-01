@@ -1,5 +1,5 @@
 ---
-title: Inverting Amplifier
+title: inverting amplifier
 categories: signal_chain
 layout: post
 function: amplification

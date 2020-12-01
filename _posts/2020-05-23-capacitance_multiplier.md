@@ -1,5 +1,5 @@
 ---
-title: Capacitance Multiplier
+title: capacitance multiplier
 categories: signal_chain
 layout: post
 function: passive

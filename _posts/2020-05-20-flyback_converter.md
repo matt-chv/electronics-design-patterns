@@ -1,5 +1,5 @@
 ---
-title: Flyback Converter
+title: flyback converter
 categories: power
 layout: post
 function: regulation

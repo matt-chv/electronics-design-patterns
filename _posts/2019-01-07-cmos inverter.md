@@ -1,5 +1,5 @@
 ---
-title: CMOS Inverter
+title: cmos inverter
 categories: logic
 layout: post
 function: inverter

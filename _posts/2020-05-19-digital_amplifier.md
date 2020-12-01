@@ -1,5 +1,5 @@
 ---
-title: Digital Amplifier
+title: digital amplifier
 categories: signal_chain
 layout: post
 function: filter

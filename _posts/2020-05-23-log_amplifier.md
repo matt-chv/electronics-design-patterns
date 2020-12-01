@@ -1,5 +1,5 @@
 ---
-title: Log Amplifier
+title: log amplifier
 categories: signal_chain
 layout: post
 function: amplification
