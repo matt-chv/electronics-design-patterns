@@ -9,7 +9,7 @@ date: 2020-05-23
 
 # Precision Rectifier
 
-The precision rectifier or super diode.
+The precision rectifier or also called super diode.
 
 When the VIN<0, there is a negative voltage on the diode, so it works like an open circuit, no current flows through the load, and the output voltage is zero.
 
