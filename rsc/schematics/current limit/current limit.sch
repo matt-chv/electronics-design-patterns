@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+LIBS:current limit-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5FC312F3
+P 4750 3600
+F 0 "R1" H 4820 3600 50  0000 L CNN
+F 1 "R" H 4820 3555 50  0001 L CNN
+F 2 "" V 4680 3600 50  0001 C CNN
+F 3 "~" H 4750 3600 50  0001 C CNN
+	1    4750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FC322D7
+P 4750 4200
+F 0 "#PWR01" H 4750 3950 50  0001 C CNN
+F 1 "GND" H 4755 4027 50  0000 C CNN
+F 2 "" H 4750 4200 50  0001 C CNN
+F 3 "" H 4750 4200 50  0001 C CNN
+	1    4750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 5FC5FFA9
+P 5150 3500
+F 0 "Q1" H 5340 3500 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 5341 3455 50  0001 L CNN
+F 2 "" H 5350 3600 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5FC61048
+P 5450 3800
+F 0 "D2" H 5450 3676 50  0000 C CNN
+F 1 "D" H 5450 3675 50  0001 C CNN
+F 2 "" H 5450 3800 50  0001 C CNN
+F 3 "~" H 5450 3800 50  0001 C CNN
+	1    5450 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5FC616A8
+P 5850 3800
+F 0 "D3" H 5850 3676 50  0000 C CNN
+F 1 "D" H 5850 3675 50  0001 C CNN
+F 2 "" H 5850 3800 50  0001 C CNN
+F 3 "~" H 5850 3800 50  0001 C CNN
+	1    5850 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 5FC623E3
+P 4750 4000
+F 0 "D1" V 4704 4079 50  0000 L CNN
+F 1 "D_Zener" V 4795 4079 50  0000 L CNN
+F 2 "" H 4750 4000 50  0001 C CNN
+F 3 "~" H 4750 4000 50  0001 C CNN
+	1    4750 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FC637CF
+P 5700 3400
+F 0 "R2" V 5600 3350 50  0000 L CNN
+F 1 "R" H 5770 3355 50  0001 L CNN
+F 2 "" V 5630 3400 50  0001 C CNN
+F 3 "~" H 5700 3400 50  0001 C CNN
+	1    5700 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3400 4750 3400
+Wire Wire Line
+	4750 3450 4750 3400
+Connection ~ 4750 3400
+Wire Wire Line
+	4750 3400 4400 3400
+Wire Wire Line
+	4750 3750 4750 3800
+Wire Wire Line
+	4750 3800 5150 3800
+Connection ~ 4750 3800
+Wire Wire Line
+	4750 3800 4750 3850
+Wire Wire Line
+	5150 3700 5150 3800
+Connection ~ 5150 3800
+Wire Wire Line
+	5150 3800 5300 3800
+Wire Wire Line
+	5350 3400 5550 3400
+Wire Wire Line
+	5850 3400 6000 3400
+Wire Wire Line
+	6000 3800 6000 3400
+Connection ~ 6000 3400
+Wire Wire Line
+	6000 3400 6150 3400
+Wire Wire Line
+	5700 3800 5600 3800
+Text Label 4450 3400 0    50   ~ 0
+VIN
+Wire Wire Line
+	4750 4150 4750 4200
+Text Label 6050 3400 0    50   ~ 0
+VOUT
+$EndSCHEMATC
