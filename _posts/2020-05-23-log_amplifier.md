@@ -9,7 +9,7 @@ date: 2020-05-23
 
 # Log Amplifier
 
-A log amplifier, is an amplifier whose output voltage is proportional to the logarithm of the input voltage (VIN). 
+A log amplifier, is an amplifier whose output voltage is proportional to the log of the input voltage (VIN). 
 
 This allows to extend the dynamic range of circuits situated at its output.
 
