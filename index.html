@@ -31,7 +31,7 @@ lang: en
         {% elsif page == 1 %}
           <li><a href="{{site.baseurl}}/">{{ page }}</a></li>
         {% else %}
-          <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+          <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a></li>
         {% endif %}
       {% endfor %}
 
