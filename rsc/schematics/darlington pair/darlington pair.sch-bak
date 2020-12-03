@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+LIBS:current mirror-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_BCE Q2
+U 1 1 5FC305ED
+P 7050 4200
+F 0 "Q2" H 7240 4200 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 7241 4155 50  0001 L CNN
+F 2 "" H 7250 4300 50  0001 C CNN
+F 3 "~" H 7050 4200 50  0001 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FC312F3
+P 6500 3750
+F 0 "R1" H 6570 3750 50  0000 L CNN
+F 1 "R" H 6570 3705 50  0001 L CNN
+F 2 "" V 6430 3750 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC322D7
+P 6800 4950
+F 0 "#PWR?" H 6800 4700 50  0001 C CNN
+F 1 "GND" H 6805 4777 50  0000 C CNN
+F 2 "" H 6800 4950 50  0001 C CNN
+F 3 "" H 6800 4950 50  0001 C CNN
+	1    6800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC VIN
+U 1 1 5FC32849
+P 6500 3500
+F 0 "VIN" H 6500 3650 50  0000 C CNN
+F 1 "VCC" H 6517 3673 50  0001 C CNN
+F 2 "" H 6500 3500 50  0001 C CNN
+F 3 "" H 6500 3500 50  0001 C CNN
+	1    6500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 5FC5FFA9
+P 6600 4200
+F 0 "Q1" H 6790 4200 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 6791 4155 50  0001 L CNN
+F 2 "" H 6800 4300 50  0001 C CNN
+F 3 "~" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3500 6500 3600
+Wire Wire Line
+	6500 3900 6500 4000
+Wire Wire Line
+	6500 4000 6800 4000
+Wire Wire Line
+	6800 4000 6800 4200
+Connection ~ 6500 4000
+Wire Wire Line
+	6800 4200 6850 4200
+Connection ~ 6800 4200
+Wire Wire Line
+	6500 4400 6500 4800
+Wire Wire Line
+	7150 4400 7150 4800
+$Comp
+L power:VCC VOUT
+U 1 1 5FC62609
+P 7150 3500
+F 0 "VOUT" H 7150 3650 50  0000 C CNN
+F 1 "VCC" H 7167 3673 50  0001 C CNN
+F 2 "" H 7150 3500 50  0001 C CNN
+F 3 "" H 7150 3500 50  0001 C CNN
+	1    7150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3500 7150 4000
+Text Label 7150 3750 1    50   ~ 0
+IOUT
+Wire Wire Line
+	6500 4800 6800 4800
+Wire Wire Line
+	6800 4950 6800 4800
+Connection ~ 6800 4800
+Wire Wire Line
+	6800 4800 7150 4800
+$EndSCHEMATC
