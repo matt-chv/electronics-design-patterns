@@ -6,8 +6,8 @@ layout: null
   {% for post in site.posts %}
   <post>
   <url>{{ site.url }}{{ post.url }}</url>
-  <title>{post.title}</title>
-  <body>{post.content}<body>
+  <title>{{post.title}}</title>
+  <body>{{post.content}}<body>
   </post>
   {% endfor %}
 </urlset>
