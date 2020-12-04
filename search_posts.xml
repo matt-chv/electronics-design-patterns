@@ -7,7 +7,7 @@ layout: null
   <post>
   <url>{{ site.url }}{{ post.url }}</url>
   <title>{{post.title}}</title>
-  <body>{{post.content}}<body>
+  <body>{{post.content}}</body>
   </post>
   {% endfor %}
 </urlset>
