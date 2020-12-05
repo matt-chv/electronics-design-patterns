@@ -66,7 +66,7 @@ baseurl = "electronics-design-patterns";
     }
 
     var xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET",baseurl+"/feed.xml");
+    xmlhttp.open("GET",baseurl+"/super-search.xml");
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState != 4) return;
         if (xmlhttp.status != 200 && xmlhttp.status != 304) { return; }
