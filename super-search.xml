@@ -18,7 +18,7 @@ layout: null
   <link href="{{ site.url }}{{ post.url }}" title="{{post.title}}" />
   <published>{{ post.date }}</published>
   <updated>{{ post.date }}</updated>
-  <id> {{post.id}} </id>
+  <id> {{base.url}}{{post.id}} </id>
   <content type="html" xml:base="{{ site.url }}{{ post.url }}">
     {{post.content}}
   </content>
