@@ -1,5 +1,5 @@
 ---
-title: marx generator_explicit
+title: marx generator explicit
 categories: power
 layout: post
 function: pulse

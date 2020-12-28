@@ -1,5 +1,5 @@
 ---
-title: darlington_pair
+title: darlington pair
 categories: signal_chain
 layout: post
 function: [amplification, v2v]

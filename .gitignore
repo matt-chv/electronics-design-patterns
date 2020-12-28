@@ -10,6 +10,7 @@ out/card_deck_single_sheet_old.pdf
 
 rsc/eagle/*
 rsc/eagle_2_kicad/*
+rsc/drafts/*
 
 scripts/venv/*
 scripts/__pycache__/*
