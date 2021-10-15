@@ -1,0 +1,115 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 6169D243
+P 4500 3300
+F 0 "Q?" H 4691 3346 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4691 3255 50  0000 L CNN
+F 2 "" H 4700 3400 50  0001 C CNN
+F 3 "~" H 4500 3300 50  0001 C CNN
+	1    4500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 6169D938
+P 3950 2800
+F 0 "T?" H 3950 3181 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 3950 3090 50  0000 C CNN
+F 2 "" H 3950 2800 50  0001 C CNN
+F 3 "~" H 3950 2800 50  0001 C CNN
+	1    3950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6169FD30
+P 5400 3250
+F 0 "D?" V 5439 3132 50  0000 R CNN
+F 1 "LED" V 5348 3132 50  0000 R CNN
+F 2 "" H 5400 3250 50  0001 C CNN
+F 3 "~" H 5400 3250 50  0001 C CNN
+	1    5400 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616A0546
+P 4600 3600
+F 0 "#PWR?" H 4600 3350 50  0001 C CNN
+F 1 "GND" H 4605 3427 50  0000 C CNN
+F 2 "" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 616A0B12
+P 3550 2050
+F 0 "#PWR?" H 3550 1900 50  0001 C CNN
+F 1 "VCC" H 3565 2223 50  0000 C CNN
+F 2 "" H 3550 2050 50  0001 C CNN
+F 3 "" H 3550 2050 50  0001 C CNN
+	1    3550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616A1646
+P 3550 2300
+F 0 "R?" H 3620 2346 50  0000 L CNN
+F 1 "R" H 3620 2255 50  0000 L CNN
+F 2 "" V 3480 2300 50  0001 C CNN
+F 3 "~" H 3550 2300 50  0001 C CNN
+	1    3550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2050 3550 2100
+Wire Wire Line
+	3550 2450 3550 2600
+Wire Wire Line
+	3550 3000 3550 3300
+Wire Wire Line
+	3550 3300 4300 3300
+Wire Wire Line
+	4600 3500 4600 3550
+Wire Wire Line
+	4350 3000 4450 3000
+Wire Wire Line
+	4450 3000 4450 2100
+Wire Wire Line
+	4450 2100 3550 2100
+Connection ~ 3550 2100
+Wire Wire Line
+	3550 2100 3550 2150
+Wire Wire Line
+	4350 2600 4600 2600
+Wire Wire Line
+	4600 2600 4600 3100
+Wire Wire Line
+	4600 3100 5400 3100
+Connection ~ 4600 3100
+Wire Wire Line
+	5400 3400 5400 3550
+Wire Wire Line
+	5400 3550 4600 3550
+Connection ~ 4600 3550
+Wire Wire Line
+	4600 3550 4600 3600
+$EndSCHEMATC
