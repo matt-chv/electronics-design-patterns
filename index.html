@@ -7,13 +7,13 @@ title: electronics design patterns
 
 <div id="home">
   <h1>{{ site.title }}</h1>
-  <hr />
   
-  <div id="selector"><ol>
-  {% for cat in site.categories%}
-    <li>{{cat.title}}: {{cat:description}}</li>
+  <div id="selector">
+  {% for cat in site.categories %}
+    <div id="cat">{{cat}} {{cat.title}}: {{cat:description}}</div>
   {% endfor %}
-    </ol></div>
+  </div>
+  <hr/>
   
   <ol class="posts">
     {% for post in paginator.posts %}
