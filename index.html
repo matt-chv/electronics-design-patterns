@@ -8,11 +8,11 @@ title: electronics design patterns
 <div id="home">
   <h1>{{ site.title }}</h1>
   
-  <div id="selector">
-  {% for cat in site.categories %}
-    <div id="cat">{{cat}} : {{cat:description}}</div>
-  {% endfor %}
-  </div>
+  <div id="mcv">
+    {% for category in site.categories %}
+      {% capture category_slug %}{{ category | first }}{% endcapture %}
+        {% for c_slug in category_slug %} <button class="btn btn-sm btn-default active">{{ c_slug }}</button>  {% endfor %}
+    {% endfor %}
   <hr/>
   
   <ol class="posts">
