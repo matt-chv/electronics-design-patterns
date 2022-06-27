@@ -9,6 +9,6 @@ Pillow==7.1.0
 pyparsing==2.3.0
 python-dateutil==2.7.5
 python-markdown-mathjax==1.0.4
-reportlab==3.5.12
+reportlab==3.5.55
 six==1.12.0
 soupsieve==1.6.2
